@@ -8,16 +8,44 @@ from meal_planner import generate_meal_plan
 from pdf_generator import generate_pdf
 import os
 
+# Mapování český → anglický pro kategorie
+CATEGORY_MAP_CZ_TO_EN = {
+    "Těstoviny": "pasta",
+    "Tradiční česká": "czech_traditional",
+    "Rychlá jídla": "quick",
+    "Comfort food": "comfort"
+}
+
+CATEGORY_MAP_EN_TO_CZ = {v: k for k, v in CATEGORY_MAP_CZ_TO_EN.items()}
+
+# Mapování pro alergeny
+ALLERGEN_MAP_CZ_TO_EN = {
+    "Lepek": "gluten",
+    "Mléčné výrobky": "dairy",
+    "Vejce": "eggs",
+    "Sója": "soy",
+    "Ořechy": "nuts"
+}
+
+# Mapování pro potraviny, které nechceš
+DISLIKE_MAP_CZ_TO_EN = {
+    "Ryby": "fish",
+    "Houby": "mushrooms",
+    "Mořské plody": "seafood",
+    "Vnitřnosti": "liver",
+    "Vepřové": "pork"
+}
+
 # Page config
 st.set_page_config(
-    page_title="🍽️ Czech Meal Planner",
+    page_title="🍽️ Týdenní Jídelníček",
     page_icon="🍽️",
     layout="wide"
 )
 
 # Title
-st.title("🍽️ Czech Meal Planner")
-st.markdown("### Personalizovaný týdenní jídelníček s AI")
+st.title("🍽️ Tvůj Týdenní Jídelníček")
+st.markdown("### Personalizovaný plán večeří s AI")
 st.divider()
 
 # Sidebar - Preferences
@@ -31,10 +59,10 @@ household_size = st.sidebar.number_input(
 )
 
 st.sidebar.subheader("Kategorie, které máš rád")
-likes = st.sidebar.multiselect(
+likes_cz = st.sidebar.multiselect(
     "Vyber kategorie",
-    ["pasta", "czech_traditional", "quick", "comfort"],
-    default=["pasta", "czech_traditional", "quick"]
+    list(CATEGORY_MAP_CZ_TO_EN.keys()),
+    default=["Těstoviny", "Tradiční česká", "Rychlá jídla"]
 )
 
 st.sidebar.subheader("Časový budget")
@@ -45,36 +73,41 @@ time_budget = st.sidebar.select_slider(
 )
 
 st.sidebar.subheader("Alergeny a omezení")
-allergies = st.sidebar.multiselect(
+allergies_cz = st.sidebar.multiselect(
     "Alergie",
-    ["gluten", "dairy", "eggs", "soy", "nuts"],
+    list(ALLERGEN_MAP_CZ_TO_EN.keys()),
     default=[]
 )
 
-dislikes = st.sidebar.multiselect(
+dislikes_cz = st.sidebar.multiselect(
     "Co nechceš v jídle",
-    ["fish", "mushrooms", "seafood", "liver", "pork"],
-    default=["fish"]
+    list(DISLIKE_MAP_CZ_TO_EN.keys()),
+    default=["Ryby"]
 )
 
 kid_friendly = st.sidebar.checkbox("Jen jídla vhodná pro děti", value=True)
 
 # Generate button
-if st.sidebar.button("🚀 Generuj Meal Plan", type="primary"):
+if st.sidebar.button("🚀 Generuj Jídelníček", type="primary"):
+
+    # Convert Czech selections to English for backend
+    likes_en = [CATEGORY_MAP_CZ_TO_EN[cat] for cat in likes_cz]
+    allergies_en = [ALLERGEN_MAP_CZ_TO_EN[allergen] for allergen in allergies_cz]
+    dislikes_en = [DISLIKE_MAP_CZ_TO_EN[dislike] for dislike in dislikes_cz]
 
     # Prepare preferences
     preferences = {
         "household_size": household_size,
-        "allergies": allergies,
-        "likes": likes,
+        "allergies": allergies_en,
+        "likes": likes_en,
         "time_budget": time_budget,
         "price_budget": "30-70",
-        "dislikes": dislikes,
+        "dislikes": dislikes_en,
         "kid_friendly_required": kid_friendly
     }
 
     # Show loading spinner
-    with st.spinner("🤖 Generuji tvůj personalizovaný meal plan..."):
+    with st.spinner("🤖 Generuji tvůj personalizovaný jídelníček..."):
         try:
             # Generate meal plan
             meal_plan = generate_meal_plan(preferences)
@@ -87,7 +120,7 @@ if st.sidebar.button("🚀 Generuj Meal Plan", type="primary"):
             pdf_path = generate_pdf(meal_plan, "generated_meal_plan.pdf")
             st.session_state.pdf_path = pdf_path
 
-            st.success("✅ Meal plan vygenerován!")
+            st.success("✅ Jídelníček vygenerován!")
 
         except Exception as e:
             st.error(f"❌ Chyba při generování: {str(e)}")
@@ -159,7 +192,18 @@ if "meal_plan" in st.session_state:
                 st.metric("💰 Cena/porce", f"{recipe['price_per_portion_czk']} Kč")
 
                 if recipe.get('allergens'):
-                    st.warning(f"⚠️ Alergeny: {', '.join(recipe['allergens'])}")
+                    # Translate allergens to Czech for display
+                    allergens_cz = []
+                    allergen_display_map = {
+                        "gluten": "lepek",
+                        "dairy": "mléčné výrobky",
+                        "eggs": "vejce",
+                        "soy": "sója",
+                        "nuts": "ořechy"
+                    }
+                    for allergen in recipe['allergens']:
+                        allergens_cz.append(allergen_display_map.get(allergen.lower(), allergen))
+                    st.warning(f"⚠️ Alergeny: {', '.join(allergens_cz)}")
 
     st.divider()
 
@@ -186,7 +230,7 @@ if "meal_plan" in st.session_state:
 
 else:
     # Welcome message
-    st.info("👈 Nastav své preference v postranním menu a klikni na **'Generuj Meal Plan'**")
+    st.info("👈 Nastav své preference v postranním menu a klikni na **'Generuj Jídelníček'**")
 
     st.markdown("""
     ### ✨ Jak to funguje?
@@ -197,7 +241,7 @@ else:
        - Časový budget
        - Alergie a omezení
 
-    2. **Klikni na tlačítko** "Generuj Meal Plan"
+    2. **Klikni na tlačítko** "Generuj Jídelníček"
 
     3. **Získej:**
        - 7 receptů na celý týden
@@ -207,17 +251,17 @@ else:
 
     ### 📊 Dostupné kategorie receptů:
 
-    - **Pasta** - Italská klasika i české adaptace
-    - **Czech Traditional** - Guláš, řízek, bramboráky...
-    - **Quick** - Rychlé večeře do 30 minut
-    - **Comfort** - Pizza, lasagne, comfort food
+    - **Těstoviny** - Italská klasika i české adaptace
+    - **Tradiční česká** - Guláš, řízek, bramboráky...
+    - **Rychlá jídla** - Rychlé večeře do 30 minut
+    - **Comfort food** - Pizza, lasagne, pohodové jídlo
 
-    ### 🎯 Demo features:
+    ### 🎯 Funkce:
 
     ✅ 10 autentických českých receptů
     ✅ Personalizace dle preferencí
     ✅ Filtrování alergií
     ✅ Automatický nákupní seznam
-    ✅ PDF download
+    ✅ PDF ke stažení
     ✅ Kalkulace ceny
     """)
