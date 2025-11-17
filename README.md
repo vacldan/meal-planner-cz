@@ -4,6 +4,26 @@ Personalizovaný týdenní jídelníček s AI - Demo verze
 
 ## 🚀 Quick Start
 
+### Option 1: Streamlit Web App (Doporučeno)
+
+1. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Spusť Streamlit app:**
+   ```bash
+   streamlit run streamlit_app.py
+   ```
+
+3. **Otevři v prohlížeči:**
+   - Automaticky se otevře na `http://localhost:8501`
+   - Nastav své preference v postranním menu
+   - Klikni "Generuj Meal Plan"
+   - Stáhni PDF
+
+### Option 2: Command Line Demo
+
 1. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
