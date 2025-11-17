@@ -9,9 +9,25 @@ from collections import defaultdict
 
 def load_recipes(filepath: str = "recipes.json") -> List[Dict]:
     """Load recipes from JSON file"""
-    with open(filepath, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    return data['recipes']
+    import os
+
+    # Try multiple possible paths
+    possible_paths = [
+        filepath,
+        os.path.join(os.path.dirname(__file__), filepath),
+        os.path.abspath(filepath)
+    ]
+
+    for path in possible_paths:
+        if os.path.exists(path):
+            try:
+                with open(path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                return data['recipes']
+            except json.JSONDecodeError as e:
+                raise ValueError(f"Chyba při načítání receptů z {path}: {str(e)}")
+
+    raise FileNotFoundError(f"Soubor recipes.json nebyl nalezen. Zkontroluj cestu: {possible_paths}")
 
 def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
     """Filter recipes based on user preferences"""

@@ -117,14 +117,30 @@ if st.sidebar.button("🚀 Generuj Jídelníček", type="primary"):
             st.session_state.preferences = preferences
 
             # Generate PDF
-            pdf_path = generate_pdf(meal_plan, "generated_meal_plan.pdf")
-            st.session_state.pdf_path = pdf_path
+            try:
+                pdf_path = generate_pdf(meal_plan, "generated_meal_plan.pdf")
+                st.session_state.pdf_path = pdf_path
+            except Exception as pdf_error:
+                st.warning(f"⚠️ PDF se nepodařilo vygenerovat: {str(pdf_error)}")
+                st.info("💡 Recepty a nákupní seznam jsou k dispozici níže na stránce")
 
             st.success("✅ Jídelníček vygenerován!")
 
-        except Exception as e:
-            st.error(f"❌ Chyba při generování: {str(e)}")
+        except json.JSONDecodeError as je:
+            st.error(f"❌ Chyba při načítání dat: {str(je)}")
+            st.error(f"📍 Pozice chyby: řádek {je.lineno}, sloupec {je.colno}")
+            st.info("💡 Zkus aplikaci restartovat (F5) nebo kontaktuj podporu")
+
+        except ValueError as ve:
+            st.error(f"❌ {str(ve)}")
             st.info("💡 Tip: Zkus upravit své preference (např. rozšířit časový budget nebo odstranit některá omezení)")
+
+        except Exception as e:
+            st.error(f"❌ Neočekávaná chyba: {str(e)}")
+            import traceback
+            with st.expander("🔍 Detaily chyby (pro ladění)"):
+                st.code(traceback.format_exc())
+            st.info("💡 Zkus aplikaci restartovat (F5) nebo změnit preference")
 
 # Display results
 if "meal_plan" in st.session_state:
