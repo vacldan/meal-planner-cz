@@ -9,8 +9,11 @@ venv/
 .env
 
 # Output files
-*.pdf
+muj_jidelnicek.pdf
 meal_plan_output.json
+
+# But keep the sample PDF
+!sample_meal_plan.pdf
 
 # IDE
 .vscode/
