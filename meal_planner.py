@@ -29,6 +29,29 @@ def load_recipes(filepath: str = "recipes.json") -> List[Dict]:
 
     raise FileNotFoundError(f"Soubor recipes.json nebyl nalezen. Zkontroluj cestu: {possible_paths}")
 
+def load_desserts(filepath: str = "recipes-dezerty.json") -> List[Dict]:
+    """Load dessert recipes from JSON file"""
+    import os
+
+    # Try multiple possible paths
+    possible_paths = [
+        filepath,
+        os.path.join(os.path.dirname(__file__), filepath),
+        os.path.abspath(filepath)
+    ]
+
+    for path in possible_paths:
+        if os.path.exists(path):
+            try:
+                with open(path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                return data['recipes']
+            except json.JSONDecodeError as e:
+                raise ValueError(f"Chyba při načítání dezertů z {path}: {str(e)}")
+
+    # Pokud soubor neexistuje, vrať prázdný seznam (dezerty jsou volitelné)
+    return []
+
 def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
     """Filter recipes based on user preferences"""
     filtered = []
@@ -387,6 +410,29 @@ def calculate_total_cost(weeks: List[Dict[str, Dict]]) -> int:
             total += recipe['price_per_portion_czk'] * recipe['servings']
     return total
 
+def select_weekly_desserts(num_weeks: int) -> List[Dict]:
+    """Select 1 random dessert for each week"""
+    all_desserts = load_desserts()
+
+    if not all_desserts:
+        return []  # Pokud nejsou dezerty, vrať prázdný seznam
+
+    # Vyber náhodně 1 dezert pro každý týden
+    selected_desserts = []
+    available_desserts = all_desserts.copy()
+
+    for _ in range(num_weeks):
+        if not available_desserts:
+            # Pokud dojdou dezerty, obnov seznam
+            available_desserts = all_desserts.copy()
+
+        dessert = random.choice(available_desserts)
+        selected_desserts.append(dessert)
+        # Odstraň vybraný dezert, aby se neopakoval
+        available_desserts = [d for d in available_desserts if d['id'] != dessert['id']]
+
+    return selected_desserts
+
 def generate_meal_plan(preferences: Dict) -> Dict:
     """Main function to generate complete meal plan for multiple weeks"""
     # Load and filter recipes
@@ -403,17 +449,30 @@ def generate_meal_plan(preferences: Dict) -> Dict:
 
     weeks = select_weekly_recipes(filtered, daily_time_budgets, num_weeks)
 
-    # Generate shopping list (for all weeks, minus "mám doma")
-    shopping_list = generate_shopping_list(weeks, have_at_home)
+    # Select 1 dessert for each week
+    weekly_desserts = select_weekly_desserts(num_weeks)
 
-    # Calculate costs
-    total_cost = calculate_total_cost(weeks)
-    total_portions = sum(sum(r['servings'] for r in week.values()) for week in weeks)
+    # Add desserts to shopping list by creating temporary weeks structure
+    # Přidáme dezerty do nákupního seznamu
+    weeks_with_desserts = []
+    for i, week in enumerate(weeks):
+        week_copy = week.copy()
+        if i < len(weekly_desserts) and weekly_desserts[i]:
+            # Přidáme dezert jako "sunday_dessert" do týdne
+            week_copy['sunday_dessert'] = weekly_desserts[i]
+        weeks_with_desserts.append(week_copy)
 
-    # Spočítej překryv ingrediencí (pro statistiku úspor) - across all weeks
+    # Generate shopping list (for all weeks including desserts, minus "mám doma")
+    shopping_list = generate_shopping_list(weeks_with_desserts, have_at_home)
+
+    # Calculate costs (včetně dezertů)
+    total_cost = calculate_total_cost(weeks_with_desserts)
+    total_portions = sum(sum(r['servings'] for r in week.values()) for week in weeks_with_desserts)
+
+    # Spočítej překryv ingrediencí (pro statistiku úspor) - across all weeks including desserts
     all_ingredients = set()
     unique_count = 0
-    for week in weeks:
+    for week in weeks_with_desserts:
         for recipe in week.values():
             for ing in recipe['ingredients']:
                 ing_base = ing['name'].lower().split()[0]
@@ -421,16 +480,17 @@ def generate_meal_plan(preferences: Dict) -> Dict:
                     unique_count += 1
                     all_ingredients.add(ing_base)
 
-    total_ingredient_uses = sum(sum(len(r['ingredients']) for r in week.values()) for week in weeks)
+    total_ingredient_uses = sum(sum(len(r['ingredients']) for r in week.values()) for week in weeks_with_desserts)
     reuse_count = total_ingredient_uses - unique_count
     reuse_percentage = round((reuse_count / total_ingredient_uses) * 100) if total_ingredient_uses > 0 else 0
 
     return {
         "week_of": "2024-11-18",
         "preferences": preferences,
-        "weeks": weeks,  # List[Dict[str, Dict]]
-        "meals": weeks[0] if weeks else {},  # První týden pro zpětnou kompatibilitu
+        "weeks": weeks_with_desserts,  # List[Dict[str, Dict]] - včetně dezertů
+        "meals": weeks_with_desserts[0] if weeks_with_desserts else {},  # První týden pro zpětnou kompatibilitu
         "num_weeks": num_weeks,
+        "weekly_desserts": weekly_desserts,  # Samostatný seznam dezertů pro zobrazení
         "shopping_list": shopping_list,
         "total_cost_czk": total_cost,
         "cost_per_portion_czk": round(total_cost / total_portions, 1) if total_portions > 0 else 0,

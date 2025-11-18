@@ -342,12 +342,16 @@ if "meal_plan" in st.session_state:
     num_weeks = meal_plan.get('num_weeks', 1)
     weeks = meal_plan.get('weeks', [meal_plan.get('meals', {})])
 
+    # Get desserts list if available
+    weekly_desserts = meal_plan.get('weekly_desserts', [])
+
     for week_idx, week_meals in enumerate(weeks, 1):
         if num_weeks > 1:
             st.subheader(f"🗓️ Týden {week_idx}")
 
         for day_en, day_cz in days_czech.items():
-            if day_en not in week_meals:
+            # Skip sunday_dessert key (it's handled separately below)
+            if day_en == 'sunday_dessert' or day_en not in week_meals:
                 continue
 
             recipe = week_meals[day_en]
@@ -399,6 +403,49 @@ if "meal_plan" in st.session_state:
                         for allergen in recipe['allergens']:
                             allergens_cz.append(allergen_display_map.get(allergen.lower(), allergen))
                         st.warning(f"⚠️ Alergeny: {', '.join(allergens_cz)}")
+
+            # Po neděli přidej dezert
+            if day_en == 'sunday' and week_idx <= len(weekly_desserts) and weekly_desserts[week_idx - 1]:
+                dessert = weekly_desserts[week_idx - 1]
+
+                with st.expander(f"🍰 **Dezert k neděli**: {dessert['name']} ({dessert['time_minutes']} min, {dessert['price_per_portion_czk']} Kč/porce)"):
+
+                    col1, col2 = st.columns([2, 1])
+
+                    with col1:
+                        st.subheader("📝 Ingredience")
+                        for ingredient in dessert['ingredients']:
+                            st.markdown(f"- {ingredient['name']} - {ingredient['amount']}")
+
+                        st.subheader("👨‍🍳 Postup")
+                        for i, step in enumerate(dessert['steps'], 1):
+                            st.markdown(f"{i}. {step}")
+
+                    with col2:
+                        st.metric("⏱️ Čas", f"{dessert['time_minutes']} min")
+                        st.metric("📊 Obtížnost", dessert['difficulty'])
+                        st.metric("👥 Porce", dessert['servings'])
+                        st.metric("💰 Cena/porce", f"{dessert['price_per_portion_czk']} Kč")
+
+                        if dessert.get('kid_friendly'):
+                            st.success("👶 Vhodné pro děti")
+
+                        # Zobraz alergeny pokud existují
+                        if dessert.get('allergens'):
+                            # Alergeny v dezertech jsou jako čísla, převedeme je
+                            allergen_number_map = {
+                                1: "lepek",
+                                3: "vejce",
+                                7: "mléko",
+                                8: "ořechy"
+                            }
+                            allergens_cz = []
+                            for allergen in dessert['allergens']:
+                                if isinstance(allergen, int):
+                                    allergens_cz.append(allergen_number_map.get(allergen, str(allergen)))
+                                else:
+                                    allergens_cz.append(str(allergen))
+                            st.warning(f"⚠️ Alergeny: {', '.join(allergens_cz)}")
 
     st.divider()
 
