@@ -342,9 +342,6 @@ if "meal_plan" in st.session_state:
     num_weeks = meal_plan.get('num_weeks', 1)
     weeks = meal_plan.get('weeks', [meal_plan.get('meals', {})])
 
-    # DEBUG: Zobraz info o dezertech
-    st.info(f"🔍 DEBUG: Generováno {num_weeks} týdnů, v každém týdnu {'JE' if any('sunday_dessert' in w for w in weeks) else 'NENÍ'} dezert")
-
     for week_idx, week_meals in enumerate(weeks, 1):
         if num_weeks > 1:
             st.subheader(f"🗓️ Týden {week_idx}")
@@ -404,10 +401,6 @@ if "meal_plan" in st.session_state:
                         st.warning(f"⚠️ Alergeny: {', '.join(allergens_cz)}")
 
         # Po všech dnech týdne zobraz dezert (pokud existuje)
-        # DEBUG
-        st.write(f"🔍 DEBUG Týden {week_idx}: Klíče = {list(week_meals.keys())}")
-        st.write(f"🔍 DEBUG: 'sunday_dessert' in week_meals = {'sunday_dessert' in week_meals}")
-
         if 'sunday_dessert' in week_meals:
             dessert = week_meals['sunday_dessert']
 
@@ -459,8 +452,11 @@ if "meal_plan" in st.session_state:
         'maso': '🥩 Maso',
         'ryby': '🐟 Ryby',
         'zelenina': '🥬 Zelenina & Ovoce',
+        'vegetables': '🥬 Zelenina & Ovoce',
         'mléčné': '🥛 Mléčné Výrobky',
+        'dairy': '🥛 Mléčné Výrobky',
         'trvanlivé': '🥫 Trvanlivé',
+        'pantry': '🥫 Trvanlivé',
         'ostatní': '📦 Ostatní'
     }
 
