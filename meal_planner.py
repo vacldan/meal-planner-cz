@@ -38,7 +38,7 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
         'těstoviny': 'pasta',
         'tradiční česká': 'czech_traditional',
         'rychlá jídla': 'quick',
-        'comfort food': 'comfort'
+        'rodinná klasika': 'comfort'
     }
 
     # Mapování českých alergenů na anglické v recipes.json
@@ -50,13 +50,26 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
         'ořechy': 'nuts'
     }
 
-    # Mapování českých omezení na varianty v receptech
+    # Mapování českých omezení na varianty v receptech - rozšířené
     dislike_mapping = {
-        'ryby': ['ryb', 'kapr', 'pstruh', 'losos', 'sleď', 'treska'],
-        'houby': ['houb', 'žampion', 'hřib', 'bedl', 'liška'],
-        'mořské plody': ['krevet', 'mořsk', 'kalamár', 'chobotnic', 'slávk'],
+        'vepřové': ['vepř', 'bůček', 'kýta', 'plec', 'krkovice', 'žebírk', 'slanina'],
+        'hovězí': ['hovězí', 'hovädzí', 'svíčkov', 'roštěnec', 'guláš'],
+        'kuřecí': ['kuřec', 'kuře', 'kur', 'drůbež'],
+        'ryby': ['ryb', 'kapr', 'pstruh', 'losos', 'sleď', 'treska', 'makrela'],
+        'mořské plody': ['krevet', 'mořsk', 'kalamár', 'chobotnic', 'slávk', 'humr'],
         'vnitřnosti': ['játr', 'vnitřnos', 'dršť', 'ledvin', 'srdce', 'jazyk'],
-        'vepřové': ['vepř', 'bůček', 'kýta', 'plec', 'krkovice', 'žebírk']
+        'houby': ['houb', 'žampion', 'hřib', 'bedl', 'liška', 'hlív'],
+        'cibule': ['cibul', 'cibulk'],
+        'česnek': ['česnek', 'česnekový'],
+        'paprika': ['paprik'],
+        'rajčata': ['rajč', 'paradajk', 'pomidor'],
+        'brokolice': ['brokolic'],
+        'květák': ['květák'],
+        'fazole': ['fazol'],
+        'čočka': ['čočk', 'čočkový'],
+        'sýr': ['sýr', 'syr', 'parmazán', 'eidam', 'mozzarella'],
+        'smetana': ['smetan', 'smetanový'],
+        'koření (pikantní)': ['peprn', 'pálivý', 'pikant', 'chilli', 'jalapeño']
     }
 
     for recipe in recipes:
