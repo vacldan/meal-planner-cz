@@ -38,7 +38,7 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
         'fish': ['ryb', 'kapr', 'pstruh', 'losos'],
         'mushrooms': ['houb', 'žampion', 'hřib'],
         'seafood': ['krevet', 'mořsk', 'kalamár'],
-        'liver': ['játr', 'vnitřnos'],
+        'liver': ['játr', 'vnitřnos', 'dršť', 'ledvin', 'srdce', 'jazyk'],
         'pork': ['vepř', 'bůček', 'kýta', 'plec', 'krkovice']
     }
 
