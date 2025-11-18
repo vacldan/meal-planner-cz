@@ -344,10 +344,12 @@ if "meal_plan" in st.session_state:
     st.header("🛒 Nákupní Seznam")
 
     category_names = {
-        'meat': '🥩 Maso & Ryby',
-        'vegetables': '🥬 Zelenina & Ovoce',
-        'dairy': '🥛 Mléčné Výrobky',
-        'pantry': '🥫 Trvanlivé'
+        'maso': '🥩 Maso',
+        'ryby': '🐟 Ryby',
+        'zelenina': '🥬 Zelenina & Ovoce',
+        'mléčné': '🥛 Mléčné Výrobky',
+        'trvanlivé': '🥫 Trvanlivé',
+        'ostatní': '📦 Ostatní'
     }
 
     cols = st.columns(2)

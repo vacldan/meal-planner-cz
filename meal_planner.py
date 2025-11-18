@@ -159,7 +159,9 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
         user_likes_en = [category_mapping.get(l, l) for l in user_likes_cz]
 
         if user_likes_en:
-            if recipe['category'] in user_likes_en:
+            # Kontroluj jak category, tak tags (pro vegetarian/vegan)
+            recipe_tags = recipe.get('tags', [])
+            if recipe['category'] in user_likes_en or any(tag in user_likes_en for tag in recipe_tags):
                 filtered.append(recipe)
         else:  # If no preference, include all
             filtered.append(recipe)

@@ -185,11 +185,13 @@
             {% for category, items in shopping_list.items() %}
             <div class="shopping-category">
                 <h4 style="text-transform: uppercase;">
-                    {% if category == 'meat' %}MASO & RYBY
-                    {% elif category == 'vegetables' %}ZELENINA & OVOCE
-                    {% elif category == 'dairy' %}MLÉČNÉ VÝROBKY
-                    {% elif category == 'pantry' %}TRVANLIVÉ
-                    {% else %}{{ category }}
+                    {% if category == 'maso' %}MASO
+                    {% elif category == 'ryby' %}RYBY
+                    {% elif category == 'zelenina' %}ZELENINA & OVOCE
+                    {% elif category == 'mléčné' %}MLÉČNÉ VÝROBKY
+                    {% elif category == 'trvanlivé' %}TRVANLIVÉ
+                    {% elif category == 'ostatní' %}OSTATNÍ
+                    {% else %}{{ category | upper }}
                     {% endif %}
                 </h4>
                 {% for item in items %}
