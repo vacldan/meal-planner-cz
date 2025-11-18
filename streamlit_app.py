@@ -29,7 +29,7 @@ COMMON_PANTRY_ITEMS = [
 ]
 
 # Kategorie receptů
-CATEGORIES = ["Těstoviny", "Tradiční česká", "Rychlá jídla", "Rodinná klasika", "Vegetariánské", "Veganské"]
+CATEGORIES = ["Těstoviny", "Tradiční česká", "Rychlá jídla", "Rodinná klasika", "Polévky", "Vegetariánské", "Veganské"]
 
 # Alergeny - kompletní seznam 14 hlavních alergenů EU
 ALLERGENS = [
@@ -120,6 +120,7 @@ likes = st.sidebar.multiselect(
     • Tradiční česká - guláš, svíčková, řízek\n
     • Rychlá jídla - do 30 minut\n
     • Rodinná klasika - pizza, burgery, palačinky\n
+    • Polévky - zeleninové, vývarové, krémové\n
     • Vegetariánské - bez masa a ryb\n
     • Veganské - bez živočišných produktů
     """
@@ -459,6 +460,7 @@ else:
         | 🇨🇿 **Tradiční česká** | Guláš, svíčková, řízek s bramborovým salátem |
         | ⚡ **Rychlá jídla** | Smažený sýr, kuřecí stir-fry (do 30 min) |
         | 🍕 **Rodinná klasika** | Pizza, palačinky, bramboráky |
+        | 🍲 **Polévky** | Rajčatová, česnečka, kuřecí vývar, hráškový krém |
         | 🥗 **Vegetariánské** | Smažený sýr, bramboráky, zapečené těstoviny |
         | 🌱 **Veganské** | Zeleninové kari, fazolový guláš, vegan lasagne |
 

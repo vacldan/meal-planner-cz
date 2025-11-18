@@ -39,6 +39,7 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
         'tradiční česká': 'czech_traditional',
         'rychlá jídla': 'quick',
         'rodinná klasika': 'comfort',
+        'polévky': 'soup',
         'vegetariánské': 'vegetarian',
         'veganské': 'vegan'
     }

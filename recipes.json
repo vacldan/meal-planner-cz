@@ -15163,6 +15163,769 @@
         "Peč na plechu s olejem na 200°C 25 minut (otoč v půlce)",
         "Podávej s tahini omáčkou"
       ]
+    },
+    {
+      "id": 261,
+      "name": "Rychlá zeleninová polévka s těstovinami",
+      "category": "soup",
+      "time_minutes": 20,
+      "difficulty": "Velmi snadné",
+      "price_per_portion_czk": 18,
+      "servings": 4,
+      "kid_friendly": true,
+      "tags": [
+        "soup",
+        "vegetarian",
+        "quick"
+      ],
+      "allergens": [
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "name": "Mražená zeleninová směs",
+          "amount": "300g",
+          "category": "zelenina"
+        },
+        {
+          "name": "Těstovinová rýže nebo drobné těstoviny",
+          "amount": "80g",
+          "category": "trvanlivé"
+        },
+        {
+          "name": "Vývar nebo voda",
+          "amount": "1.2l",
+          "category": "trvanlivé"
+        }
+      ],
+      "steps": [
+        "Vodu nebo vývar přiveď k varu.",
+        "Přidej zeleninu a vař 10 minut.",
+        "Vsyp těstovinovou rýži, provař dalších 8 minut.",
+        "Osol, opepři a podávej."
+      ]
+    },
+    {
+      "id": 262,
+      "name": "Rajčatová polévka s rýží",
+      "category": "soup",
+      "time_minutes": 25,
+      "difficulty": "Snadné",
+      "price_per_portion_czk": 20,
+      "servings": 4,
+      "kid_friendly": true,
+      "tags": [
+        "soup",
+        "rice",
+        "vegetarian"
+      ],
+      "allergens": [],
+      "ingredients": [
+        {
+          "name": "Rajčata krájená v plechovce",
+          "amount": "400g",
+          "category": "trvanlivé"
+        },
+        {
+          "name": "Rýže",
+          "amount": "70g",
+          "category": "trvanlivé"
+        },
+        {
+          "name": "Cibule",
+          "amount": "1ks",
+          "category": "zelenina"
+        }
+      ],
+      "steps": [
+        "Cibuli orestuj na oleji.",
+        "Přidej rajčata a 800 ml vody, přiveď k varu.",
+        "Vsyp rýži a vař 15 minut.",
+        "Dochut solí a pepřem."
+      ]
+    },
+    {
+      "id": 263,
+      "name": "Kuřecí vývar s nudlemi",
+      "category": "soup",
+      "time_minutes": 20,
+      "difficulty": "Snadné",
+      "price_per_portion_czk": 22,
+      "servings": 4,
+      "kid_friendly": true,
+      "tags": [
+        "soup",
+        "classic",
+        "kids"
+      ],
+      "allergens": [
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "name": "Kuřecí maso (z vývaru nebo prsa)",
+          "amount": "150g",
+          "category": "maso"
+        },
+        {
+          "name": "Mrkev",
+          "amount": "2ks",
+          "category": "zelenina"
+        },
+        {
+          "name": "Nudle do polévky",
+          "amount": "60g",
+          "category": "trvanlivé"
+        },
+        {
+          "name": "Vývar",
+          "amount": "1.2l",
+          "category": "trvanlivé"
+        }
+      ],
+      "steps": [
+        "Vývar přiveď k varu.",
+        "Přidej na kolečka nakrájenou mrkev a povař 8 minut.",
+        "Přidej nudle a vař dalších 5 minut.",
+        "Na závěr vlož na kousky maso."
+      ]
+    },
+    {
+      "id": 264,
+      "name": "Hráškový krém s krutony",
+      "category": "soup",
+      "time_minutes": 20,
+      "difficulty": "Velmi snadné",
+      "price_per_portion_czk": 18,
+      "servings": 4,
+      "kid_friendly": true,
+      "tags": [
+        "cream",
+        "quick",
+        "kids",
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "ingredients": [
+        {
+          "name": "Mražený hrášek",
+          "amount": "400g",
+          "category": "zelenina"
+        },
+        {
+          "name": "Brambory",
+          "amount": "200g",
+          "category": "zelenina"
+        },
+        {
+          "name": "Smetana",
+          "amount": "100ml",
+          "category": "mléčné"
+        }
+      ],
+      "steps": [
+        "Brambory a hrášek povař ve vodě 12 minut.",
+        "Rozmixuj dohladka, přidej smetanu.",
+        "Osol, opepři.",
+        "Podávej s krutony."
+      ]
+    },
+    {
+      "id": 265,
+      "name": "Česnečka s bramborem",
+      "category": "soup",
+      "time_minutes": 15,
+      "difficulty": "Velmi snadné",
+      "price_per_portion_czk": 12,
+      "servings": 4,
+      "kid_friendly": false,
+      "tags": [
+        "soup",
+        "czech",
+        "vegetarian"
+      ],
+      "allergens": [],
+      "ingredients": [
+        {
+          "name": "Brambory",
+          "amount": "300g",
+          "category": "zelenina"
+        },
+        {
+          "name": "Česnek",
+          "amount": "4 stroužky",
+          "category": "zelenina"
+        }
+      ],
+      "steps": [
+        "Brambory nakrájej a vař 10 minut.",
+        "Přidej prolisovaný česnek.",
+        "Dochuť solí, pepřem a majoránkou."
+      ]
+    },
+    {
+      "id": 266,
+      "name": "Cibulačka po domácku",
+      "category": "soup",
+      "time_minutes": 30,
+      "difficulty": "Snadné",
+      "price_per_portion_czk": 16,
+      "servings": 4,
+      "kid_friendly": true,
+      "tags": [
+        "soup",
+        "comfort",
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "ingredients": [
+        {
+          "name": "Cibule",
+          "amount": "3ks",
+          "category": "zelenina"
+        },
+        {
+          "name": "Máslo",
+          "amount": "30g",
+          "category": "mléčné"
+        },
+        {
+          "name": "Toustový chléb",
+          "amount": "4 plátky",
+          "category": "trvanlivé"
+        }
+      ],
+      "steps": [
+        "Cibuli zlehka osmaž na másle do zlatova.",
+        "Zalij 1l vody nebo vývaru a vař 15 minut.",
+        "Podávej s opečeným pečivem."
+      ]
+    },
+    {
+      "id": 267,
+      "name": "Pórková polévka s bramborem",
+      "category": "soup",
+      "time_minutes": 20,
+      "difficulty": "Velmi snadné",
+      "price_per_portion_czk": 16,
+      "servings": 4,
+      "kid_friendly": true,
+      "tags": [
+        "soup",
+        "vegetarian"
+      ],
+      "allergens": [
+        "dairy"
+      ],
+      "ingredients": [
+        {
+          "name": "Pórek",
+          "amount": "1ks",
+          "category": "zelenina"
+        },
+        {
+          "name": "Brambory",
+          "amount": "300g",
+          "category": "zelenina"
+        },
+        {
+          "name": "Máslo",
+          "amount": "20g",
+          "category": "mléčné"
+        }
+      ],
+      "steps": [
+        "Pórek nakrájej a orestuj na másle.",
+        "Přidej kostky brambor a zalij 1l vody.",
+        "Vař 15 minut, dochuť solí."
+      ]
+    },
+    {
+      "id": 268,
+      "name": "Mrkvový krém se smetanou",
+      "category": "soup",
+      "time_minutes": 25,
+      "difficulty": "Velmi snadné",
+      "price_per_portion_czk": 14,
+      "servings": 4,
+      "kid_friendly": true,
+      "tags": [
+        "cream",
+        "vegetarian"
+      ],
+      "allergens": [
+        "dairy"
+      ],
+      "ingredients": [
+        {
+          "name": "Mrkev",
+          "amount": "500g",
+          "category": "zelenina"
+        },
+        {
+          "name": "Brambory",
+          "amount": "1ks",
+          "category": "zelenina"
+        },
+        {
+          "name": "Smetana",
+          "amount": "100ml",
+          "category": "mléčné"
+        }
+      ],
+      "steps": [
+        "Mrkev a bramboru povař 15 minut.",
+        "Rozmixuj, přidej smetanu.",
+        "Osol a podávej."
+      ]
+    },
+    {
+      "id": 269,
+      "name": "Kukuřičná polévka s bramborem",
+      "category": "soup",
+      "time_minutes": 25,
+      "difficulty": "Snadné",
+      "price_per_portion_czk": 18,
+      "servings": 4,
+      "kid_friendly": true,
+      "tags": [
+        "soup",
+        "kids",
+        "vegetarian"
+      ],
+      "allergens": [],
+      "ingredients": [
+        {
+          "name": "Kukuřice v plechovce",
+          "amount": "300g",
+          "category": "trvanlivé"
+        },
+        {
+          "name": "Brambory",
+          "amount": "200g",
+          "category": "zelenina"
+        }
+      ],
+      "steps": [
+        "Brambory povař 10 minut.",
+        "Přidej kukuřici a vař dalších 5 minut.",
+        "Část polévky rozmixuj pro zahuštění."
+      ]
+    },
+    {
+      "id": 270,
+      "name": "Rychlá čočková polévka",
+      "category": "soup",
+      "time_minutes": 25,
+      "difficulty": "Snadné",
+      "price_per_portion_czk": 16,
+      "servings": 4,
+      "kid_friendly": true,
+      "tags": [
+        "soup",
+        "legumes",
+        "vegetarian"
+      ],
+      "allergens": [],
+      "ingredients": [
+        {
+          "name": "Červená čočka",
+          "amount": "200g",
+          "category": "trvanlivé"
+        },
+        {
+          "name": "Mrkev",
+          "amount": "1ks",
+          "category": "zelenina"
+        }
+      ],
+      "steps": [
+        "Čočku propláchni.",
+        "Mrkev nakrájej, vše dej do hrnce a vař 15 minut.",
+        "Dochut solí a kmínem."
+      ]
+    },
+    {
+      "id": 271,
+      "name": "Brokolicový krém s česnekem",
+      "category": "soup",
+      "time_minutes": 20,
+      "difficulty": "Velmi snadné",
+      "price_per_portion_czk": 20,
+      "servings": 4,
+      "kid_friendly": true,
+      "tags": [
+        "cream",
+        "healthy",
+        "vegetarian"
+      ],
+      "allergens": [
+        "dairy"
+      ],
+      "ingredients": [
+        {
+          "name": "Brokolice",
+          "amount": "400g",
+          "category": "zelenina"
+        },
+        {
+          "name": "Brambory",
+          "amount": "200g",
+          "category": "zelenina"
+        },
+        {
+          "name": "Smetana",
+          "amount": "70ml",
+          "category": "mléčné"
+        }
+      ],
+      "steps": [
+        "Brokolici a brambory povař 12 minut.",
+        "Rozmixuj a přidej smetanu.",
+        "Dochut solí a pepřem."
+      ]
+    },
+    {
+      "id": 272,
+      "name": "Gulášová polévka (rychlá verze)",
+      "category": "soup",
+      "time_minutes": 30,
+      "difficulty": "Střední",
+      "price_per_portion_czk": 28,
+      "servings": 4,
+      "kid_friendly": true,
+      "tags": [
+        "czech",
+        "meat"
+      ],
+      "allergens": [],
+      "ingredients": [
+        {
+          "name": "Mleté maso",
+          "amount": "250g",
+          "category": "maso"
+        },
+        {
+          "name": "Cibule",
+          "amount": "1ks",
+          "category": "zelenina"
+        },
+        {
+          "name": "Brambory",
+          "amount": "300g",
+          "category": "zelenina"
+        }
+      ],
+      "steps": [
+        "Cibuli orestuj, přidej maso a opeč.",
+        "Přidej brambory a papriku, zalij 1l vody.",
+        "Vař 20 minut a dochuť."
+      ]
+    },
+    {
+      "id": 273,
+      "name": "Zelná polévka s klobásou",
+      "category": "soup",
+      "time_minutes": 30,
+      "difficulty": "Snadné",
+      "price_per_portion_czk": 26,
+      "servings": 4,
+      "kid_friendly": true,
+      "tags": [
+        "czech",
+        "hearty"
+      ],
+      "allergens": [],
+      "ingredients": [
+        {
+          "name": "Kysané zelí",
+          "amount": "250g",
+          "category": "zelenina"
+        },
+        {
+          "name": "Klobása",
+          "amount": "150g",
+          "category": "maso"
+        },
+        {
+          "name": "Brambory",
+          "amount": "200g",
+          "category": "zelenina"
+        }
+      ],
+      "steps": [
+        "Brambory povař 10 minut.",
+        "Přidej zelí a klobásu.",
+        "Vař dalších 10 minut a dochuť."
+      ]
+    },
+    {
+      "id": 274,
+      "name": "Krupicová polévka s vejcem",
+      "category": "soup",
+      "time_minutes": 15,
+      "difficulty": "Velmi snadné",
+      "price_per_portion_czk": 10,
+      "servings": 4,
+      "kid_friendly": true,
+      "tags": [
+        "quick",
+        "cheap",
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten",
+        "eggs"
+      ],
+      "ingredients": [
+        {
+          "name": "Dětská krupička",
+          "amount": "4 lžíce",
+          "category": "trvanlivé"
+        },
+        {
+          "name": "Vejce",
+          "amount": "1ks",
+          "category": "mléčné"
+        }
+      ],
+      "steps": [
+        "Do vroucí vody zašlehej vejce.",
+        "Postupně přisypávej krupici a míchej.",
+        "Vař 5 minut, osol."
+      ]
+    },
+    {
+      "id": 275,
+      "name": "Polévka z pečené zeleniny",
+      "category": "soup",
+      "time_minutes": 40,
+      "difficulty": "Snadné",
+      "price_per_portion_czk": 24,
+      "servings": 4,
+      "kid_friendly": true,
+      "tags": [
+        "vegetarian",
+        "cream"
+      ],
+      "allergens": [],
+      "ingredients": [
+        {
+          "name": "Mrkev",
+          "amount": "3ks",
+          "category": "zelenina"
+        },
+        {
+          "name": "Cibule",
+          "amount": "1ks",
+          "category": "zelenina"
+        },
+        {
+          "name": "Brambory",
+          "amount": "2ks",
+          "category": "zelenina"
+        }
+      ],
+      "steps": [
+        "Zeleninu nakrájej, dej na plech a peč 20 minut.",
+        "Přendej do hrnce, zalij 1l vody a vař 10 minut.",
+        "Rozmixuj a dochuť."
+      ]
+    },
+    {
+      "id": 276,
+      "name": "Houbová polévka po česku",
+      "category": "soup",
+      "time_minutes": 25,
+      "difficulty": "Snadné",
+      "price_per_portion_czk": 22,
+      "servings": 4,
+      "kid_friendly": true,
+      "tags": [
+        "czech",
+        "mushroom",
+        "vegetarian"
+      ],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "ingredients": [
+        {
+          "name": "Žampiony",
+          "amount": "250g",
+          "category": "zelenina"
+        },
+        {
+          "name": "Brambory",
+          "amount": "200g",
+          "category": "zelenina"
+        },
+        {
+          "name": "Smetana",
+          "amount": "80ml",
+          "category": "mléčné"
+        }
+      ],
+      "steps": [
+        "Houby orestuj na másle.",
+        "Přidej brambory a zalij 1l vody.",
+        "Vař 15 minut, přidej smetanu a dochuť."
+      ]
+    },
+    {
+      "id": 277,
+      "name": "Kapustová polévka s bramborem",
+      "category": "soup",
+      "time_minutes": 25,
+      "difficulty": "Snadné",
+      "price_per_portion_czk": 14,
+      "servings": 4,
+      "kid_friendly": true,
+      "tags": [
+        "vegetarian",
+        "czech"
+      ],
+      "allergens": [],
+      "ingredients": [
+        {
+          "name": "Kapusta",
+          "amount": "300g",
+          "category": "zelenina"
+        },
+        {
+          "name": "Brambory",
+          "amount": "250g",
+          "category": "zelenina"
+        }
+      ],
+      "steps": [
+        "Brambory nakrájej a povař 10 minut.",
+        "Přidej kapustu a vař dalších 10 minut.",
+        "Dochuť solí, pepřem a česnekem."
+      ]
+    },
+    {
+      "id": 278,
+      "name": "Rybí polévka s bramborem",
+      "category": "soup",
+      "time_minutes": 25,
+      "difficulty": "Snadné",
+      "price_per_portion_czk": 26,
+      "servings": 4,
+      "kid_friendly": true,
+      "tags": [
+        "fish",
+        "soup"
+      ],
+      "allergens": [
+        "fish"
+      ],
+      "ingredients": [
+        {
+          "name": "Rybí filety (treska, pangasius)",
+          "amount": "250g",
+          "category": "ryby"
+        },
+        {
+          "name": "Brambory",
+          "amount": "200g",
+          "category": "zelenina"
+        },
+        {
+          "name": "Mrkev",
+          "amount": "1ks",
+          "category": "zelenina"
+        }
+      ],
+      "steps": [
+        "Brambory a mrkev povař 10 minut.",
+        "Přidej na kostky nakrájenou rybu.",
+        "Vař dalších 8 minut a dochuť."
+      ]
+    },
+    {
+      "id": 279,
+      "name": "Asijská kokosová polévka s rýžovými nudlemi",
+      "category": "soup",
+      "time_minutes": 25,
+      "difficulty": "Snadné",
+      "price_per_portion_czk": 32,
+      "servings": 4,
+      "kid_friendly": true,
+      "tags": [
+        "asian",
+        "noodles",
+        "vegetarian"
+      ],
+      "allergens": [],
+      "ingredients": [
+        {
+          "name": "Kokosové mléko",
+          "amount": "400ml",
+          "category": "trvanlivé"
+        },
+        {
+          "name": "Rýžové nudle",
+          "amount": "150g",
+          "category": "trvanlivé"
+        },
+        {
+          "name": "Mrkev",
+          "amount": "1ks",
+          "category": "zelenina"
+        }
+      ],
+      "steps": [
+        "V hrnci ohřej kokosové mléko a 600ml vody.",
+        "Přidej nakrájenou mrkev a vař 10 minut.",
+        "Vsyp nudle a vař 4–5 minut.",
+        "Dochut solí."
+      ]
+    },
+    {
+      "id": 280,
+      "name": "Fazolová polévka s kořenovou zeleninou",
+      "category": "soup",
+      "time_minutes": 30,
+      "difficulty": "Snadné",
+      "price_per_portion_czk": 18,
+      "servings": 4,
+      "kid_friendly": true,
+      "tags": [
+        "legumes",
+        "vegetarian"
+      ],
+      "allergens": [],
+      "ingredients": [
+        {
+          "name": "Bílé fazole v plechovce",
+          "amount": "400g",
+          "category": "trvanlivé"
+        },
+        {
+          "name": "Mrkev",
+          "amount": "1ks",
+          "category": "zelenina"
+        },
+        {
+          "name": "Celer",
+          "amount": "1/4ks",
+          "category": "zelenina"
+        }
+      ],
+      "steps": [
+        "Mrkev a celer nakrájej, orestuj a zalij 1l vody.",
+        "Vař 10 minut.",
+        "Přidej fazole a provař dalších 10 minut.",
+        "Dochut solí a pepřem."
+      ]
     }
   ]
 }
