@@ -8,6 +8,26 @@ from meal_planner import generate_meal_plan
 from pdf_generator import generate_pdf
 import os
 
+# Běžné ingredience, které lidé často mají doma
+COMMON_PANTRY_ITEMS = [
+    # Trvanlivé
+    "Mouka", "Cukr", "Sůl", "Pepř", "Olej", "Olivový olej",
+    "Ocet", "Rýže", "Těstoviny", "Kečup", "Hořčice",
+
+    # Mléčné
+    "Mléko", "Máslo", "Sýr", "Parmazán", "Smetana", "Jogurt",
+
+    # Zelenina
+    "Cibule", "Česnek", "Brambory", "Mrkev", "Rajčata",
+
+    # Koření a byliny
+    "Paprika sladká", "Kmín", "Majoránka", "Bazalka",
+    "Oregano", "Tymián", "Bobkový list",
+
+    # Ostatní
+    "Vejce", "Med", "Citron", "Zázvor", "Sojová omáčka"
+]
+
 # Kategorie receptů
 CATEGORIES = ["Těstoviny", "Tradiční česká", "Rychlá jídla", "Rodinná klasika", "Vegetariánské", "Veganské"]
 
@@ -186,11 +206,11 @@ st.sidebar.divider()
 
 st.sidebar.subheader("🏠 Co už máš doma?")
 st.sidebar.markdown("*Odečteme z nákupního seznamu:*")
-have_at_home = st.sidebar.text_area(
-    "Ingredience (každá na nový řádek)",
-    placeholder="mléko\nvejce\ncibule\nmouka",
-    help="Napiš ingredience, které už máš v lednici/spíži. Ušetříš peníze!",
-    height=100
+have_at_home = st.sidebar.multiselect(
+    "Odškrtni co máš",
+    COMMON_PANTRY_ITEMS,
+    default=[],
+    help="Vyber ingredience, které už máš doma - nebudou v nákupním seznamu. Ušetříš peníze!"
 )
 
 st.sidebar.divider()
@@ -199,8 +219,8 @@ st.sidebar.divider()
 if st.sidebar.button("🚀 Generuj Jídelníček", type="primary", use_container_width=True):
 
     # Prepare preferences - vše česky
-    # Parse "mám doma" - rozdělení po řádcích a lowercase
-    have_at_home_list = [item.strip().lower() for item in have_at_home.split('\n') if item.strip()]
+    # "Mám doma" už je list z multiselect
+    have_at_home_list = [item.lower() for item in have_at_home]
 
     preferences = {
         "household_size": household_size,
