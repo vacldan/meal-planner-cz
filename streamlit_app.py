@@ -310,12 +310,27 @@ if "meal_plan" in st.session_state:
                 help="Kolik ingrediencí používáš vícekrát = menší nákup!"
             )
 
-    # Zobraz úspory z opakování ingrediencí
+    # Zobraz úspory z opakování ingrediencí (weighted optimization)
     if 'ingredient_stats' in meal_plan and meal_plan['ingredient_stats']['reuse_percentage'] > 0:
-        st.success(
-            f"✨ **Smart optimalizace:** Tvůj jídelníček využívá {meal_plan['ingredient_stats']['reused_count']} "
-            f"sdílených ingrediencí! Koupíš méně, ušetříš čas i peníze."
+        stats = meal_plan['ingredient_stats']
+
+        # Základní info
+        success_msg = (
+            f"✨ **Smart optimalizace:** Tvůj jídelníček využívá {stats['reused_count']} "
+            f"sdílených ingrediencí! "
         )
+
+        # Přidej weighted score a savings pokud jsou k dispozici
+        if 'weighted_reuse_score' in stats and 'estimated_savings_czk' in stats:
+            success_msg += (
+                f"\n\n💰 **Weighted overlap skóre:** {stats['weighted_reuse_score']} bodů "
+                f"(dražší ingredience jako maso mají vyšší váhu)\n\n"
+                f"💸 **Odhadované úspory:** ~{stats['estimated_savings_czk']} Kč díky sdílení ingrediencí"
+            )
+        else:
+            success_msg += "Koupíš méně, ušetříš čas i peníze."
+
+        st.success(success_msg)
 
     st.divider()
 
@@ -423,11 +438,12 @@ if "meal_plan" in st.session_state:
                             weeks_with_desserts = st.session_state.meal_plan['weeks']
                             have_at_home = st.session_state.preferences.get('have_at_home', [])
 
-                            shopping_list = generate_shopping_list(weeks_with_desserts, have_at_home)
+                            shopping_result = generate_shopping_list(weeks_with_desserts, have_at_home)
                             total_cost = calculate_total_cost(weeks_with_desserts)
                             total_portions = sum(sum(r['servings'] for r in w.values() if isinstance(r, dict)) for w in weeks_with_desserts)
 
-                            st.session_state.meal_plan['shopping_list'] = shopping_list
+                            st.session_state.meal_plan['shopping_list'] = shopping_result['shopping_list']
+                            st.session_state.meal_plan['shopping_details'] = shopping_result
                             st.session_state.meal_plan['total_cost_czk'] = total_cost
                             st.session_state.meal_plan['cost_per_portion_czk'] = round(total_cost / total_portions, 1) if total_portions > 0 else 0
 
@@ -523,11 +539,12 @@ if "meal_plan" in st.session_state:
                             weeks_with_desserts = st.session_state.meal_plan['weeks']
                             have_at_home = st.session_state.preferences.get('have_at_home', [])
 
-                            shopping_list = generate_shopping_list(weeks_with_desserts, have_at_home)
+                            shopping_result = generate_shopping_list(weeks_with_desserts, have_at_home)
                             total_cost = calculate_total_cost(weeks_with_desserts)
                             total_portions = sum(sum(r['servings'] for r in w.values() if isinstance(r, dict)) for w in weeks_with_desserts)
 
-                            st.session_state.meal_plan['shopping_list'] = shopping_list
+                            st.session_state.meal_plan['shopping_list'] = shopping_result['shopping_list']
+                            st.session_state.meal_plan['shopping_details'] = shopping_result
                             st.session_state.meal_plan['total_cost_czk'] = total_cost
                             st.session_state.meal_plan['cost_per_portion_czk'] = round(total_cost / total_portions, 1) if total_portions > 0 else 0
 
@@ -591,6 +608,12 @@ if "meal_plan" in st.session_state:
         'ostatní': '📦 Ostatní'
     }
 
+    # Zobraz "Mám doma" sekci pokud existuje
+    if 'shopping_details' in meal_plan and meal_plan['shopping_details'].get('have_at_home_items'):
+        with st.expander("✅ Mám doma (nepotřebuješ koupit)", expanded=False):
+            for item in meal_plan['shopping_details']['have_at_home_items']:
+                st.write(f"- {item}")
+
     cols = st.columns(2)
 
     for i, (category, items) in enumerate(meal_plan['shopping_list'].items()):
@@ -600,7 +623,24 @@ if "meal_plan" in st.session_state:
                 st.checkbox(item, key=f"{category}_{item}")
 
     st.divider()
+
+    # Zobraz info o balení a celkovém počtu
+    if 'shopping_details' in meal_plan:
+        total_packages = meal_plan['shopping_details'].get('total_packages', 0)
+        st.info(f"📦 Celkem balení k nákupu: **{total_packages}**")
+
     st.success(f"💰 Odhadovaná cena nákupu: **{meal_plan['total_cost_czk']} Kč**")
+
+    # Zobraz zbytky a tipy pokud existují
+    if 'shopping_details' in meal_plan and meal_plan['shopping_details'].get('leftovers'):
+        with st.expander("💡 Tipy na využití zbytků", expanded=False):
+            st.markdown("Při nákupu v balíčcích ti zbydou tyto ingredience:")
+
+            for leftover in meal_plan['shopping_details']['leftovers']:
+                tip_text = f"**{leftover['ingredient']}**: zbytek ~{leftover['leftover']}"
+                if 'tip' in leftover:
+                    tip_text += f"\n- 💡 {leftover['tip']}"
+                st.markdown(tip_text)
 
 else:
     # Welcome message - user friendly pro české matky

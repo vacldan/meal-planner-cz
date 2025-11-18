@@ -223,7 +223,20 @@ def get_main_protein(recipe: Dict) -> str:
     return 'other'
 
 def select_weekly_recipes(filtered_recipes: List[Dict], daily_time_budgets: Dict[str, str] = None, num_weeks: int = 1) -> List[Dict[str, Dict]]:
-    """Select recipes for multiple weeks with ingredient overlap optimization, anti-repeat, and protein diversity (max 3x same protein per week)"""
+    """Select recipes for multiple weeks with weighted ingredient overlap optimization, anti-repeat, and protein diversity (max 3x same protein per week)"""
+
+    # Váhy pro weighted overlap optimization
+    INGREDIENT_WEIGHTS = {
+        'maso': 3.0,      # Nejdražší - nejvíce váhy
+        'ryby': 3.0,
+        'zelenina': 2.0,
+        'vegetables': 2.0,
+        'mléčné': 2.0,
+        'dairy': 2.0,
+        'trvanlivé': 1.0,
+        'pantry': 1.0,
+        'ostatní': 0.5
+    }
 
     days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
     total_days = num_weeks * 7
@@ -248,7 +261,7 @@ def select_weekly_recipes(filtered_recipes: List[Dict], daily_time_budgets: Dict
 
     for week_num in range(num_weeks):
         weekly_plan = {}
-        ingredient_pool = set()  # Reset pro každý týden
+        ingredient_pool = {}  # {ing_name: category} - pro vážený overlap
         categories_used = defaultdict(int)
         protein_counts = defaultdict(int)  # Sleduj hlavní ingredience v týdnu
 
@@ -285,12 +298,14 @@ def select_weekly_recipes(filtered_recipes: List[Dict], daily_time_budgets: Dict
                 main_protein = get_main_protein(first)
                 protein_counts[main_protein] += 1
 
-                # Přidej ingredience do poolu
+                # Přidej ingredience do poolu s jejich kategoriemi
                 for ing in first['ingredients']:
-                    ingredient_pool.add(ing['name'].lower().split()[0])
+                    ing_name = ing['name'].lower().split()[0]
+                    ing_category = ing.get('category', 'ostatní').lower()
+                    ingredient_pool[ing_name] = ing_category
                 continue
 
-            # Další dny - preferuj recepty se sdílenými ingrediencemi
+            # Další dny - preferuj recepty se sdílenými ingrediencemi (WEIGHTED OVERLAP)
             scored = []
             used_ids = [r['id'] for r in weekly_plan.values()]
 
@@ -303,22 +318,28 @@ def select_weekly_recipes(filtered_recipes: List[Dict], daily_time_budgets: Dict
                 if protein_counts[recipe_protein] >= 3:
                     continue  # Přeskoč, už je 3x tento protein
 
-                # Spočítej překryv ingrediencí
-                recipe_ingredients = set()
-                for ing in recipe['ingredients']:
-                    recipe_ingredients.add(ing['name'].lower().split()[0])
+                # Spočítej VÁŽENÝ překryv ingrediencí
+                weighted_overlap = 0.0
+                recipe_ingredients = {}  # {name: category}
 
-                overlap = len(recipe_ingredients & ingredient_pool)
+                for ing in recipe['ingredients']:
+                    ing_name = ing['name'].lower().split()[0]
+                    ing_category = ing.get('category', 'ostatní').lower()
+                    recipe_ingredients[ing_name] = ing_category
+
+                    # Pokud je ingredience už v poolu, přičti váhu
+                    if ing_name in ingredient_pool:
+                        weight = INGREDIENT_WEIGHTS.get(ing_category, 0.5)
+                        weighted_overlap += weight
 
                 # Penalizace za opakování kategorie
                 category_penalty = categories_used[recipe['category']] * 2
 
-                # NOVÁ: Penalizace za opakování proteinu (soft penalty)
-                # Pokud už je 2x, silně penalizuj (ale nedovolí 4. použití výše)
+                # Penalizace za opakování proteinu (soft penalty)
                 protein_penalty = protein_counts[recipe_protein] * 5
 
-                # Skóre: overlap je pozitivní, penalty negativní
-                score = overlap - category_penalty - protein_penalty
+                # Skóre: weighted overlap je pozitivní, penalty negativní
+                score = weighted_overlap - category_penalty - protein_penalty
 
                 scored.append((recipe, score))
 
@@ -345,79 +366,202 @@ def select_weekly_recipes(filtered_recipes: List[Dict], daily_time_budgets: Dict
             main_protein = get_main_protein(next_recipe)
             protein_counts[main_protein] += 1
 
-            # Přidej nové ingredience do poolu
+            # Přidej nové ingredience do poolu s jejich kategoriemi
             for ing in next_recipe['ingredients']:
-                ingredient_pool.add(ing['name'].lower().split()[0])
+                ing_name = ing['name'].lower().split()[0]
+                ing_category = ing.get('category', 'ostatní').lower()
+                ingredient_pool[ing_name] = ing_category
 
         # Přidej tento týden do seznamu
         weeks.append(weekly_plan)
 
     return weeks
 
-def round_to_package_size(ingredient_name: str, amount_str: str) -> str:
-    """Zaokrouhlit množství na reálné velikosti balení v obchodech"""
+def parse_amount(amount_str: str):
+    """Extrahuje číslo a jednotku z textu množství"""
     import re
 
-    # Extrahuj číslo a jednotku
-    match = re.match(r'(\d+(?:\.\d+)?)\s*(\w+)', amount_str)
+    # Podporuje formáty: "500g", "500 g", "1.5 kg", "2 ks"
+    match = re.match(r'(\d+(?:[.,]\d+)?)\s*(\w+)', str(amount_str))
     if not match:
-        return amount_str  # Pokud nejde parsovat, vrať původní
+        return None, None
 
-    amount = float(match.group(1))
+    amount = float(match.group(1).replace(',', '.'))
     unit = match.group(2).lower()
 
-    # Mapování běžných velikostí balení
-    package_sizes = {
-        # Maso a uzeniny (g)
-        'kuřecí': (400, 'g'), 'hovězí': (500, 'g'), 'vepřové': (400, 'g'),
-        'šunka': (100, 'g'), 'slanina': (150, 'g'),
+    return amount, unit
+
+def round_to_package_size(ingredient_name: str, amount_str: str) -> dict:
+    """
+    Zaokrouhlit množství na reálné velikosti balení v českých obchodech.
+
+    Returns:
+        dict: {
+            'original_amount': str,
+            'rounded_amount': str,
+            'leftover': str (optional),
+            'packages_needed': int,
+            'tip': str (optional)
+        }
+    """
+
+    # Rozšířené PACKAGE_SIZES - reálné velikosti z Kaufland, Tesco, Albert, Billa
+    PACKAGE_SIZES = {
+        # Maso a drůbež
+        'kuřecí prsa': (400, 'g'),
+        'kuřecí stehna': (600, 'g'),
+        'kuřecí': (500, 'g'),
+        'hovězí maso': (500, 'g'),
+        'hovězí': (500, 'g'),
+        'vepřové': (400, 'g'),
+        'vepřová': (400, 'g'),
+        'krkovice': (500, 'g'),
+        'uzené': (300, 'g'),
+        'slanina': (150, 'g'),
+        'klobása': (250, 'g'),
+        'párky': (300, 'g'),
+
+        # Ryby
+        'losos': (250, 'g'),
+        'treska': (400, 'g'),
+        'kapr': (1000, 'g'),
 
         # Mléčné výrobky
-        'máslo': (250, 'g'), 'smetana': (200, 'ml'),
-        'mléko': (1000, 'ml'), 'jogurt': (150, 'g'),
-        'sýr': (200, 'g'), 'parmazán': (100, 'g'),
+        'máslo': (250, 'g'),
+        'smetana': (200, 'ml'),
+        'zakysaná smetana': (200, 'ml'),
+        'mléko': (1000, 'ml'),
+        'jogurt': (150, 'g'),
+        'sýr': (200, 'g'),
+        'eidam': (250, 'g'),
+        'parmazán': (100, 'g'),
+        'mozzarella': (125, 'g'),
+        'tvaroh': (250, 'g'),
+        'čedar': (200, 'g'),
 
-        # Zelenina a ovoce (přibližné)
-        'brambory': (1000, 'g'), 'mrkev': (500, 'g'),
-        'cibule': (500, 'g'), 'rajčata': (500, 'g'),
+        # Zelenina (typické váhy/balení)
+        'brambory': (1000, 'g'),
+        'mrkev': (500, 'g'),
+        'cibule': (500, 'g'),
+        'rajčata': (500, 'g'),
+        'paprika': (500, 'g'),
+        'česnek': (50, 'g'),
+        'cuketa': (500, 'g'),
+        'brokolice': (400, 'g'),
+        'květák': (600, 'g'),
+        'zelí': (1000, 'g'),
+        'pórek': (300, 'g'),
+        'houby': (250, 'g'),
+        'žampiony': (250, 'g'),
 
         # Trvanlivé
-        'mouka': (1000, 'g'), 'rýže': (500, 'g'),
-        'těstoviny': (500, 'g'), 'cukr': (1000, 'g'),
+        'mouka': (1000, 'g'),
+        'rýže': (500, 'g'),
+        'těstoviny': (500, 'g'),
+        'špagety': (500, 'g'),
+        'cukr': (1000, 'g'),
+        'sůl': (500, 'g'),
+        'olej': (1000, 'ml'),
+        'ocet': (500, 'ml'),
+        'rajčatový protlak': (500, 'g'),
+        'rajčata konzervovaná': (400, 'g'),
+        'fazole': (400, 'g'),
+        'čočka': (500, 'g'),
+        'hladká mouka': (1000, 'g'),
+        'polohrubá mouka': (1000, 'g'),
+
+        # Koření a dochucovadla (častá balení)
+        'pepř': (50, 'g'),
+        'paprika': (50, 'g'),
+        'kmín': (30, 'g'),
+        'muškátový oříšek': (20, 'g'),
     }
+
+    amount, unit = parse_amount(amount_str)
+    if not amount or not unit:
+        return {
+            'original_amount': amount_str,
+            'rounded_amount': amount_str,
+            'packages_needed': 1
+        }
 
     # Zkus najít ingredienci v mapování
     ingredient_lower = ingredient_name.lower()
     package_size = None
     package_unit = unit
 
-    for key, (size, pkg_unit) in package_sizes.items():
+    for key, (size, pkg_unit) in PACKAGE_SIZES.items():
         if key in ingredient_lower:
-            # Konvertuj jednotky pokud nutné
-            if unit == pkg_unit or (unit == 'g' and pkg_unit == 'g') or (unit == 'ml' and pkg_unit == 'ml'):
+            # Konvertuj jednotky pokud nutné (g/kg, ml/l)
+            if unit == pkg_unit:
+                package_size = size
+                package_unit = pkg_unit
+                break
+            elif unit == 'kg' and pkg_unit == 'g':
+                amount = amount * 1000
+                unit = 'g'
+                package_size = size
+                package_unit = pkg_unit
+                break
+            elif unit == 'l' and pkg_unit == 'ml':
+                amount = amount * 1000
+                unit = 'ml'
                 package_size = size
                 package_unit = pkg_unit
                 break
 
-    # Pokud našli package_size, zaokrouhli nahoru
-    if package_size:
-        packages_needed = int((amount + package_size - 1) // package_size)  # Ceiling division
-        rounded = packages_needed * package_size
-
-        if rounded > amount:
-            return f"{int(amount)}{unit} → {int(rounded)}{package_unit} (balení)"
-        else:
-            return f"{int(rounded)}{package_unit}"
-
     # Pokud není v mapování, vrať původní
-    if amount == int(amount):
-        return f"{int(amount)}{unit}"
-    else:
-        return amount_str
+    if not package_size:
+        return {
+            'original_amount': amount_str,
+            'rounded_amount': f"{int(amount) if amount == int(amount) else amount}{unit}",
+            'packages_needed': 1
+        }
+
+    # Zaokrouhli nahoru na celé balení
+    packages_needed = int((amount + package_size - 1) // package_size)
+    rounded = packages_needed * package_size
+    leftover = rounded - amount
+
+    result = {
+        'original_amount': f"{int(amount) if amount == int(amount) else amount}{unit}",
+        'rounded_amount': f"{int(rounded)}{package_unit}",
+        'packages_needed': packages_needed
+    }
+
+    # Přidej info o zbytku, pokud je > 20% balení
+    if leftover > 0 and leftover / package_size > 0.2:
+        result['leftover'] = f"{int(leftover)}{package_unit}"
+
+        # Tipy na využití zbytků
+        tips = {
+            'máslo': 'Zbytek využij na pečení nebo vaření.',
+            'smetana': 'Použij do kávy nebo na přípravu omáček.',
+            'sýr': 'Nastrouhaný sýr vydrží v lednici 2 týdny.',
+            'těstoviny': 'Suché těstoviny vydrží rok v suchém prostředí.',
+            'rýže': 'Rýže vydrží neomezeně v uzavřené nádobě.'
+        }
+
+        for key, tip in tips.items():
+            if key in ingredient_lower:
+                result['tip'] = tip
+                break
+
+    return result
 
 
-def generate_shopping_list(weeks: List[Dict[str, Dict]], have_at_home: List[str] = None) -> Dict[str, List[str]]:
-    """Aggregate ingredients from all weeks into shopping list with smart rounding and 'have at home' deduction"""
+def generate_shopping_list(weeks: List[Dict[str, Dict]], have_at_home: List[str] = None) -> Dict:
+    """
+    Aggregate ingredients from all weeks into shopping list with smart rounding and 'have at home' deduction.
+
+    Returns:
+        dict: {
+            'shopping_list': {category: [items]},
+            'have_at_home_items': [items],
+            'leftovers': [{ingredient, leftover, tip}],
+            'total_packages': int
+        }
+    """
     shopping_dict = defaultdict(lambda: defaultdict(float))
 
     # Aggregate across all weeks
@@ -433,22 +577,52 @@ def generate_shopping_list(weeks: List[Dict[str, Dict]], have_at_home: List[str]
 
     # Convert to list format grouped by category with smart quantities
     shopping_list = {}
+    have_at_home_items = []
+    leftovers = []
+    total_packages = 0
+
     have_at_home_lower = [item.lower() for item in (have_at_home or [])]
 
     for category, items in shopping_dict.items():
         smart_items = []
         for name, amount in items.items():
-            # Pokud už máme doma, přeskoč
+            # Pokud už máme doma, přidej do "mám doma" seznamu
             if any(have_item in name.lower() for have_item in have_at_home_lower):
+                have_at_home_items.append(f"{name} - {amount}")
                 continue  # Není v nákupním seznamu
 
-            rounded_amount = round_to_package_size(name, amount)
-            smart_items.append(f"{name} - {rounded_amount}")
+            # Smart rounding
+            rounded_info = round_to_package_size(name, amount)
+            total_packages += rounded_info['packages_needed']
+
+            # Formátuj do textu
+            display_text = f"{name} - {rounded_info['rounded_amount']}"
+
+            # Přidej info o původním množství pokud se liší
+            if rounded_info['original_amount'] != rounded_info['rounded_amount']:
+                display_text += f" (potřebuješ {rounded_info['original_amount']})"
+
+            smart_items.append(display_text)
+
+            # Shromáždi info o zbytcích
+            if 'leftover' in rounded_info:
+                leftover_entry = {
+                    'ingredient': name,
+                    'leftover': rounded_info['leftover']
+                }
+                if 'tip' in rounded_info:
+                    leftover_entry['tip'] = rounded_info['tip']
+                leftovers.append(leftover_entry)
 
         if smart_items:  # Přidej jen pokud má items
             shopping_list[category] = smart_items
 
-    return shopping_list
+    return {
+        'shopping_list': shopping_list,
+        'have_at_home_items': have_at_home_items,
+        'leftovers': leftovers,
+        'total_packages': total_packages
+    }
 
 def calculate_total_cost(weeks: List[Dict[str, Dict]]) -> int:
     """Calculate total cost across all weeks"""
@@ -510,27 +684,48 @@ def generate_meal_plan(preferences: Dict) -> Dict:
             week_copy['sunday_dessert'] = weekly_desserts[i]
         weeks_with_desserts.append(week_copy)
 
-    # Generate shopping list (for all weeks including desserts, minus "mám doma")
-    shopping_list = generate_shopping_list(weeks_with_desserts, have_at_home)
+    # Generate smart shopping list (for all weeks including desserts, minus "mám doma")
+    shopping_result = generate_shopping_list(weeks_with_desserts, have_at_home)
 
     # Calculate costs (včetně dezertů)
     total_cost = calculate_total_cost(weeks_with_desserts)
     total_portions = sum(sum(r['servings'] for r in week.values()) for week in weeks_with_desserts)
 
-    # Spočítej překryv ingrediencí (pro statistiku úspor) - across all weeks including desserts
-    all_ingredients = set()
+    # Váhy pro weighted overlap statistics
+    INGREDIENT_WEIGHTS = {
+        'maso': 3.0, 'ryby': 3.0,
+        'zelenina': 2.0, 'vegetables': 2.0,
+        'mléčné': 2.0, 'dairy': 2.0,
+        'trvanlivé': 1.0, 'pantry': 1.0,
+        'ostatní': 0.5
+    }
+
+    # Spočítej vážený překryv ingrediencí (pro statistiku úspor)
+    all_ingredients = {}  # {name: category}
     unique_count = 0
+    weighted_reuse = 0.0
+
     for week in weeks_with_desserts:
         for recipe in week.values():
             for ing in recipe['ingredients']:
                 ing_base = ing['name'].lower().split()[0]
+                ing_category = ing.get('category', 'ostatní').lower()
+
                 if ing_base not in all_ingredients:
                     unique_count += 1
-                    all_ingredients.add(ing_base)
+                    all_ingredients[ing_base] = ing_category
+                else:
+                    # Přičti váhu za opakované použití
+                    weight = INGREDIENT_WEIGHTS.get(ing_category, 0.5)
+                    weighted_reuse += weight
 
     total_ingredient_uses = sum(sum(len(r['ingredients']) for r in week.values()) for week in weeks_with_desserts)
     reuse_count = total_ingredient_uses - unique_count
     reuse_percentage = round((reuse_count / total_ingredient_uses) * 100) if total_ingredient_uses > 0 else 0
+
+    # Odhadni úspory z překryvu (weighted)
+    avg_ingredient_cost = 30  # Kč průměr
+    estimated_savings = round(weighted_reuse * avg_ingredient_cost)
 
     return {
         "week_of": "2024-11-18",
@@ -539,13 +734,16 @@ def generate_meal_plan(preferences: Dict) -> Dict:
         "meals": weeks_with_desserts[0] if weeks_with_desserts else {},  # První týden pro zpětnou kompatibilitu
         "num_weeks": num_weeks,
         "weekly_desserts": weekly_desserts,  # Samostatný seznam dezertů pro zobrazení
-        "shopping_list": shopping_list,
+        "shopping_list": shopping_result['shopping_list'],  # Zpětná kompatibilita
+        "shopping_details": shopping_result,  # Nová detailní struktura
         "total_cost_czk": total_cost,
         "cost_per_portion_czk": round(total_cost / total_portions, 1) if total_portions > 0 else 0,
         "ingredient_stats": {
             "total_uses": total_ingredient_uses,
             "unique_ingredients": unique_count,
             "reused_count": reuse_count,
-            "reuse_percentage": reuse_percentage
+            "reuse_percentage": reuse_percentage,
+            "weighted_reuse_score": round(weighted_reuse, 1),
+            "estimated_savings_czk": estimated_savings
         }
     }
