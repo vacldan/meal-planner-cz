@@ -75,6 +75,13 @@ st.divider()
 # Sidebar - Preferences
 st.sidebar.header("📋 Tvoje Preference")
 
+num_weeks = st.sidebar.selectbox(
+    "📅 Kolik týdnů chceš naplánovat?",
+    options=[1, 2, 3, 4],
+    index=0,
+    help="Recepty se nebudou opakovat - maximálně 1x za 3 týdny"
+)
+
 household_size = st.sidebar.number_input(
     "Velikost domácnosti (počet osob)",
     min_value=1,
@@ -177,10 +184,24 @@ equipment = st.sidebar.multiselect(
 
 st.sidebar.divider()
 
+st.sidebar.subheader("🏠 Co už máš doma?")
+st.sidebar.markdown("*Odečteme z nákupního seznamu:*")
+have_at_home = st.sidebar.text_area(
+    "Ingredience (každá na nový řádek)",
+    placeholder="mléko\nvejce\ncibule\nmouka",
+    help="Napiš ingredience, které už máš v lednici/spíži. Ušetříš peníze!",
+    height=100
+)
+
+st.sidebar.divider()
+
 # Generate button
 if st.sidebar.button("🚀 Generuj Jídelníček", type="primary", use_container_width=True):
 
     # Prepare preferences - vše česky
+    # Parse "mám doma" - rozdělení po řádcích a lowercase
+    have_at_home_list = [item.strip().lower() for item in have_at_home.split('\n') if item.strip()]
+
     preferences = {
         "household_size": household_size,
         "allergies": [a.lower() for a in allergies],
@@ -190,7 +211,9 @@ if st.sidebar.button("🚀 Generuj Jídelníček", type="primary", use_container
         "price_budget": "30-70",
         "dislikes": [d.lower() for d in dislikes],
         "kid_friendly_required": kid_friendly,
-        "equipment": [e.lower() for e in equipment]
+        "equipment": [e.lower() for e in equipment],
+        "num_weeks": num_weeks,
+        "have_at_home": have_at_home_list
     }
 
     # Show loading spinner
@@ -273,8 +296,8 @@ if "meal_plan" in st.session_state:
 
     st.divider()
 
-    # Weekly menu
-    st.header("📅 Týdenní Menu")
+    # Weekly menu (multiple weeks support)
+    st.header("📅 Menu")
 
     days_czech = {
         'monday': 'Pondělí',
@@ -286,57 +309,67 @@ if "meal_plan" in st.session_state:
         'sunday': 'Neděle'
     }
 
-    # Display recipes
-    for day_en, day_cz in days_czech.items():
-        recipe = meal_plan['meals'][day_en]
+    # Display recipes for all weeks
+    num_weeks = meal_plan.get('num_weeks', 1)
+    weeks = meal_plan.get('weeks', [meal_plan.get('meals', {})])
 
-        with st.expander(f"**{day_cz}**: {recipe['name']} ({recipe['time_minutes']} min, {recipe['price_per_portion_czk']} Kč/porce)"):
+    for week_idx, week_meals in enumerate(weeks, 1):
+        if num_weeks > 1:
+            st.subheader(f"🗓️ Týden {week_idx}")
 
-            col1, col2 = st.columns([2, 1])
+        for day_en, day_cz in days_czech.items():
+            if day_en not in week_meals:
+                continue
 
-            with col1:
-                st.subheader("📝 Ingredience")
-                for ingredient in recipe['ingredients']:
-                    st.markdown(f"- {ingredient['name']} - {ingredient['amount']}")
+            recipe = week_meals[day_en]
 
-                st.subheader("👨‍🍳 Postup")
-                for i, step in enumerate(recipe['steps'], 1):
-                    st.markdown(f"{i}. {step}")
+            with st.expander(f"**{day_cz}**: {recipe['name']} ({recipe['time_minutes']} min, {recipe['price_per_portion_czk']} Kč/porce)"):
 
-            with col2:
-                # Zobraz celkový čas nebo rozdělení prep/cook
-                if 'prep_time_minutes' in recipe and 'cook_time_minutes' in recipe:
-                    st.metric("⏱️ Celkový čas", f"{recipe['time_minutes']} min")
-                    st.caption(f"🔪 Příprava: {recipe['prep_time_minutes']} min | 🍳 Vaření: {recipe['cook_time_minutes']} min")
-                else:
-                    st.metric("⏱️ Čas", f"{recipe['time_minutes']} min")
+                col1, col2 = st.columns([2, 1])
 
-                st.metric("📊 Obtížnost", recipe['difficulty'])
-                st.metric("👥 Porce", recipe['servings'])
-                st.metric("💰 Cena/porce", f"{recipe['price_per_portion_czk']} Kč")
+                with col1:
+                    st.subheader("📝 Ingredience")
+                    for ingredient in recipe['ingredients']:
+                        st.markdown(f"- {ingredient['name']} - {ingredient['amount']}")
 
-                if recipe.get('allergens'):
-                    # Translate allergens to Czech for display
-                    allergens_cz = []
-                    allergen_display_map = {
-                        "gluten": "lepek",
-                        "shellfish": "korýši",
-                        "eggs": "vejce",
-                        "fish": "ryby",
-                        "peanuts": "arašídy",
-                        "soy": "sója",
-                        "dairy": "mléko",
-                        "nuts": "ořechy",
-                        "celery": "celer",
-                        "mustard": "hořčice",
-                        "sesame": "sezam",
-                        "sulfites": "oxid siřičitý",
-                        "lupin": "vlčí bob",
-                        "molluscs": "měkkýši"
-                    }
-                    for allergen in recipe['allergens']:
-                        allergens_cz.append(allergen_display_map.get(allergen.lower(), allergen))
-                    st.warning(f"⚠️ Alergeny: {', '.join(allergens_cz)}")
+                    st.subheader("👨‍🍳 Postup")
+                    for i, step in enumerate(recipe['steps'], 1):
+                        st.markdown(f"{i}. {step}")
+
+                with col2:
+                    # Zobraz celkový čas nebo rozdělení prep/cook
+                    if 'prep_time_minutes' in recipe and 'cook_time_minutes' in recipe:
+                        st.metric("⏱️ Celkový čas", f"{recipe['time_minutes']} min")
+                        st.caption(f"🔪 Příprava: {recipe['prep_time_minutes']} min | 🍳 Vaření: {recipe['cook_time_minutes']} min")
+                    else:
+                        st.metric("⏱️ Čas", f"{recipe['time_minutes']} min")
+
+                    st.metric("📊 Obtížnost", recipe['difficulty'])
+                    st.metric("👥 Porce", recipe['servings'])
+                    st.metric("💰 Cena/porce", f"{recipe['price_per_portion_czk']} Kč")
+
+                    if recipe.get('allergens'):
+                        # Translate allergens to Czech for display
+                        allergens_cz = []
+                        allergen_display_map = {
+                            "gluten": "lepek",
+                            "shellfish": "korýši",
+                            "eggs": "vejce",
+                            "fish": "ryby",
+                            "peanuts": "arašídy",
+                            "soy": "sója",
+                            "dairy": "mléko",
+                            "nuts": "ořechy",
+                            "celery": "celer",
+                            "hořčice": "mustard",
+                            "sesame": "sezam",
+                            "sulfites": "oxid siřičitý",
+                            "lupin": "vlčí bob",
+                            "molluscs": "měkkýši"
+                        }
+                        for allergen in recipe['allergens']:
+                            allergens_cz.append(allergen_display_map.get(allergen.lower(), allergen))
+                        st.warning(f"⚠️ Alergeny: {', '.join(allergens_cz)}")
 
     st.divider()
 
