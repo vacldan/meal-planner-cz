@@ -192,8 +192,38 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
 
     return filtered
 
+def get_main_protein(recipe: Dict) -> str:
+    """Detekuje hlavní bílkovinu/typ jídla z receptu"""
+    # Zkontroluj název a ingredience
+    recipe_text = (recipe['name'] + ' ' + ' '.join([ing['name'] for ing in recipe['ingredients']])).lower()
+
+    # Definuj priority - první match vyhrává
+    protein_keywords = {
+        'chicken': ['kuřec', 'kuře', 'kur', 'drůbež'],
+        'pork': ['vepř', 'bůček', 'kýta', 'plec', 'krkovice', 'žebírk', 'slanina', 'uzené'],
+        'beef': ['hovězí', 'hovädzí', 'svíčkov', 'roštěnec'],
+        'fish': ['ryb', 'kapr', 'pstruh', 'losos', 'sleď', 'treska', 'makrela', 'tuňák'],
+        'seafood': ['krevet', 'mořsk', 'kalamár', 'chobotnic'],
+        'vegan': ['vegan', 'fazol', 'čočk', 'cizrn'],
+        'vegetarian': ['vegetariánsk', 'sýr', 'smažený sýr', 'bramboráky', 'vaječn']
+    }
+
+    # Zkontroluj tags
+    tags = recipe.get('tags', [])
+    if 'vegan' in tags:
+        return 'vegan'
+    if 'vegetarian' in tags or 'vegetariánské' in tags:
+        return 'vegetarian'
+
+    # Hledej podle klíčových slov
+    for protein, keywords in protein_keywords.items():
+        if any(keyword in recipe_text for keyword in keywords):
+            return protein
+
+    return 'other'
+
 def select_weekly_recipes(filtered_recipes: List[Dict], daily_time_budgets: Dict[str, str] = None, num_weeks: int = 1) -> List[Dict[str, Dict]]:
-    """Select recipes for multiple weeks with ingredient overlap optimization and anti-repeat (max 1x per 3 weeks)"""
+    """Select recipes for multiple weeks with ingredient overlap optimization, anti-repeat, and protein diversity (max 3x same protein per week)"""
 
     days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
     total_days = num_weeks * 7
@@ -220,6 +250,7 @@ def select_weekly_recipes(filtered_recipes: List[Dict], daily_time_budgets: Dict
         weekly_plan = {}
         ingredient_pool = set()  # Reset pro každý týden
         categories_used = defaultdict(int)
+        protein_counts = defaultdict(int)  # Sleduj hlavní ingredience v týdnu
 
         for day in days:
             # Pokud máme individuální časy, filtruj podle dne
@@ -250,6 +281,10 @@ def select_weekly_recipes(filtered_recipes: List[Dict], daily_time_budgets: Dict
                 all_selected_recipes.append(first)
                 categories_used[first['category']] += 1
 
+                # Sleduj hlavní protein
+                main_protein = get_main_protein(first)
+                protein_counts[main_protein] += 1
+
                 # Přidej ingredience do poolu
                 for ing in first['ingredients']:
                     ingredient_pool.add(ing['name'].lower().split()[0])
@@ -263,6 +298,11 @@ def select_weekly_recipes(filtered_recipes: List[Dict], daily_time_budgets: Dict
                 if recipe['id'] in used_ids:
                     continue  # Neopakuj stejný recept v rámci týdne
 
+                # Zkontroluj hlavní protein - HARD LIMIT: max 3x týdně
+                recipe_protein = get_main_protein(recipe)
+                if protein_counts[recipe_protein] >= 3:
+                    continue  # Přeskoč, už je 3x tento protein
+
                 # Spočítej překryv ingrediencí
                 recipe_ingredients = set()
                 for ing in recipe['ingredients']:
@@ -273,13 +313,17 @@ def select_weekly_recipes(filtered_recipes: List[Dict], daily_time_budgets: Dict
                 # Penalizace za opakování kategorie
                 category_penalty = categories_used[recipe['category']] * 2
 
-                # Skóre: overlap je pozitivní, category_penalty negativní
-                score = overlap - category_penalty
+                # NOVÁ: Penalizace za opakování proteinu (soft penalty)
+                # Pokud už je 2x, silně penalizuj (ale nedovolí 4. použití výše)
+                protein_penalty = protein_counts[recipe_protein] * 5
+
+                # Skóre: overlap je pozitivní, penalty negativní
+                score = overlap - category_penalty - protein_penalty
 
                 scored.append((recipe, score))
 
             if not scored:
-                # Pokud nejsou žádné nové recepty, použij co máme
+                # Pokud nejsou žádné nové recepty, použij co máme (bez protein limitu)
                 available = [r for r in day_recipes_available if r['id'] not in used_ids]
                 if available:
                     next_recipe = random.choice(available)
@@ -296,6 +340,10 @@ def select_weekly_recipes(filtered_recipes: List[Dict], daily_time_budgets: Dict
             weekly_plan[day] = next_recipe
             all_selected_recipes.append(next_recipe)
             categories_used[next_recipe['category']] += 1
+
+            # Sleduj hlavní protein
+            main_protein = get_main_protein(next_recipe)
+            protein_counts[main_protein] += 1
 
             # Přidej nové ingredience do poolu
             for ing in next_recipe['ingredients']:
