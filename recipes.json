@@ -343,1585 +343,795 @@
         "Podávej teplé"
       ]
     },
-
     {
       "id": 11,
-      "name": "Svíčková na smetaně s houskovým knedlíkem",
-      "category": "czech_traditional",
-      "time_minutes": 150,
-      "difficulty": "Střední",
-      "price_per_portion_czk": 72,
-      "servings": 6,
-      "kid_friendly": true,
-      "tags": ["czech_traditional", "comfort", "sauce"],
-      "allergens": ["dairy", "gluten"],
-      "ingredients": [
-        {"name": "Hovězí zadní", "amount": "800g", "category": "meat"},
-        {"name": "Kořenová zelenina", "amount": "400g", "category": "vegetables"},
-        {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
-        {"name": "Bobkový list", "amount": "2ks", "category": "pantry"},
-        {"name": "Nové koření", "amount": "5 kuliček", "category": "pantry"},
-        {"name": "Smetana ke šlehání", "amount": "200ml", "category": "dairy"},
-        {"name": "Hladká mouka", "amount": "2 lžíce", "category": "pantry"},
-        {"name": "Cukr", "amount": "1 lžíce", "category": "pantry"},
-        {"name": "Citron", "amount": "1/2ks", "category": "vegetables"},
-        {"name": "Brusinky", "amount": "2 lžíce", "category": "pantry"},
-        {"name": "Houskový knedlík", "amount": "12 plátků", "category": "pantry"}
-      ],
-      "steps": [
-        "Orestuj zeleninu a cibuli dohněda",
-        "Přidej maso, zprudka opeč",
-        "Přidej koření, zalij vodou a dust 2 hodiny",
-        "Vyjmi maso, zeleninu rozmixuj",
-        "Přidej smetanu, cukr, citron, zahusti moukou",
-        "Vrať maso, prohřej 10 minut",
-        "Podávej s knedlíkem a brusinkami"
-      ]
-    },
-    {
-      "id": 12,
-      "name": "Vepřo knedlo zelo",
-      "category": "czech_traditional",
-      "time_minutes": 120,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 56,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["czech_traditional", "roasted"],
-      "allergens": ["gluten"],
-      "ingredients": [
-        {"name": "Vepřová plec", "amount": "600g", "category": "meat"},
-        {"name": "Cibule", "amount": "2ks", "category": "vegetables"},
-        {"name": "Kysané zelí", "amount": "500g", "category": "vegetables"},
-        {"name": "Kmín", "amount": "1 lžička", "category": "pantry"},
-        {"name": "Cukr", "amount": "1 lžíce", "category": "pantry"},
-        {"name": "Olej", "amount": "2 lžíce", "category": "pantry"},
-        {"name": "Houskový knedlík", "amount": "8 plátků", "category": "pantry"}
-      ],
-      "steps": [
-        "Maso osol a okmínuj",
-        "Polož na cibuli a peč 90 minut na 180°C",
-        "Zelí podus 20 minut s cukrem a kmínem",
-        "Podávej maso se zelím a knedlíkem"
-      ]
-    },
-    {
-      "id": 13,
-      "name": "Koprová omáčka s vejcem",
-      "category": "czech_traditional",
-      "time_minutes": 35,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 28,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["czech_traditional", "vegetarian", "sauce"],
-      "allergens": ["dairy", "gluten"],
-      "ingredients": [
-        {"name": "Máslo", "amount": "50g", "category": "dairy"},
-        {"name": "Hladká mouka", "amount": "2 lžíce", "category": "pantry"},
-        {"name": "Mléko", "amount": "400ml", "category": "dairy"},
-        {"name": "Kopr", "amount": "1 svazek", "category": "vegetables"},
-        {"name": "Ocet", "amount": "2 lžíce", "category": "pantry"},
-        {"name": "Cukr", "amount": "2 lžíce", "category": "pantry"},
-        {"name": "Vejce natvrdo", "amount": "4ks", "category": "dairy"},
-        {"name": "Brambory", "amount": "600g", "category": "vegetables"}
-      ],
-      "steps": [
-        "Uvař brambory",
-        "Z másla a mouky udělej jíšku",
-        "Přilij mléko a míchej do zhoustnutí",
-        "Přidej kopr, ocet, cukr",
-        "Podávej s bramborami a vejcem"
-      ]
-    },
-    {
-      "id": 14,
-      "name": "Pečené kuře s bramborem",
-      "category": "czech_traditional",
-      "time_minutes": 80,
-      "difficulty": "Velmi snadné",
-      "price_per_portion_czk": 38,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["baked", "czech_traditional"],
-      "allergens": [],
-      "ingredients": [
-        {"name": "Kuře celé", "amount": "1ks", "category": "meat"},
-        {"name": "Brambory", "amount": "1kg", "category": "vegetables"},
-        {"name": "Cibule", "amount": "2ks", "category": "vegetables"},
-        {"name": "Česnek", "amount": "3 stroužky", "category": "vegetables"},
-        {"name": "Paprika mletá", "amount": "1 lžička", "category": "pantry"}
-      ],
-      "steps": [
-        "Kuře osol, opepři a potřísni česnekem",
-        "Do pekáče dej brambory, cibuli, kuře",
-        "Posyp paprikou",
-        "Peč 75 minut na 180°C"
-      ]
-    },
-    {
-      "id": 15,
-      "name": "Dršťková polévka",
-      "category": "czech_traditional",
-      "time_minutes": 70,
-      "difficulty": "Střední",
-      "price_per_portion_czk": 34,
-      "servings": 4,
-      "kid_friendly": false,
-      "tags": ["soup", "czech_traditional"],
-      "allergens": ["gluten"],
-      "ingredients": [
-        {"name": "Dršťky předvařené", "amount": "400g", "category": "meat"},
-        {"name": "Cibule", "amount": "2ks", "category": "vegetables"},
-        {"name": "Paprika mletá", "amount": "1 lžíce", "category": "pantry"},
-        {"name": "Majoránka", "amount": "1 lžička", "category": "pantry"},
-        {"name": "Hladká mouka", "amount": "1 lžíce", "category": "pantry"},
-        {"name": "Vývar", "amount": "1l", "category": "pantry"}
-      ],
-      "steps": [
-        "Orestuj cibuli dohněda",
-        "Přidej papriku, mouku, udělej jíšku",
-        "Zalij vývarem",
-        "Přidej dršťky a majoránku",
-        "Vař 40 minut"
-      ]
-    },
-    {
-      "id": 16,
-      "name": "Kynuté buchty s povidly",
-      "category": "czech_traditional",
-      "time_minutes": 90,
-      "difficulty": "Střední",
-      "price_per_portion_czk": 18,
-      "servings": 6,
-      "kid_friendly": true,
-      "tags": ["sweet", "baked", "czech_traditional"],
-      "allergens": ["gluten", "eggs", "dairy"],
-      "ingredients": [
-        {"name": "Hladká mouka", "amount": "500g", "category": "pantry"},
-        {"name": "Droždí", "amount": "1 kostka", "category": "pantry"},
-        {"name": "Mléko", "amount": "250ml", "category": "dairy"},
-        {"name": "Máslo", "amount": "80g", "category": "dairy"},
-        {"name": "Vejce", "amount": "2ks", "category": "dairy"},
-        {"name": "Povidla", "amount": "200g", "category": "pantry"}
-      ],
-      "steps": [
-        "Z mléka a droždí udělej kvásek",
-        "Smíchej s moukou, vejci a máslem",
-        "Nech kynout 40 minut",
-        "Tvaruj buchty, plň povidly",
-        "Peč 25 minut na 180°C"
-      ]
-    },
-    {
-      "id": 17,
-      "name": "Rajská omáčka s masovými koulemi",
-      "category": "czech_traditional",
-      "time_minutes": 45,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 34,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["sauce", "czech_traditional"],
-      "allergens": ["gluten", "dairy"],
-      "ingredients": [
-        {"name": "Mleté hovězí", "amount": "400g", "category": "meat"},
-        {"name": "Strouhanka", "amount": "2 lžíce", "category": "pantry"},
-        {"name": "Vejce", "amount": "1ks", "category": "dairy"},
-        {"name": "Rajčatový protlak", "amount": "200g", "category": "pantry"},
-        {"name": "Cukr", "amount": "2 lžíce", "category": "pantry"},
-        {"name": "Máslo", "amount": "30g", "category": "dairy"},
-        {"name": "Hladká mouka", "amount": "1 lžíce", "category": "pantry"},
-        {"name": "Vývar", "amount": "400ml", "category": "pantry"},
-        {"name": "Těstoviny nebo knedlík", "amount": "4 porce", "category": "pantry"}
-      ],
-      "steps": [
-        "Z masa, vejce a strouhanky vytvoř koule",
-        "Orestuj na pánvi do barvy",
-        "Z másla a mouky udělej jíšku",
-        "Přidej protlak, zalij vývarem",
-        "Oslad, povař 10 minut",
-        "Vrať koule, provař 5 minut"
-      ]
-    },
-    {
-      "id": 18,
-      "name": "Bramboračka",
-      "category": "czech_traditional",
-      "time_minutes": 35,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 18,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["soup", "vegetarian", "czech_traditional"],
-      "allergens": [],
-      "ingredients": [
-        {"name": "Brambory", "amount": "400g", "category": "vegetables"},
-        {"name": "Mrkev", "amount": "2ks", "category": "vegetables"},
-        {"name": "Celer", "amount": "1/4ks", "category": "vegetables"},
-        {"name": "Houby sušené", "amount": "1 hrst", "category": "pantry"},
-        {"name": "Majoránka", "amount": "1 lžička", "category": "pantry"},
-        {"name": "Česnek", "amount": "2 stroužky", "category": "vegetables"}
-      ],
-      "steps": [
-        "Namoč houby na 10 minut",
-        "Nakrájej zeleninu a brambory",
-        "Vař 20 minut",
-        "Přidej česnek a majoránku",
-        "Dochut solí, pepřem"
-      ]
-    },
-    {
-      "id": 19,
-      "name": "Palačinky s marmeládou",
-      "category": "sweet",
-      "time_minutes": 20,
-      "difficulty": "Velmi snadné",
-      "price_per_portion_czk": 16,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["sweet", "quick"],
-      "allergens": ["gluten", "eggs", "dairy"],
-      "ingredients": [
-        {"name": "Mléko", "amount": "400ml", "category": "dairy"},
-        {"name": "Vejce", "amount": "2ks", "category": "dairy"},
-        {"name": "Hladká mouka", "amount": "200g", "category": "pantry"},
-        {"name": "Máslo", "amount": "20g", "category": "dairy"},
-        {"name": "Marmeláda", "amount": "200g", "category": "pantry"}
-      ],
-      "steps": [
-        "Smíchej těsto z mléka, mouky a vajec",
-        "Smaž tenké palačinky",
-        "Potři marmeládou a sroluj"
-      ]
-    },
-    {
-      "id": 20,
-      "name": "Znojemská omáčka",
-      "category": "czech_traditional",
-      "time_minutes": 60,
-      "difficulty": "Střední",
-      "price_per_portion_czk": 42,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["sauce", "czech_traditional"],
-      "allergens": ["gluten"],
-      "ingredients": [
-        {"name": "Hovězí maso", "amount": "500g", "category": "meat"},
-        {"name": "Kyselé okurky", "amount": "4ks", "category": "pantry"},
-        {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
-        {"name": "Mouka", "amount": "1 lžíce", "category": "pantry"},
-        {"name": "Vývar", "amount": "500ml", "category": "pantry"},
-        {"name": "Hořčice", "amount": "1 lžíce", "category": "pantry"}
-      ],
-      "steps": [
-        "Orestuj cibuli, přidej maso",
-        "Zasyp moukou, přidej vývar",
-        "Přidej okurky a hořčici",
-        "Vař 45 minut"
-      ]
-    },
-    {
-      "id": 21,
-      "name": "Karbanátky s bramborovou kaší",
-      "category": "czech_traditional",
-      "time_minutes": 45,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 38,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["fried", "czech_traditional"],
-      "allergens": ["gluten", "eggs", "dairy"],
-      "ingredients": [
-        {"name": "Mleté maso mix", "amount": "500g", "category": "meat"},
-        {"name": "Vejce", "amount": "1ks", "category": "dairy"},
-        {"name": "Strouhanka", "amount": "50g", "category": "pantry"},
-        {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
-        {"name": "Brambory", "amount": "800g", "category": "vegetables"},
-        {"name": "Máslo", "amount": "40g", "category": "dairy"},
-        {"name": "Mléko", "amount": "100ml", "category": "dairy"}
-      ],
-      "steps": [
-        "Smíchej maso s vejcem, cibulí a strouhankou",
-        "Tvaruj karbanátky a smaž 6 minut z každé strany",
-        "Uvař brambory, rozmačkej s máslem a mlékem",
-        "Podávej"
-      ]
-    },
-    {
-      "id": 22,
-      "name": "Pečená kachna se zelím",
-      "category": "czech_traditional",
-      "time_minutes": 180,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 65,
-      "servings": 4,
-      "kid_friendly": false,
-      "tags": ["roasted", "czech_traditional"],
-      "allergens": ["gluten"],
-      "ingredients": [
-        {"name": "Kachna", "amount": "1ks", "category": "meat"},
-        {"name": "Kysané zelí", "amount": "500g", "category": "vegetables"},
-        {"name": "Kmín", "amount": "1 lžička", "category": "pantry"},
-        {"name": "Houskový knedlík", "amount": "8 plátků", "category": "pantry"}
-      ],
-      "steps": [
-        "Kachnu osol a okmínuj",
-        "Peč 2,5 hodiny na 160°C",
-        "Podus zelí",
-        "Podávej s knedlíkem"
-      ]
-    },
-    {
-      "id": 23,
-      "name": "Krupicová kaše",
-      "category": "sweet",
-      "time_minutes": 10,
-      "difficulty": "Velmi snadné",
-      "price_per_portion_czk": 10,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["sweet", "quick"],
-      "allergens": ["dairy", "gluten"],
-      "ingredients": [
-        {"name": "Mléko", "amount": "1l", "category": "dairy"},
-        {"name": "Krupice", "amount": "80g", "category": "pantry"},
-        {"name": "Máslo", "amount": "20g", "category": "dairy"},
-        {"name": "Cukr", "amount": "2 lžíce", "category": "pantry"},
-        {"name": "Kakao", "amount": "1 lžička", "category": "pantry"}
-      ],
-      "steps": [
-        "Přiveď mléko k varu",
-        "Zašlehej krupici",
-        "Vař 3 minuty",
-        "Oslad, přidej kakao a máslo"
-      ]
-    },
-    {
-      "id": 24,
-      "name": "Halušky se zelím a slaninou",
-      "category": "czech_traditional",
-      "time_minutes": 30,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 29,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["czech_traditional", "quick"],
-      "allergens": ["gluten", "eggs"],
-      "ingredients": [
-        {"name": "Brambory", "amount": "600g", "category": "vegetables"},
-        {"name": "Hladká mouka", "amount": "200g", "category": "pantry"},
-        {"name": "Vejce", "amount": "1ks", "category": "dairy"},
-        {"name": "Kysané zelí", "amount": "400g", "category": "vegetables"},
-        {"name": "Slanina", "amount": "100g", "category": "meat"}
-      ],
-      "steps": [
-        "Nastrouhej brambory, přidej mouku a vejce",
-        "Těsto protlač do vroucí vody",
-        "Slaninu orestuj dokřupava",
-        "Podávej halušky se zelím a slaninou"
-      ]
-    },
-    {
-      "id": 25,
-      "name": "Kvasnicová polévka",
-      "category": "czech_traditional",
-      "time_minutes": 20,
-      "difficulty": "Velmi snadné",
-      "price_per_portion_czk": 12,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["czech_traditional", "soup", "quick"],
-      "allergens": ["gluten"],
-      "ingredients": [
-        {"name": "Droždí", "amount": "1 kostka", "category": "pantry"},
-        {"name": "Máslo", "amount": "30g", "category": "dairy"},
-        {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
-        {"name": "Mouka", "amount": "1 lžíce", "category": "pantry"},
-        {"name": "Voda", "amount": "1l", "category": "other"}
-      ],
-      "steps": [
-        "Orestuj cibuli na másle",
-        "Přidej droždí, nechej zpěnit",
-        "Zasyp moukou",
-        "Zalij vodou a povař 10 minut"
-      ]
-    },
-    {
-      "id": 26,
-      "name": "Pečené žampiony plněné sýrem",
-      "category": "quick",
-      "time_minutes": 25,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 22,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["quick", "vegetarian", "baked"],
-      "allergens": ["dairy"],
-      "ingredients": [
-        {"name": "Žampiony velké", "amount": "8ks", "category": "vegetables"},
-        {"name": "Sýr eidam", "amount": "120g", "category": "dairy"},
-        {"name": "Česnek", "amount": "1 stroužek", "category": "vegetables"},
-        {"name": "Olej", "amount": "1 lžíce", "category": "pantry"}
-      ],
-      "steps": [
-        "Odstraň nožičky ze žampionů",
-        "Smíchej sýr s česnekem",
-        "Napln klobouky",
-        "Peč 15 minut na 180°C"
-      ]
-    },
-    {
-      "id": 27,
-      "name": "Šunkofleky",
-      "category": "czech_traditional",
-      "time_minutes": 35,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 30,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["baked", "czech_traditional"],
-      "allergens": ["gluten", "eggs", "dairy"],
-      "ingredients": [
-        {"name": "Těstoviny fleky", "amount": "400g", "category": "pantry"},
-        {"name": "Šunka", "amount": "200g", "category": "meat"},
-        {"name": "Vejce", "amount": "3ks", "category": "dairy"},
-        {"name": "Mléko", "amount": "100ml", "category": "dairy"}
-      ],
-      "steps": [
-        "Uvař těstoviny",
-        "Smíchej se šunkou",
-        "Rozšlehej vejce s mlékem",
-        "Zalij a peč 25 minut"
-      ]
-    },
-    {
-      "id": 28,
-      "name": "Zapečené brambory se smetanou",
-      "category": "czech_traditional",
-      "time_minutes": 55,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 28,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["baked", "comfort"],
-      "allergens": ["dairy"],
-      "ingredients": [
-        {"name": "Brambory", "amount": "800g", "category": "vegetables"},
-        {"name": "Smetana", "amount": "250ml", "category": "dairy"},
-        {"name": "Sýr eidam", "amount": "100g", "category": "dairy"},
-        {"name": "Česnek", "amount": "2 stroužky", "category": "vegetables"}
-      ],
-      "steps": [
-        "Nakrájej brambory na plátky",
-        "Vrstvi s česnekem a smetanou",
-        "Posyp sýrem",
-        "Peč 40 minut"
-      ]
-    },
-    {
-      "id": 29,
-      "name": "Hovězí polévka s nudlemi",
-      "category": "czech_traditional",
-      "time_minutes": 120,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 22,
-      "servings": 6,
-      "kid_friendly": true,
-      "tags": ["soup", "czech_traditional"],
-      "allergens": ["gluten", "eggs"],
-      "ingredients": [
-        {"name": "Hovězí kosti a maso", "amount": "600g", "category": "meat"},
-        {"name": "Mrkev", "amount": "2ks", "category": "vegetables"},
-        {"name": "Celer", "amount": "1/4ks", "category": "vegetables"},
-        {"name": "Petržel", "amount": "1ks", "category": "vegetables"},
-        {"name": "Vaječné nudle", "amount": "150g", "category": "pantry"}
-      ],
-      "steps": [
-        "Vař maso s kořením 90 minut",
-        "Přidej zeleninu",
-        "Povař dalších 20 minut",
-        "Podávej s nudlemi"
-      ]
-    },
-    {
-      "id": 30,
-      "name": "Kuřecí perkelt",
-      "category": "czech_traditional",
-      "time_minutes": 45,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 36,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["sauce", "czech_traditional"],
-      "allergens": [],
-      "ingredients": [
-        {"name": "Kuřecí stehenní řízky", "amount": "500g", "category": "meat"},
-        {"name": "Cibule", "amount": "2ks", "category": "vegetables"},
-        {"name": "Paprika mletá", "amount": "1 lžíce", "category": "pantry"},
-        {"name": "Rajčatový protlak", "amount": "1 lžíce", "category": "pantry"},
-        {"name": "Vývar", "amount": "300ml", "category": "pantry"}
-      ],
-      "steps": [
-        "Cibuli orestuj",
-        "Přidej maso, zprudka opeč",
-        "Přidej papriku a protlak",
-        "Zalij vývarem a vař 30 minut"
-      ]
-    },
-    {
-      "id": 31,
-      "name": "Vaječná tlačenka",
-      "category": "czech_traditional",
-      "time_minutes": 25,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 20,
-      "servings": 6,
-      "kid_friendly": true,
-      "tags": ["czech_traditional", "cold"],
-      "allergens": ["eggs", "dairy"],
-      "ingredients": [
-        {"name": "Vejce", "amount": "6ks", "category": "dairy"},
-        {"name": "Šunka", "amount": "200g", "category": "meat"},
-        {"name": "Sýr eidam", "amount": "150g", "category": "dairy"},
-        {"name": "Majonéza", "amount": "3 lžíce", "category": "pantry"},
-        {"name": "Želatina", "amount": "2 sáčky", "category": "pantry"}
-      ],
-      "steps": [
-        "Uvař vejce natvrdo",
-        "Nakrájej vše na kostky",
-        "Smíchej s majonézou",
-        "Zalij želatinou a nech ztuhnout"
-      ]
-    },
-    {
-      "id": 32,
-      "name": "Kuřecí nudličky na paprice",
-      "category": "quick",
-      "time_minutes": 25,
-      "difficulty": "Velmi snadné",
-      "price_per_portion_czk": 32,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["quick", "sauce"],
-      "allergens": ["dairy"],
-      "ingredients": [
-        {"name": "Kuřecí prsa", "amount": "400g", "category": "meat"},
-        {"name": "Paprika mletá", "amount": "1 lžíce", "category": "pantry"},
-        {"name": "Smetana", "amount": "200ml", "category": "dairy"},
-        {"name": "Cibule", "amount": "1ks", "category": "vegetables"}
-      ],
-      "steps": [
-        "Orestuj cibuli",
-        "Přidej kuře, opeč",
-        "Přidej papriku a smetanu",
-        "Vař 10 minut"
-      ]
-    },
-    {
-      "id": 33,
-      "name": "Bramborové knedlíky plněné uzeným",
-      "category": "czech_traditional",
-      "time_minutes": 50,
-      "difficulty": "Střední",
-      "price_per_portion_czk": 34,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["czech_traditional"],
-      "allergens": ["gluten", "eggs"],
-      "ingredients": [
-        {"name": "Brambory", "amount": "800g", "category": "vegetables"},
-        {"name": "Hladká mouka", "amount": "200g", "category": "pantry"},
-        {"name": "Vejce", "amount": "1ks", "category": "dairy"},
-        {"name": "Uzené maso", "amount": "200g", "category": "meat"}
-      ],
-      "steps": [
-        "Uvař brambory a nastrouhej",
-        "Přidej mouku a vejce",
-        "Tvaruj knedlíky s uzeným uvnitř",
-        "Vař 10 minut"
-      ]
-    },
-    {
-      "id": 34,
-      "name": "Rýžový nákyp s meruňkami",
-      "category": "sweet",
-      "time_minutes": 60,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 24,
-      "servings": 6,
-      "kid_friendly": true,
-      "tags": ["sweet", "baked"],
-      "allergens": ["dairy", "eggs"],
-      "ingredients": [
-        {"name": "Rýže", "amount": "300g", "category": "pantry"},
-        {"name": "Mléko", "amount": "700ml", "category": "dairy"},
-        {"name": "Vejce", "amount": "3ks", "category": "dairy"},
-        {"name": "Máslo", "amount": "40g", "category": "dairy"},
-        {"name": "Cukr", "amount": "2 lžíce", "category": "pantry"},
-        {"name": "Meruňky kompot", "amount": "300g", "category": "pantry"}
-      ],
-      "steps": [
-        "Uvař rýži v mléce",
-        "Smíchej s vejci a cukrem",
-        "Přidej meruňky",
-        "Peč 30 minut"
-      ]
-    },
-    {
-      "id": 35,
-      "name": "Smažené žampiony",
-      "category": "czech_traditional",
-      "time_minutes": 20,
-      "difficulty": "Velmi snadné",
-      "price_per_portion_czk": 24,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["fried", "vegetarian"],
-      "allergens": ["gluten", "eggs"],
-      "ingredients": [
-        {"name": "Žampiony", "amount": "500g", "category": "vegetables"},
-        {"name": "Vejce", "amount": "2ks", "category": "dairy"},
-        {"name": "Mouka", "amount": "100g", "category": "pantry"},
-        {"name": "Strouhanka", "amount": "100g", "category": "pantry"},
-        {"name": "Olej", "amount": "200ml", "category": "pantry"}
-      ],
-      "steps": [
-        "Očisti žampiony",
-        "Obal v trojobalu",
-        "Smaž 3 minuty"
-      ]
-    },
-    {
-      "id": 36,
-      "name": "Šťouchané brambory se slaninou",
-      "category": "quick",
-      "time_minutes": 20,
-      "difficulty": "Velmi snadné",
-      "price_per_portion_czk": 18,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["quick", "czech_traditional"],
-      "allergens": [],
-      "ingredients": [
-        {"name": "Brambory", "amount": "800g", "category": "vegetables"},
-        {"name": "Slanina", "amount": "150g", "category": "meat"},
-        {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
-        {"name": "Máslo", "amount": "40g", "category": "dairy"}
-      ],
-      "steps": [
-        "Uvař brambory",
-        "Orestuj slaninu s cibulí",
-        "Rozšťouchej brambory s máslem",
-        "Vmíchej slaninu"
-      ]
-    },
-    {
-      "id": 37,
-      "name": "Krupicové noky do polévky",
-      "category": "quick",
-      "time_minutes": 15,
-      "difficulty": "Velmi snadné",
-      "price_per_portion_czk": 6,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["quick", "czech_traditional"],
-      "allergens": ["gluten", "eggs"],
-      "ingredients": [
-        {"name": "Vejce", "amount": "1ks", "category": "dairy"},
-        {"name": "Krupice", "amount": "4 lžíce", "category": "pantry"},
-        {"name": "Máslo", "amount": "1 lžíce", "category": "dairy"}
-      ],
-      "steps": [
-        "Smíchej ingredience",
-        "Tvaruj noky lžičkou",
-        "Vař 3 minuty"
-      ]
-    },
-    {
-      "id": 38,
-      "name": "Česká čočka na kyselo",
-      "category": "czech_traditional",
-      "time_minutes": 40,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 18,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["czech_traditional", "vegetarian"],
-      "allergens": [],
-      "ingredients": [
-        {"name": "Čočka hnědá", "amount": "300g", "category": "pantry"},
-        {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
-        {"name": "Ocet", "amount": "1 lžíce", "category": "pantry"},
-        {"name": "Cukr", "amount": "1 lžíce", "category": "pantry"}
-      ],
-      "steps": [
-        "Namoč čočku na 20 minut",
-        "Uvař do měkka",
-        "Orestuj cibuli, vmíchej do čočky",
-        "Dochut octem a cukrem"
-      ]
-    },
-    {
-      "id": 39,
-      "name": "Knedlíky z rohlíků",
-      "category": "czech_traditional",
-      "time_minutes": 30,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 10,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["czech_traditional"],
-      "allergens": ["gluten", "eggs", "dairy"],
-      "ingredients": [
-        {"name": "Rohlíky", "amount": "4ks", "category": "pantry"},
-        {"name": "Mléko", "amount": "200ml", "category": "dairy"},
-        {"name": "Vejce", "amount": "1ks", "category": "dairy"},
-        {"name": "Mouka", "amount": "3 lžíce", "category": "pantry"}
-      ],
-      "steps": [
-        "Nakrájej rohlíky",
-        "Zalij mlékem a vejcem",
-        "Přidej mouku",
-        "Tvaruj a vař 15 minut"
-      ]
-    },
-    {
-      "id": 40,
-      "name": "Sekaná pečeně",
-      "category": "czech_traditional",
-      "time_minutes": 70,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 30,
-      "servings": 6,
-      "kid_friendly": true,
-      "tags": ["baked", "meat"],
-      "allergens": ["gluten", "eggs"],
-      "ingredients": [
-        {"name": "Mleté maso mix", "amount": "700g", "category": "meat"},
-        {"name": "Strouhanka", "amount": "3 lžíce", "category": "pantry"},
-        {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
-        {"name": "Vejce", "amount": "1ks", "category": "dairy"}
-      ],
-      "steps": [
-        "Smíchej vše dohromady",
-        "Vytvaruj šišku",
-        "Peč 50 minut na 180°C"
-      ]
-    },
+    "name": "Svíčková na smetaně s houskovým knedlíkem",
+    "category": "czech_traditional",
+    "time_minutes": 150,
+    "difficulty": "Střední",
+    "price_per_portion_czk": 72,
+    "servings": 6,
+    "kid_friendly": true,
+    "tags": ["czech_traditional", "comfort", "sauce"],
+    "allergens": ["dairy", "gluten"],
+    "ingredients": [
+      {"name": "Hovězí zadní", "amount": "800g", "category": "meat"},
+      {"name": "Kořenová zelenina", "amount": "400g", "category": "vegetables"},
+      {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
+      {"name": "Bobkový list", "amount": "2ks", "category": "pantry"},
+      {"name": "Nové koření", "amount": "5 kuliček", "category": "pantry"},
+      {"name": "Smetana ke šlehání", "amount": "200ml", "category": "dairy"},
+      {"name": "Hladká mouka", "amount": "2 lžíce", "category": "pantry"},
+      {"name": "Cukr", "amount": "1 lžíce", "category": "pantry"},
+      {"name": "Citron", "amount": "1/2ks", "category": "vegetables"},
+      {"name": "Brusinky", "amount": "2 lžíce", "category": "pantry"},
+      {"name": "Houskový knedlík", "amount": "12 plátků", "category": "pantry"}
+    ],
+    "steps": [
+      "Orestuj zeleninu a cibuli dohněda",
+      "Přidej maso, zprudka opeč",
+      "Přidej koření, zalij vodou a dust 2 hodiny",
+      "Vyjmi maso, zeleninu rozmixuj",
+      "Přidej smetanu, cukr, citron, zahusti moukou",
+      "Vrať maso, prohřej 10 minut",
+      "Podávej s knedlíkem a brusinkami"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Vepřo knedlo zelo",
+    "category": "czech_traditional",
+    "time_minutes": 120,
+    "difficulty": "Snadné",
+    "price_per_portion_czk": 56,
+    "servings": 4,
+    "kid_friendly": true,
+    "tags": ["czech_traditional", "roasted"],
+    "allergens": ["gluten"],
+    "ingredients": [
+      {"name": "Vepřová plec", "amount": "600g", "category": "meat"},
+      {"name": "Cibule", "amount": "2ks", "category": "vegetables"},
+      {"name": "Kysané zelí", "amount": "500g", "category": "vegetables"},
+      {"name": "Kmín", "amount": "1 lžička", "category": "pantry"},
+      {"name": "Cukr", "amount": "1 lžíce", "category": "pantry"},
+      {"name": "Olej", "amount": "2 lžíce", "category": "pantry"},
+      {"name": "Houskový knedlík", "amount": "8 plátků", "category": "pantry"}
+    ],
+    "steps": [
+      "Maso osol a okmínuj",
+      "Polož na cibuli a peč 90 minut na 180°C",
+      "Zelí podus 20 minut s cukrem a kmínem",
+      "Podávej maso se zelím a knedlíkem"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Koprová omáčka s vejcem",
+    "category": "czech_traditional",
+    "time_minutes": 35,
+    "difficulty": "Snadné",
+    "price_per_portion_czk": 28,
+    "servings": 4,
+    "kid_friendly": true,
+    "tags": ["czech_traditional", "vegetarian", "sauce"],
+    "allergens": ["dairy", "gluten"],
+    "ingredients": [
+      {"name": "Máslo", "amount": "50g", "category": "dairy"},
+      {"name": "Hladká mouka", "amount": "2 lžíce", "category": "pantry"},
+      {"name": "Mléko", "amount": "400ml", "category": "dairy"},
+      {"name": "Kopr", "amount": "1 svazek", "category": "vegetables"},
+      {"name": "Ocet", "amount": "2 lžíce", "category": "pantry"},
+      {"name": "Cukr", "amount": "2 lžíce", "category": "pantry"},
+      {"name": "Vejce natvrdo", "amount": "4ks", "category": "dairy"},
+      {"name": "Brambory", "amount": "600g", "category": "vegetables"}
+    ],
+    "steps": [
+      "Uvař brambory",
+      "Z másla a mouky udělej jíšku",
+      "Přilij mléko a míchej do zhoustnutí",
+      "Přidej kopr, ocet, cukr",
+      "Podávej s bramborami a vejcem"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Pečené kuře s bramborem",
+    "category": "czech_traditional",
+    "time_minutes": 80,
+    "difficulty": "Velmi snadné",
+    "price_per_portion_czk": 38,
+    "servings": 4,
+    "kid_friendly": true,
+    "tags": ["baked", "czech_traditional"],
+    "allergens": [],
+    "ingredients": [
+      {"name": "Kuře celé", "amount": "1ks", "category": "meat"},
+      {"name": "Brambory", "amount": "1kg", "category": "vegetables"},
+      {"name": "Cibule", "amount": "2ks", "category": "vegetables"},
+      {"name": "Česnek", "amount": "3 stroužky", "category": "vegetables"},
+      {"name": "Paprika mletá", "amount": "1 lžička", "category": "pantry"}
+    ],
+    "steps": [
+      "Kuře osol, opepři a potřísni česnekem",
+      "Do pekáče dej brambory, cibuli, kuře",
+      "Posyp paprikou",
+      "Peč 75 minut na 180°C"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Dršťková polévka",
+    "category": "czech_traditional",
+    "time_minutes": 70,
+    "difficulty": "Střední",
+    "price_per_portion_czk": 34,
+    "servings": 4,
+    "kid_friendly": false,
+    "tags": ["soup", "czech_traditional"],
+    "allergens": ["gluten"],
+    "ingredients": [
+      {"name": "Dršťky předvařené", "amount": "400g", "category": "meat"},
+      {"name": "Cibule", "amount": "2ks", "category": "vegetables"},
+      {"name": "Paprika mletá", "amount": "1 lžíce", "category": "pantry"},
+      {"name": "Majoránka", "amount": "1 lžička", "category": "pantry"},
+      {"name": "Hladká mouka", "amount": "1 lžíce", "category": "pantry"},
+      {"name": "Vývar", "amount": "1l", "category": "pantry"}
+    ],
+    "steps": [
+      "Orestuj cibuli dohněda",
+      "Přidej papriku, mouku, udělej jíšku",
+      "Zalij vývarem",
+      "Přidej dršťky, majoránku",
+      "Vař 40 minut"
+    ]
+  },
 
-    {
-      "id": 41,
-      "name": "Špagety Bolognese (klasika)",
-      "category": "pasta",
-      "time_minutes": 35,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 42,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["pasta", "italian", "family_favorite"],
-      "allergens": ["gluten", "dairy"],
-      "ingredients": [
-        {"name": "Špagety", "amount": "400g", "category": "pantry"},
-        {"name": "Mleté hovězí", "amount": "400g", "category": "meat"},
-        {"name": "Rajčatová passata", "amount": "500ml", "category": "pantry"},
-        {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
-        {"name": "Česnek", "amount": "2 stroužky", "category": "vegetables"},
-        {"name": "Mrkev", "amount": "1ks", "category": "vegetables"},
-        {"name": "Olivový olej", "amount": "2 lžíce", "category": "pantry"},
-        {"name": "Parmazán", "amount": "50g", "category": "dairy"}
-      ],
-      "steps": [
-        "Uvař špagety dle návodu",
-        "Na oleji orestuj cibuli, česnek a nastrouhanou mrkev",
-        "Přidej mleté maso a opékej dohněda",
-        "Přilij passatu, osol, opepři a vař 15 minut",
-        "Podávej se špagetami a strouhaným parmazánem"
-      ]
-    },
-    {
-      "id": 42,
-      "name": "Kuřecí fajitas s tortillami",
-      "category": "mexican",
-      "time_minutes": 30,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 45,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["mexican", "quick", "wraps"],
-      "allergens": ["gluten"],
-      "ingredients": [
-        {"name": "Kuřecí prsa", "amount": "400g", "category": "meat"},
-        {"name": "Paprika červená", "amount": "1ks", "category": "vegetables"},
-        {"name": "Paprika žlutá", "amount": "1ks", "category": "vegetables"},
-        {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
-        {"name": "Pšeničné tortilly", "amount": "8ks", "category": "pantry"},
-        {"name": "Olej", "amount": "2 lžíce", "category": "pantry"},
-        {"name": "Koření na fajitas nebo paprika + kmín", "amount": "2 lžičky", "category": "pantry"},
-        {"name": "Zakysaná smetana", "amount": "150g", "category": "dairy"}
-      ],
-      "steps": [
-        "Nakrájej kuře na proužky, osol a okořeň",
-        "Nakrájej papriky a cibuli na proužky",
-        "Na pánvi rozehřej olej, orestuj kuře 5–7 minut",
-        "Přidej zeleninu a restuj dalších 5 minut",
-        "Tortilly krátce ohřej na suché pánvi",
-        "Podávej maso se zeleninou v tortillách se zakysanou smetanou"
-      ]
-    },
-    {
-      "id": 43,
-      "name": "Řecký gyros v misce (bez rotisseri)",
-      "category": "mediterranean",
-      "time_minutes": 35,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 48,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["mediterranean", "bowl", "healthy"],
-      "allergens": ["dairy", "gluten"],
-      "ingredients": [
-        {"name": "Kuřecí stehenní řízky", "amount": "500g", "category": "meat"},
-        {"name": "Jogurt bílý", "amount": "150g", "category": "dairy"},
-        {"name": "Citronová šťáva", "amount": "2 lžíce", "category": "pantry"},
-        {"name": "Česnek", "amount": "2 stroužky", "category": "vegetables"},
-        {"name": "Okurka", "amount": "1ks", "category": "vegetables"},
-        {"name": "Rajčata", "amount": "3ks", "category": "vegetables"},
-        {"name": "Červená cibule", "amount": "1ks", "category": "vegetables"},
-        {"name": "Rýže nebo pita chleba", "amount": "4 porce", "category": "pantry"}
-      ],
-      "steps": [
-        "Smíchej jogurt, citron, česnek, sůl a pepř, nalož do něj kuřecí maso na 15 minut",
-        "Maso opeč na pánvi dozlatova",
-        "Nakrájej zeleninu na kousky",
-        "Podávej v misce s rýží nebo v pitě jako gyros bowl"
-      ]
-    },
-    {
-      "id": 44,
-      "name": "Jednoduché hovězí tacos",
-      "category": "mexican",
-      "time_minutes": 25,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 46,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["mexican", "quick", "family_favorite"],
-      "allergens": ["gluten", "dairy"],
-      "ingredients": [
-        {"name": "Mleté hovězí", "amount": "400g", "category": "meat"},
-        {"name": "Tortilly malé", "amount": "8ks", "category": "pantry"},
-        {"name": "Sýr cheddar nebo eidam", "amount": "100g", "category": "dairy"},
-        {"name": "Ledový salát", "amount": "1/2 hlávky", "category": "vegetables"},
-        {"name": "Rajčata", "amount": "2ks", "category": "vegetables"},
-        {"name": "Taco koření", "amount": "2 lžičky", "category": "pantry"},
-        {"name": "Olej", "amount": "1 lžíce", "category": "pantry"}
-      ],
-      "steps": [
-        "Na oleji orestuj mleté maso, přidej taco koření a trochu vody",
-        "Nech krátce provařit",
-        "Nakrájej zeleninu a nastrouhej sýr",
-        "Tortilly ohřej na pánvi",
-        "Naplň tortilla maso–salát–rajče–sýr a podávej"
-      ]
-    },
-    {
-      "id": 45,
-      "name": "Kuřecí tikka masala (zjednodušená)",
-      "category": "asian",
-      "time_minutes": 40,
-      "difficulty": "Střední",
-      "price_per_portion_czk": 50,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["indian", "sauce", "rice"],
-      "allergens": ["dairy"],
-      "ingredients": [
-        {"name": "Kuřecí prsa", "amount": "500g", "category": "meat"},
-        {"name": "Jogurt bílý", "amount": "150g", "category": "dairy"},
-        {"name": "Rajčatová passata", "amount": "400ml", "category": "pantry"},
-        {"name": "Smetana na vaření", "amount": "150ml", "category": "dairy"},
-        {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
-        {"name": "Česnek", "amount": "2 stroužky", "category": "vegetables"},
-        {"name": "Koření kari nebo směs garam masala", "amount": "2 lžičky", "category": "pantry"},
-        {"name": "Rýže", "amount": "300g", "category": "pantry"}
-      ],
-      "steps": [
-        "Nakrájej kuře na kostky a nalož do jogurtu s 1 lžičkou koření a solí",
-        "Opeč maso na pánvi dozlatova, vyjmi stranou",
-        "Na téže pánvi orestuj cibuli a česnek",
-        "Přidej passatu a zbylé koření, vař 10 minut",
-        "Vmíchej smetanu a kuře, prohřej 5–10 minut",
-        "Podávej s uvařenou rýží"
-      ]
-    },
-    {
-      "id": 46,
-      "name": "Zeleninové stir-fry s nudlemi",
-      "category": "asian",
-      "time_minutes": 20,
-      "difficulty": "Velmi snadné",
-      "price_per_portion_czk": 32,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["asian", "quick", "vegetarian"],
-      "allergens": ["gluten", "soy"],
-      "ingredients": [
-        {"name": "Vaječné nebo pšeničné nudle", "amount": "300g", "category": "pantry"},
-        {"name": "Mrkev", "amount": "2ks", "category": "vegetables"},
-        {"name": "Paprika", "amount": "1ks", "category": "vegetables"},
-        {"name": "Brokolice", "amount": "200g", "category": "vegetables"},
-        {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
-        {"name": "Sójová omáčka", "amount": "3 lžíce", "category": "pantry"},
-        {"name": "Olej", "amount": "2 lžíce", "category": "pantry"}
-      ],
-      "steps": [
-        "Uvař nudle dle návodu",
-        "Zeleninu nakrájej na proužky a růžičky",
-        "Na pánvi nebo woku rozehřej olej, restuj zeleninu 5–7 minut",
-        "Přidej nudle a sójovou omáčku, vše promíchej a krátce prohřej",
-        "Podávej ihned"
-      ]
-    },
-    {
-      "id": 47,
-      "name": "Kuřecí křídla BBQ s americkými bramborami",
-      "category": "comfort",
-      "time_minutes": 50,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 44,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["american", "baked", "finger_food"],
-      "allergens": [],
-      "ingredients": [
-        {"name": "Kuřecí křídla", "amount": "1kg", "category": "meat"},
-        {"name": "BBQ omáčka", "amount": "150g", "category": "pantry"},
-        {"name": "Brambory", "amount": "800g", "category": "vegetables"},
-        {"name": "Olej", "amount": "3 lžíce", "category": "pantry"},
-        {"name": "Paprika mletá", "amount": "1 lžička", "category": "pantry"}
-      ],
-      "steps": [
-        "Křídla osol, opepři a potřísni BBQ omáčkou",
-        "Brambory nakrájej na měsíčky, promíchej s olejem, solí a paprikou",
-        "Na plech dej brambory a nahoře křídla",
-        "Peč 35–40 minut na 200°C do zlatova"
-      ]
-    },
-    {
-      "id": 48,
-      "name": "Fish & Chips (pečená verze)",
-      "category": "comfort",
-      "time_minutes": 40,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 52,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["british", "baked"],
-      "allergens": ["gluten", "eggs", "fish"],
-      "ingredients": [
-        {"name": "Bílé rybí filety", "amount": "600g", "category": "fish"},
-        {"name": "Brambory", "amount": "800g", "category": "vegetables"},
-        {"name": "Hladká mouka", "amount": "3 lžíce", "category": "pantry"},
-        {"name": "Vejce", "amount": "1ks", "category": "dairy"},
-        {"name": "Strouhanka", "amount": "100g", "category": "pantry"},
-        {"name": "Olej", "amount": "3 lžíce", "category": "pantry"}
-      ],
-      "steps": [
-        "Brambory nakrájej na hranolky, promíchej s olejem a peč 25–30 minut na 200°C",
-        "Rybu osol, obal v mouce, vejci a strouhance",
-        "Rybu polož na plech a peč 15–20 minut",
-        "Podávej s hranolky a citronem nebo dresinkem"
-      ]
-    },
-    {
-      "id": 49,
-      "name": "Shakshuka (vejce v rajčatové omáčce)",
-      "category": "mediterranean",
-      "time_minutes": 25,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 30,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["mediterranean", "vegetarian", "one_pan"],
-      "allergens": ["eggs"],
-      "ingredients": [
-        {"name": "Vejce", "amount": "6ks", "category": "dairy"},
-        {"name": "Rajčata konzervovaná krájená", "amount": "400g", "category": "pantry"},
-        {"name": "Paprika", "amount": "1ks", "category": "vegetables"},
-        {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
-        {"name": "Česnek", "amount": "2 stroužky", "category": "vegetables"},
-        {"name": "Olej", "amount": "2 lžíce", "category": "pantry"}
-      ],
-      "steps": [
-        "Na oleji orestuj cibuli, papriku a česnek",
-        "Přidej rajčata, osol a vař 10 minut",
-        "Vytvoř lžící důlky a rozklepni vejce",
-        "Zakryj pokličkou a vař, dokud bílky neztuhnou",
-        "Podávej s pečivem"
-      ]
-    },
-    {
-      "id": 50,
-      "name": "Ratatouille s rýží",
-      "category": "mediterranean",
-      "time_minutes": 40,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 32,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["mediterranean", "vegetarian", "healthy"],
-      "allergens": [],
-      "ingredients": [
-        {"name": "Cuketa", "amount": "1ks", "category": "vegetables"},
-        {"name": "Lilek", "amount": "1ks", "category": "vegetables"},
-        {"name": "Paprika", "amount": "1ks", "category": "vegetables"},
-        {"name": "Rajčata konzervovaná", "amount": "400g", "category": "pantry"},
-        {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
-        {"name": "Česnek", "amount": "2 stroužky", "category": "vegetables"},
-        {"name": "Olivový olej", "amount": "2 lžíce", "category": "pantry"},
-        {"name": "Rýže", "amount": "300g", "category": "pantry"}
-      ],
-      "steps": [
-        "Nakrájej zeleninu na kostky",
-        "Na oleji orestuj cibuli a česnek",
-        "Přidej zeleninu a opékej 5–7 minut",
-        "Přidej rajčata, osol a dust 15–20 minut",
-        "Podávej s uvařenou rýží"
-      ]
-    },
-    {
-      "id": 51,
-      "name": "Caesar salát s kuřetem (domácí verze)",
-      "category": "salad",
-      "time_minutes": 25,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 40,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["salad", "light", "international"],
-      "allergens": ["dairy", "gluten", "eggs"],
-      "ingredients": [
-        {"name": "Kuřecí prsa", "amount": "400g", "category": "meat"},
-        {"name": "Římský nebo ledový salát", "amount": "1 hlávka", "category": "vegetables"},
-        {"name": "Toastový chléb", "amount": "4 plátky", "category": "pantry"},
-        {"name": "Parmazán", "amount": "50g", "category": "dairy"},
-        {"name": "Jogurt nebo majonéza", "amount": "4 lžíce", "category": "dairy"},
-        {"name": "Citronová šťáva", "amount": "1 lžíce", "category": "pantry"},
-        {"name": "Česnek", "amount": "1 stroužek", "category": "vegetables"}
-      ],
-      "steps": [
-        "Kuře osol, opepři a opeč na pánvi, nakrájej na plátky",
-        "Chléb nakrájej na kostky a nasucho opeč na pánvi",
-        "Smíchej jogurt/majonézu s citronem a česnekem",
-        "Do mísy dej natrhaný salát, kuře, krutony a dresink",
-        "Posyp parmazánem a podávej"
-      ]
-    },
-    {
-      "id": 52,
-      "name": "Chilli con carne (jemná verze)",
-      "category": "comfort",
-      "time_minutes": 45,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 40,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["mexican", "one_pot", "rice"],
-      "allergens": [],
-      "ingredients": [
-        {"name": "Mleté hovězí", "amount": "400g", "category": "meat"},
-        {"name": "Fazolky v plechovce", "amount": "400g", "category": "pantry"},
-        {"name": "Kukuřice v plechovce", "amount": "150g", "category": "pantry"},
-        {"name": "Rajčata konzervovaná", "amount": "400g", "category": "pantry"},
-        {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
-        {"name": "Česnek", "amount": "2 stroužky", "category": "vegetables"},
-        {"name": "Mletá paprika a kmín", "amount": "2 lžičky", "category": "pantry"},
-        {"name": "Rýže", "amount": "300g", "category": "pantry"}
-      ],
-      "steps": [
-        "Orestuj cibuli a česnek",
-        "Přidej mleté maso a opeč dohněda",
-        "Přidej koření, rajčata, fazole a kukuřici",
-        "Vař 20–25 minut, občas promíchej",
-        "Podávej s uvařenou rýží nebo pečivem"
-      ]
-    },
-    {
-      "id": 53,
-      "name": "Thajské zelené kari s kuřetem (z pasty z obchodu)",
-      "category": "asian",
-      "time_minutes": 30,
-      "difficulty": "Střední",
-      "price_per_portion_czk": 52,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["thai", "curry", "rice"],
-      "allergens": [],
-      "ingredients": [
-        {"name": "Kuřecí prsa", "amount": "400g", "category": "meat"},
-        {"name": "Zelená kari pasta", "amount": "2 lžíce", "category": "pantry"},
-        {"name": "Kokosové mléko", "amount": "400ml", "category": "pantry"},
-        {"name": "Paprika", "amount": "1ks", "category": "vegetables"},
-        {"name": "Cuketa", "amount": "1/2ks", "category": "vegetables"},
-        {"name": "Mrkev", "amount": "1ks", "category": "vegetables"},
-        {"name": "Rýže", "amount": "300g", "category": "pantry"}
-      ],
-      "steps": [
-        "Nakrájej kuře a zeleninu na kousky",
-        "Na pánvi krátce orestuj curry pastu",
-        "Přidej kuře a opeč",
-        "Přilij kokosové mléko, přidej zeleninu",
-        "Vař 10–15 minut, dokud maso nezměkne",
-        "Podávej s uvařenou rýží"
-      ]
-    },
-    {
-      "id": 54,
-      "name": "Smažená rýže s vejcem a zeleninou",
-      "category": "asian",
-      "time_minutes": 25,
-      "difficulty": "Velmi snadné",
-      "price_per_portion_czk": 24,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["asian", "quick", "leftovers"],
-      "allergens": ["eggs", "soy"],
-      "ingredients": [
-        {"name": "Vařená rýže (nejlépe včerejší)", "amount": "500g", "category": "pantry"},
-        {"name": "Vejce", "amount": "3ks", "category": "dairy"},
-        {"name": "Mražená nebo čerstvá zeleninová směs", "amount": "300g", "category": "vegetables"},
-        {"name": "Sójová omáčka", "amount": "3 lžíce", "category": "pantry"},
-        {"name": "Olej", "amount": "2 lžíce", "category": "pantry"}
-      ],
-      "steps": [
-        "Na pánvi rozšlehej vejce a osmaž dohruda, vyjmi stranou",
-        "Na oleji orestuj zeleninu",
-        "Přidej rýži a opékej 5–7 minut",
-        "Vmíchej vejce a sójovou omáčku",
-        "Podávej ihned"
-      ]
-    },
-    {
-      "id": 55,
-      "name": "Quesadilly se šunkou a sýrem",
-      "category": "mexican",
-      "time_minutes": 15,
-      "difficulty": "Velmi snadné",
-      "price_per_portion_czk": 26,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["quick", "mexican", "pan"],
-      "allergens": ["gluten", "dairy"],
-      "ingredients": [
-        {"name": "Pšeničné tortilly", "amount": "8ks", "category": "pantry"},
-        {"name": "Šunka", "amount": "200g", "category": "meat"},
-        {"name": "Sýr eidam", "amount": "200g", "category": "dairy"},
-        {"name": "Kečup nebo salsa", "amount": "4 lžíce", "category": "pantry"}
-      ],
-      "steps": [
-        "Na polovinu tortilly dej šunku, sýr a trochu kečupu",
-        "Překlop druhou polovinou",
-        "Opékej nasucho na pánvi z obou stran, dokud sýr neroztaje",
-        "Nakrájej na trojúhelníky a podávej"
-      ]
-    },
-    {
-      "id": 56,
-      "name": "Losos teriyaki s rýží",
-      "category": "asian",
-      "time_minutes": 30,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 65,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["asian", "fish", "healthy"],
-      "allergens": ["fish", "soy"],
-      "ingredients": [
-        {"name": "Losos filet", "amount": "600g", "category": "fish"},
-        {"name": "Teriyaki omáčka", "amount": "100ml", "category": "pantry"},
-        {"name": "Rýže", "amount": "300g", "category": "pantry"},
-        {"name": "Sezamová semínka (volitelné)", "amount": "1 lžíce", "category": "pantry"}
-      ],
-      "steps": [
-        "Lososa osol a potřísni teriyaki omáčkou",
-        "Nech 10 minut odležet",
-        "Opeč na pánvi nebo peč v troubě 12–15 minut",
-        "Podávej s uvařenou rýží, případně posyp sezamem"
-      ]
-    },
-    {
-      "id": 57,
-      "name": "Domácí hamburger",
-      "category": "comfort",
-      "time_minutes": 30,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 55,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["american", "burger", "family_favorite"],
-      "allergens": ["gluten", "dairy"],
-      "ingredients": [
-        {"name": "Mleté hovězí", "amount": "600g", "category": "meat"},
-        {"name": "Hamburgerové bulky", "amount": "4ks", "category": "pantry"},
-        {"name": "Sýr plátkový", "amount": "4 plátky", "category": "dairy"},
-        {"name": "Rajče", "amount": "1ks", "category": "vegetables"},
-        {"name": "Salát", "amount": "4 listy", "category": "vegetables"},
-        {"name": "Kečup a hořčice", "amount": "dle chuti", "category": "pantry"}
-      ],
-      "steps": [
-        "Z mletého masa vytvaruj 4 placky, osol a opepři",
-        "Opeč na pánvi nebo grilu z obou stran",
-        "Na konci na maso polož plátek sýra, nech rozpustit",
-        "Bulky rozkroj a lehce opeč",
-        "Sestav burger: bulka–omáčky–salát–maso–rajče–vrchní bulka"
-      ]
-    },
-    {
-      "id": 58,
-      "name": "Wrapy s kuřetem a zeleninou",
-      "category": "quick",
-      "time_minutes": 20,
-      "difficulty": "Velmi snadné",
-      "price_per_portion_czk": 34,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["quick", "wraps", "healthy"],
-      "allergens": ["gluten", "dairy"],
-      "ingredients": [
-        {"name": "Pšeničné tortilly", "amount": "8ks", "category": "pantry"},
-        {"name": "Kuřecí prsa", "amount": "400g", "category": "meat"},
-        {"name": "Ledový salát", "amount": "1/2 hlávky", "category": "vegetables"},
-        {"name": "Rajče", "amount": "2ks", "category": "vegetables"},
-        {"name": "Jogurtový nebo česnekový dresink", "amount": "150g", "category": "dairy"}
-      ],
-      "steps": [
-        "Kuře nakrájej na proužky, osol a opeč na pánvi",
-        "Zeleninu nakrájej",
-        "Tortilly krátce ohřej",
-        "Plň kuřetem, zeleninou a polij dresinkem",
-        "Zaviň do wrapu a podávej"
-      ]
-    },
-    {
-      "id": 59,
-      "name": "Penne Alfredo s kuřetem",
-      "category": "pasta",
-      "time_minutes": 25,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 45,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["pasta", "italian", "creamy"],
-      "allergens": ["gluten", "dairy"],
-      "ingredients": [
-        {"name": "Těstoviny penne", "amount": "400g", "category": "pantry"},
-        {"name": "Kuřecí prsa", "amount": "300g", "category": "meat"},
-        {"name": "Smetana ke šlehání", "amount": "250ml", "category": "dairy"},
-        {"name": "Máslo", "amount": "30g", "category": "dairy"},
-        {"name": "Parmazán", "amount": "50g", "category": "dairy"},
-        {"name": "Česnek", "amount": "1 stroužek", "category": "vegetables"}
-      ],
-      "steps": [
-        "Uvař těstoviny dle návodu",
-        "Na másle orestuj kuře a česnek",
-        "Přilij smetanu a krátce povař",
-        "Vmíchej parmazán, osol a opepři",
-        "Smíchej s penne a podávej"
-      ]
-    },
-    {
-      "id": 60,
-      "name": "Lasagne se špenátem a ricottou",
-      "category": "pasta",
-      "time_minutes": 60,
-      "difficulty": "Střední",
-      "price_per_portion_czk": 48,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["pasta", "vegetarian", "baked"],
-      "allergens": ["gluten", "dairy", "eggs"],
-      "ingredients": [
-        {"name": "Lasagne pláty", "amount": "250g", "category": "pantry"},
-        {"name": "Mražený špenát sekaný", "amount": "400g", "category": "vegetables"},
-        {"name": "Ricotta nebo tvaroh", "amount": "250g", "category": "dairy"},
-        {"name": "Mozzarella", "amount": "150g", "category": "dairy"},
-        {"name": "Česnek", "amount": "2 stroužky", "category": "vegetables"},
-        {"name": "Máslo a mouka na bešamel", "amount": "30g + 2 lžíce", "category": "dairy"}
-      ],
-      "steps": [
-        "Připrav bešamel z másla, mouky a mléka",
-        "Špenát rozmraz, orestuj s česnekem a smíchej s ricottou",
-        "Do pekáče vrstvi bešamel, pláty lasagní a špenátovou směs",
-        "Nahoru dej mozzarellu",
-        "Peč 35–40 minut na 180°C"
-      ]
-    },
-    {
-      "id": 61,
-      "name": "Jednoduchá kuřecí paella",
-      "category": "mediterranean",
-      "time_minutes": 40,
-      "difficulty": "Střední",
-      "price_per_portion_czk": 46,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["mediterranean", "rice", "one_pan"],
-      "allergens": [],
-      "ingredients": [
-        {"name": "Kuřecí stehenní řízky", "amount": "400g", "category": "meat"},
-        {"name": "Rýže (nejlépe kulatozrnná)", "amount": "300g", "category": "pantry"},
-        {"name": "Vývar", "amount": "700ml", "category": "pantry"},
-        {"name": "Paprika", "amount": "1ks", "category": "vegetables"},
-        {"name": "Hrášek mražený", "amount": "150g", "category": "vegetables"},
-        {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
-        {"name": "Šafrán nebo kurkuma (pro barvu)", "amount": "1/2 lžičky", "category": "pantry"}
-      ],
-      "steps": [
-        "Na pánvi orestuj cibuli a kuřecí kousky",
-        "Přidej rýži a krátce opraž",
-        "Přilij vývar a koření, přidej papriku a hrášek",
-        "Vař na mírném ohni cca 20 minut, dokud rýže nenasákne tekutinu",
-        "Nech 5 minut odpočinout pod pokličkou"
-      ]
-    },
-    {
-      "id": 62,
-      "name": "Gnocchi se smetanovou omáčkou a šunkou",
-      "category": "pasta",
-      "time_minutes": 20,
-      "difficulty": "Velmi snadné",
-      "price_per_portion_czk": 38,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["pasta", "quick", "italian"],
-      "allergens": ["gluten", "dairy"],
-      "ingredients": [
-        {"name": "Bramborové gnocchi (kupované)", "amount": "500g", "category": "pantry"},
-        {"name": "Šunka", "amount": "150g", "category": "meat"},
-        {"name": "Smetana na vaření", "amount": "200ml", "category": "dairy"},
-        {"name": "Parmazán nebo tvrdý sýr", "amount": "50g", "category": "dairy"},
-        {"name": "Máslo", "amount": "20g", "category": "dairy"}
-      ],
-      "steps": [
-        "Uvař gnocchi dle návodu",
-        "Na másle orestuj na kousky nakrájenou šunku",
-        "Přilij smetanu a krátce povař",
-        "Vmíchej gnocchi a sýr, dochuť",
-        "Podávej ihned"
-      ]
-    },
-    {
-      "id": 63,
-      "name": "Jednoduchý poké bowl s lososem",
-      "category": "asian",
-      "time_minutes": 30,
-      "difficulty": "Střední",
-      "price_per_portion_czk": 58,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["asian", "bowl", "healthy"],
-      "allergens": ["fish", "soy"],
-      "ingredients": [
-        {"name": "Uvařená rýže (ideálně sushi rýže)", "amount": "400g", "category": "pantry"},
-        {"name": "Uzený nebo lehce zauzený losos", "amount": "300g", "category": "fish"},
-        {"name": "Okurka", "amount": "1ks", "category": "vegetables"},
-        {"name": "Mrkev", "amount": "1ks", "category": "vegetables"},
-        {"name": "Avokádo (volitelné)", "amount": "1ks", "category": "vegetables"},
-        {"name": "Sójová omáčka", "amount": "3 lžíce", "category": "pantry"}
-      ],
-      "steps": [
-        "Uvař rýži a nech lehce vychladnout",
-        "Lososa nakrájej na kousky",
-        "Zeleninu nakrájej na proužky nebo kostky",
-        "Do misek dej rýži, navrch lososa a zeleninu",
-        "Zakápni sójovou omáčkou a podávej"
-      ]
-    },
-    {
-      "id": 64,
-      "name": "Pad Thai s kuřetem (zjednodušené)",
-      "category": "asian",
-      "time_minutes": 30,
-      "difficulty": "Střední",
-      "price_per_portion_czk": 44,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["asian", "noodles", "stir_fry"],
-      "allergens": ["eggs", "soy"],
-      "ingredients": [
-        {"name": "Rýžové nudle", "amount": "300g", "category": "pantry"},
-        {"name": "Kuřecí prsa", "amount": "300g", "category": "meat"},
-        {"name": "Vejce", "amount": "2ks", "category": "dairy"},
-        {"name": "Mrkev", "amount": "1ks", "category": "vegetables"},
-        {"name": "Jarní cibulka", "amount": "3ks", "category": "vegetables"},
-        {"name": "Sójová omáčka", "amount": "3 lžíce", "category": "pantry"},
-        {"name": "Citron nebo limetka", "amount": "1ks", "category": "vegetables"}
-      ],
-      "steps": [
-        "Nudle namoč a uvař dle návodu",
-        "Kuře nakrájej na proužky a opeč na pánvi",
-        "Přidej našlehaná vejce, míchej do zatuhnutí",
-        "Vmíchej nudle, mrkev na proužky, jarní cibulku a sójovou omáčku",
-        "Podávej zakápnuté citronem/limetkou"
-      ]
-    },
-    {
-      "id": 65,
-      "name": "Falafel v pita chlebu",
-      "category": "mediterranean",
-      "time_minutes": 35,
-      "difficulty": "Střední",
-      "price_per_portion_czk": 34,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["vegetarian", "mediterranean", "street_food"],
-      "allergens": ["gluten"],
-      "ingredients": [
-        {"name": "Cizrna vařená nebo z plechovky", "amount": "400g", "category": "pantry"},
-        {"name": "Česnek", "amount": "2 stroužky", "category": "vegetables"},
-        {"name": "Petržel", "amount": "1 hrst", "category": "vegetables"},
-        {"name": "Mouka", "amount": "2 lžíce", "category": "pantry"},
-        {"name": "Pita chleby", "amount": "4ks", "category": "pantry"},
-        {"name": "Jogurtový dresink", "amount": "150g", "category": "dairy"},
-        {"name": "Zelenina (rajče, okurka, salát)", "amount": "dle chuti", "category": "vegetables"}
-      ],
-      "steps": [
-        "Cizrnu rozmixuj s česnekem, petrželí, solí a moukou",
-        "Tvaruj malé kuličky nebo placičky",
-        "Osmaž na oleji dozlatova nebo peč v troubě",
-        "Podávej v pita chlebu se zeleninou a jogurtem"
-      ]
-    },
-    {
-      "id": 66,
-      "name": "Bruschetta s rajčaty a bazalkou",
-      "category": "mediterranean",
-      "time_minutes": 15,
-      "difficulty": "Velmi snadné",
-      "price_per_portion_czk": 18,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["starter", "italian", "vegetarian"],
-      "allergens": ["gluten"],
-      "ingredients": [
-        {"name": "Bageta", "amount": "1ks", "category": "pantry"},
-        {"name": "Rajčata", "amount": "4ks", "category": "vegetables"},
-        {"name": "Česnek", "amount": "1 stroužek", "category": "vegetables"},
-        {"name": "Bazalka", "amount": "1 hrst", "category": "vegetables"},
-        {"name": "Olivový olej", "amount": "2 lžíce", "category": "pantry"}
-      ],
-      "steps": [
-        "Rajčata nakrájej na malé kostičky, smíchej s nasekanou bazalkou",
-        "Bagetu nakrájej na plátky a opeč v troubě nebo na pánvi",
-        "Plátky potřete stroužkem česneku a zakápni olejem",
-        "Navrch dej rajčatovou směs a podávej"
-      ]
-    },
-    {
-      "id": 67,
-      "name": "Kuřecí korma (mírné indické kari)",
-      "category": "asian",
-      "time_minutes": 40,
-      "difficulty": "Střední",
-      "price_per_portion_czk": 48,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["indian", "curry", "rice"],
-      "allergens": ["dairy"],
-      "ingredients": [
-        {"name": "Kuřecí stehenní řízky", "amount": "500g", "category": "meat"},
-        {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
-        {"name": "Jogurt bílý", "amount": "150g", "category": "dairy"},
-        {"name": "Smetana", "amount": "100ml", "category": "dairy"},
-        {"name": "Koření kari/korma pasta", "amount": "2 lžíce", "category": "pantry"},
-        {"name": "Rýže", "amount": "300g", "category": "pantry"}
-      ],
-      "steps": [
-        "Na oleji orestuj cibuli",
-        "Přidej na kostky nakrájené maso a opeč",
-        "Přidej koření/pastu, jogurt a trochu vody",
-        "Vař 20–25 minut, nakonec vmíchej smetanu",
-        "Podávej s rýží"
-      ]
-    },
-    {
-      "id": 68,
-      "name": "Turecký kebab na plechu z kuřete",
-      "category": "mediterranean",
-      "time_minutes": 50,
-      "difficulty": "Střední",
-      "price_per_portion_czk": 42,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["mediterranean", "baked", "wraps"],
-      "allergens": ["gluten", "dairy"],
-      "ingredients": [
-        {"name": "Kuřecí stehenní řízky", "amount": "600g", "category": "meat"},
-        {"name": "Jogurt", "amount": "150g", "category": "dairy"},
-        {"name": "Koření gyros/kebab", "amount": "2 lžíce", "category": "pantry"},
-        {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
-        {"name": "Tortilly nebo pita", "amount": "8ks", "category": "pantry"},
-        {"name": "Zelenina (rajče, okurka, salát)", "amount": "dle chuti", "category": "vegetables"}
-      ],
-      "steps": [
-        "Kuře nakrájej na proužky, smíchej s jogurtem, kořením a cibulí, nech 20 minut marinovat",
-        "Rozprostři na plech a peč 25–30 minut na 200°C",
-        "Podávej v tortille nebo pita chlebu se zeleninou a dresinkem"
-      ]
-    },
-    {
-      "id": 69,
-      "name": "Španělská tortilla (bramborová omeleta)",
-      "category": "mediterranean",
-      "time_minutes": 30,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 24,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["spanish", "vegetarian", "pan"],
-      "allergens": ["eggs"],
-      "ingredients": [
-        {"name": "Brambory", "amount": "600g", "category": "vegetables"},
-        {"name": "Vejce", "amount": "6ks", "category": "dairy"},
-        {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
-        {"name": "Olej", "amount": "3 lžíce", "category": "pantry"}
-      ],
-      "steps": [
-        "Brambory nakrájej na tenké plátky, cibuli na proužky",
-        "Na pánvi na oleji pomalu opékej brambory s cibulí do změknutí",
-        "V misce rozšlehej vejce se solí a pepřem",
-        "Smíchej s bramborami, nalij na pánev a opékej na mírném ohni",
-        "Jakmile ztuhne, opatrně obrať nebo dopeč v troubě"
-      ]
-    },
-    {
-      "id": 70,
-      "name": "Polévka Minestrone",
-      "category": "soup",
-      "time_minutes": 35,
-      "difficulty": "Snadné",
-      "price_per_portion_czk": 26,
-      "servings": 4,
-      "kid_friendly": true,
-      "tags": ["italian", "soup", "vegetarian"],
-      "allergens": ["gluten"],
-      "ingredients": [
-        {"name": "Mrkev", "amount": "2ks", "category": "vegetables"},
-        {"name": "Celer řapíkatý nebo bulvový", "amount": "2 řapíky / 1/4 bulvy", "category": "vegetables"},
-        {"name": "Cuketa", "amount": "1/2ks", "category": "vegetables"},
-        {"name": "Rajčata konzervovaná", "amount": "400g", "category": "pantry"},
-        {"name": "Bílé fazole v plechovce", "amount": "300g", "category": "pantry"},
-        {"name": "Malé těstoviny (např. kolínka)", "amount": "100g", "category": "pantry"},
-        {"name": "Vývar", "amount": "1l", "category": "pantry"}
-      ],
-      "steps": [
-        "Zeleninu nakrájej na menší kousky",
-        "V hrnci orestuj zeleninu na oleji pár minut",
-        "Přidej rajčata a vývar, vař 15 minut",
-        "Přidej fazole a těstoviny, vař dalších 8–10 minut",
-        "Dochut solí, pepřem a podávej"
-      ]
-    }
+  {
+    "id": 16,
+    "name": "Kynuté buchty s povidly",
+    "category": "czech_traditional",
+    "time_minutes": 90,
+    "difficulty": "Střední",
+    "price_per_portion_czk": 18,
+    "servings": 6,
+    "kid_friendly": true,
+    "tags": ["sweet", "baked", "czech_traditional"],
+    "allergens": ["gluten", "eggs", "dairy"],
+    "ingredients": [
+      {"name": "Hladká mouka", "amount": "500g", "category": "pantry"},
+      {"name": "Droždí", "amount": "1 kostka", "category": "pantry"},
+      {"name": "Mléko", "amount": "250ml", "category": "dairy"},
+      {"name": "Máslo", "amount": "80g", "category": "dairy"},
+      {"name": "Vejce", "amount": "2ks", "category": "dairy"},
+      {"name": "Povidla", "amount": "200g", "category": "pantry"}
+    ],
+    "steps": [
+      "Z mléka a droždí udělej kvásek",
+      "Smíchej s moukou, vejci a máslem",
+      "Nech kynout 40 minut",
+      "Tvaruj buchty, plň povidly",
+      "Peč 25 minut na 180°C"
+    ]
+  },
+  
+  {
+    "id": 17,
+    "name": "Rajská omáčka s masovými koulemi",
+    "category": "czech_traditional",
+    "time_minutes": 45,
+    "difficulty": "Snadné",
+    "price_per_portion_czk": 34,
+    "servings": 4,
+    "kid_friendly": true,
+    "tags": ["sauce", "czech_traditional"],
+    "allergens": ["gluten", "dairy"],
+    "ingredients": [
+      {"name": "Mleté hovězí", "amount": "400g", "category": "meat"},
+      {"name": "Strouhanka", "amount": "2 lžíce", "category": "pantry"},
+      {"name": "Vejce", "amount": "1ks", "category": "dairy"},
+      {"name": "Rajčatový protlak", "amount": "200g", "category": "pantry"},
+      {"name": "Cukr", "amount": "2 lžíce", "category": "pantry"},
+      {"name": "Máslo", "amount": "30g", "category": "dairy"},
+      {"name": "Hladká mouka", "amount": "1 lžíce", "category": "pantry"},
+      {"name": "Vývar", "amount": "400ml", "category": "pantry"},
+      {"name": "Těstoviny nebo knedlík", "amount": "4 porce", "category": "pantry"}
+    ],
+    "steps": [
+      "Z masa, vejce a strouhanky vytvoř koule",
+      "Orestuj na pánvi do barvy",
+      "Z másla a mouky udělej jíšku",
+      "Přidej protlak, zalij vývarem",
+      "Oslad, povař 10 minut",
+      "Vrať koule, provař 5 minut"
+    ]
+  },
+
+  {
+    "id": 18,
+    "name": "Bramboračka",
+    "category": "czech_traditional",
+    "time_minutes": 35,
+    "difficulty": "Snadné",
+    "price_per_portion_czk": 18,
+    "servings": 4,
+    "kid_friendly": true,
+    "tags": ["soup", "vegetarian", "czech_traditional"],
+    "allergens": [],
+    "ingredients": [
+      {"name": "Brambory", "amount": "400g", "category": "vegetables"},
+      {"name": "Mrkev", "amount": "2ks", "category": "vegetables"},
+      {"name": "Celer", "amount": "1/4ks", "category": "vegetables"},
+      {"name": "Houby sušené", "amount": "1 hrst", "category": "pantry"},
+      {"name": "Majoránka", "amount": "1 lžička", "category": "pantry"},
+      {"name": "Česnek", "amount": "2 stroužky", "category": "vegetables"}
+    ],
+    "steps": [
+      "Namoč houby na 10 minut",
+      "Nakrájej zeleninu a brambory",
+      "Vař 20 minut",
+      "Přidej česnek a majoránku",
+      "Dochut solí, pepřem"
+    ]
+  },
+
+  {
+    "id": 19,
+    "name": "Palačinky s marmeládou",
+    "category": "sweet",
+    "time_minutes": 20,
+    "difficulty": "Velmi snadné",
+    "price_per_portion_czk": 16,
+    "servings": 4,
+    "kid_friendly": true,
+    "tags": ["sweet", "quick"],
+    "allergens": ["gluten", "eggs", "dairy"],
+    "ingredients": [
+      {"name": "Mléko", "amount": "400ml", "category": "dairy"},
+      {"name": "Vejce", "amount": "2ks", "category": "dairy"},
+      {"name": "Hladká mouka", "amount": "200g", "category": "pantry"},
+      {"name": "Máslo", "amount": "20g", "category": "dairy"},
+      {"name": "Marmeláda", "amount": "200g", "category": "pantry"}
+    ],
+    "steps": [
+      "Smíchej těsto z mléka, mouky a vajec",
+      "Smaž tenké palačinky",
+      "Potři marmeládou a sroluj"
+    ]
+  },
+
+  {
+    "id": 20,
+    "name": "Znojemská omáčka",
+    "category": "czech_traditional",
+    "time_minutes": 60,
+    "difficulty": "Střední",
+    "price_per_portion_czk": 42,
+    "servings": 4,
+    "kid_friendly": true,
+    "tags": ["sauce", "czech_traditional"],
+    "allergens": ["gluten"],
+    "ingredients": [
+      {"name": "Hovězí maso", "amount": "500g", "category": "meat"},
+      {"name": "Kyselé okurky", "amount": "4ks", "category": "pantry"},
+      {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
+      {"name": "Mouka", "amount": "1 lžíce", "category": "pantry"},
+      {"name": "Vývar", "amount": "500ml", "category": "pantry"},
+      {"name": "Hořčice", "amount": "1 lžíce", "category": "pantry"}
+    ],
+    "steps": [
+      "Orestuj cibuli, přidej maso",
+      "Zasyp moukou, přidej vývar",
+      "Přidej okurky a hořčici",
+      "Vař 45 minut"
+    ]
+  },
+
+  {
+    "id": 21,
+    "name": "Karbanátky s bramborovou kaší",
+    "category": "czech_traditional",
+    "time_minutes": 45,
+    "difficulty": "Snadné",
+    "price_per_portion_czk": 38,
+    "servings": 4,
+    "kid_friendly": true,
+    "tags": ["fried", "czech_traditional"],
+    "allergens": ["gluten", "eggs", "dairy"],
+    "ingredients": [
+      {"name": "Mleté maso mix", "amount": "500g", "category": "meat"},
+      {"name": "Vejce", "amount": "1ks", "category": "dairy"},
+      {"name": "Strouhanka", "amount": "50g", "category": "pantry"},
+      {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
+      {"name": "Brambory", "amount": "800g", "category": "vegetables"},
+      {"name": "Máslo", "amount": "40g", "category": "dairy"},
+      {"name": "Mléko", "amount": "100ml", "category": "dairy"}
+    ],
+    "steps": [
+      "Smíchej maso s vejcem, cibulí a strouhankou",
+      "Tvaruj karbanátky a smaž 6 minut z každé strany",
+      "Uvař brambory, rozmačkej s máslem a mlékem",
+      "Podávej"
+    ]
+  },
+
+  {
+    "id": 22,
+    "name": "Pečená kachna se zelím",
+    "category": "czech_traditional",
+    "time_minutes": 180,
+    "difficulty": "Snadné",
+    "price_per_portion_czk": 65,
+    "servings": 4,
+    "kid_friendly": false,
+    "tags": ["roasted", "czech_traditional"],
+    "allergens": ["gluten"],
+    "ingredients": [
+      {"name": "Kachna", "amount": "1ks", "category": "meat"},
+      {"name": "Kysané zelí", "amount": "500g", "category": "vegetables"},
+      {"name": "Kmín", "amount": "1 lžička", "category": "pantry"},
+      {"name": "Houskový knedlík", "amount": "8 plátků", "category": "pantry"}
+    ],
+    "steps": [
+      "Kachnu osol a okmínuj",
+      "Peč 2,5 hodiny na 160°C",
+      "Podus zelí",
+      "Podávej s knedlíkem"
+    ]
+  },
+
+  {
+    "id": 23,
+    "name": "Krupicová kaše",
+    "category": "sweet",
+    "time_minutes": 10,
+    "difficulty": "Velmi snadné",
+    "price_per_portion_czk": 10,
+    "servings": 4,
+    "kid_friendly": true,
+    "tags": ["sweet", "quick"],
+    "allergens": ["dairy", "gluten"],
+    "ingredients": [
+      {"name": "Mléko", "amount": "1l", "category": "dairy"},
+      {"name": "Krupice", "amount": "80g", "category": "pantry"},
+      {"name": "Máslo", "amount": "20g", "category": "dairy"},
+      {"name": "Cukr", "amount": "2 lžíce", "category": "pantry"},
+      {"name": "Kakao", "amount": "1 lžička", "category": "pantry"}
+    ],
+    "steps": [
+      "Přiveď mléko k varu",
+      "Zašlehej krupici",
+      "Vař 3 minuty",
+      "Oslad, přidej kakao a máslo"
+    ]
+  },
+
+  {
+    "id": 24,
+    "name": "Halušky se zelím a slaninou",
+    "category": "czech_traditional",
+    "time_minutes": 30,
+    "difficulty": "Snadné",
+    "price_per_portion_czk": 29,
+    "servings": 4,
+    "kid_friendly": true,
+    "tags": ["czech_traditional", "quick"],
+    "allergens": ["gluten", "eggs"],
+    "ingredients": [
+      {"name": "Brambory", "amount": "600g", "category": "vegetables"},
+      {"name": "Hladká mouka", "amount": "200g", "category": "pantry"},
+      {"name": "Vejce", "amount": "1ks", "category": "dairy"},
+      {"name": "Kysané zelí", "amount": "400g", "category": "vegetables"},
+      {"name": "Slanina", "amount": "100g", "category": "meat"}
+    ],
+    "steps": [
+      "Nastrouhej brambory, přidej mouku a vejce",
+      "Těsto protlač do vroucí vody",
+      "Slaninu orestuj dokřupava",
+      "Podávej halušky se zelím a slaninou"
+    ]
+  },
+
+  {
+    "id": 25,
+    "name": "Kvasnicová polévka",
+    "category": "czech_traditional",
+    "time_minutes": 20,
+    "difficulty": "Velmi snadné",
+    "price_per_portion_czk": 12,
+    "servings": 4,
+    "kid_friendly": true,
+    "tags": ["czech_traditional", "soup", "quick"],
+    "allergens": ["gluten"],
+    "ingredients": [
+      {"name": "Droždí", "amount": "1 kostka", "category": "pantry"},
+      {"name": "Máslo", "amount": "30g", "category": "dairy"},
+      {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
+      {"name": "Mouka", "amount": "1 lžíce", "category": "pantry"},
+      {"name": "Voda", "amount": "1l", "category": "other"}
+    ],
+    "steps": [
+      "Orestuj cibuli na másle",
+      "Přidej droždí, nechej zpěnit",
+      "Zasyp moukou",
+      "Zalij vodou a povař 10 minut"
+    ]
+  },
+
+  {
+    "id": 26,
+    "name": "Pečené žampiony plněné sýrem",
+    "category": "quick",
+    "time_minutes": 25,
+    "difficulty": "Snadné",
+    "price_per_portion_czk": 22,
+    "servings": 4,
+    "kid_friendly": true,
+    "tags": ["quick", "vegetarian", "baked"],
+    "allergens": ["dairy"],
+    "ingredients": [
+      {"name": "Žampiony velké", "amount": "8ks", "category": "vegetables"},
+      {"name": "Sýr eidam", "amount": "120g", "category": "dairy"},
+      {"name": "Česnek", "amount": "1 stroužek", "category": "vegetables"},
+      {"name": "Olej", "amount": "1 lžíce", "category": "pantry"}
+    ],
+    "steps": [
+      "Odstraň nožičky ze žampionů",
+      "Smíchej sýr s česnekem",
+      "Napln klobouky",
+      "Peč 15 minut na 180°C"
+    ]
+  },
+
+  {
+    "id": 27,
+    "name": "Šunkofleky",
+    "category": "czech_traditional",
+    "time_minutes": 35,
+    "difficulty": "Snadné",
+    "price_per_portion_czk": 30,
+    "servings": 4,
+    "kid_friendly": true,
+    "tags": ["baked", "czech_traditional"],
+    "allergens": ["gluten", "eggs", "dairy"],
+    "ingredients": [
+      {"name": "Těstoviny fleky", "amount": "400g", "category": "pantry"},
+      {"name": "Šunka", "amount": "200g", "category": "meat"},
+      {"name": "Vejce", "amount": "3ks", "category": "dairy"},
+      {"name": "Mléko", "amount": "100ml", "category": "dairy"}
+    ],
+    "steps": [
+      "Uvař těstoviny",
+      "Smíchej se šunkou",
+      "Rozšlehej vejce s mlékem",
+      "Zalij a peč 25 minut"
+    ]
+  },
+
+  {
+    "id": 28,
+    "name": "Zapečené brambory se smetanou",
+    "category": "czech_traditional",
+    "time_minutes": 55,
+    "difficulty": "Snadné",
+    "price_per_portion_czk": 28,
+    "servings": 4,
+    "kid_friendly": true,
+    "tags": ["baked", "comfort"],
+    "allergens": ["dairy"],
+    "ingredients": [
+      {"name": "Brambory", "amount": "800g", "category": "vegetables"},
+      {"name": "Smetana", "amount": "250ml", "category": "dairy"},
+      {"name": "Sýr eidam", "amount": "100g", "category": "dairy"},
+      {"name": "Česnek", "amount": "2 stroužky", "category": "vegetables"}
+    ],
+    "steps": [
+      "Nakrájej brambory na plátky",
+      "Vrstvi s česnekem a smetanou",
+      "Posyp sýrem",
+      "Peč 40 minut"
+    ]
+  },
+
+  {
+    "id": 29,
+    "name": "Hovězí polévka s nudlemi",
+    "category": "czech_traditional",
+    "time_minutes": 120,
+    "difficulty": "Snadné",
+    "price_per_portion_czk": 22,
+    "servings": 6,
+    "kid_friendly": true,
+    "tags": ["soup", "czech_traditional"],
+    "allergens": ["gluten", "eggs"],
+    "ingredients": [
+      {"name": "Hovězí kosti a maso", "amount": "600g", "category": "meat"},
+      {"name": "Mrkev", "amount": "2ks", "category": "vegetables"},
+      {"name": "Celer", "amount": "1/4ks", "category": "vegetables"},
+      {"name": "Petržel", "amount": "1ks", "category": "vegetables"},
+      {"name": "Vaječné nudle", "amount": "150g", "category": "pantry"}
+    ],
+    "steps": [
+      "Vař maso s kořením 90 minut",
+      "Přidej zeleninu",
+      "Povař dalších 20 minut",
+      "Podávej s nudlemi"
+    ]
+  },
+
+  {
+    "id": 30,
+    "name": "Kuřecí perkelt",
+    "category": "czech_traditional",
+    "time_minutes": 45,
+    "difficulty": "Snadné",
+    "price_per_portion_czk": 36,
+    "servings": 4,
+    "kid_friendly": true,
+    "tags": ["sauce", "czech_traditional"],
+    "allergens": [],
+    "ingredients": [
+      {"name": "Kuřecí stehenní řízky", "amount": "500g", "category": "meat"},
+      {"name": "Cibule", "amount": "2ks", "category": "vegetables"},
+      {"name": "Paprika mletá", "amount": "1 lžíce", "category": "pantry"},
+      {"name": "Rajčatový protlak", "amount": "1 lžíce", "category": "pantry"},
+      {"name": "Vývar", "amount": "300ml", "category": "pantry"}
+    ],
+    "steps": [
+      "Cibuli orestuj",
+      "Přidej maso, zprudka opeč",
+      "Přidej papriku a protlak",
+      "Zalij vývarem a vař 30 minut"
+    ]
+  },
+
+  {
+    "id": 31,
+    "name": "Vaječná tlačenka",
+    "category": "czech_traditional",
+    "time_minutes": 25,
+    "difficulty": "Snadné",
+    "price_per_portion_czk": 20,
+    "servings": 6,
+    "kid_friendly": true,
+    "tags": ["czech_traditional", "cold"],
+    "allergens": ["eggs", "dairy"],
+    "ingredients": [
+      {"name": "Vejce", "amount": "6ks", "category": "dairy"},
+      {"name": "Šunka", "amount": "200g", "category": "meat"},
+      {"name": "Sýr eidam", "amount": "150g", "category": "dairy"},
+      {"name": "Majonéza", "amount": "3 lžíce", "category": "pantry"},
+      {"name": "Želatina", "amount": "2 sáčky", "category": "pantry"}
+    ],
+    "steps": [
+      "Uvař vejce natvrdo",
+      "Nakrájej vše na kostky",
+      "Smíchej s majonézou",
+      "Zalij želatinou a nech ztuhnout"
+    ]
+  },
+
+  {
+    "id": 32,
+    "name": "Kuřecí nudličky na paprice",
+    "category": "quick",
+    "time_minutes": 25,
+    "difficulty": "Velmi snadné",
+    "price_per_portion_czk": 32,
+    "servings": 4,
+    "kid_friendly": true,
+    "tags": ["quick", "sauce"],
+    "allergens": ["dairy"],
+    "ingredients": [
+      {"name": "Kuřecí prsa", "amount": "400g", "category": "meat"},
+      {"name": "Paprika mletá", "amount": "1 lžíce", "category": "pantry"},
+      {"name": "Smetana", "amount": "200ml", "category": "dairy"},
+      {"name": "Cibule", "amount": "1ks", "category": "vegetables"}
+    ],
+    "steps": [
+      "Orestuj cibuli",
+      "Přidej kuře, opeč",
+      "Přidej papriku a smetanu",
+      "Vař 10 minut"
+    ]
+  },
+
+  {
+    "id": 33,
+    "name": "Bramborové knedlíky plněné uzeným",
+    "category": "czech_traditional",
+    "time_minutes": 50,
+    "difficulty": "Střední",
+    "price_per_portion_czk": 34,
+    "servings": 4,
+    "kid_friendly": true,
+    "tags": ["czech_traditional"],
+    "allergens": ["gluten", "eggs"],
+    "ingredients": [
+      {"name": "Brambory", "amount": "800g", "category": "vegetables"},
+      {"name": "Hladká mouka", "amount": "200g", "category": "pantry"},
+      {"name": "Vejce", "amount": "1ks", "category": "dairy"},
+      {"name": "Uzené maso", "amount": "200g", "category": "meat"}
+    ],
+    "steps": [
+      "Uvař brambory a nastrouhej",
+      "Přidej mouku a vejce",
+      "Tvaruj knedlíky s uzeným uvnitř",
+      "Vař 10 minut"
+    ]
+  },
+
+  {
+    "id": 34,
+    "name": "Rýžový nákyp s meruňkami",
+    "category": "sweet",
+    "time_minutes": 60,
+    "difficulty": "Snadné",
+    "price_per_portion_czk": 24,
+    "servings": 6,
+    "kid_friendly": true,
+    "tags": ["sweet", "baked"],
+    "allergens": ["dairy", "eggs"],
+    "ingredients": [
+      {"name": "Rýže", "amount": "300g", "category": "pantry"},
+      {"name": "Mléko", "amount": "700ml", "category": "dairy"},
+      {"name": "Vejce", "amount": "3ks", "category": "dairy"},
+      {"name": "Máslo", "amount": "40g", "category": "dairy"},
+      {"name": "Cukr", "amount": "2 lžíce", "category": "pantry"},
+      {"name": "Meruňky kompot", "amount": "300g", "category": "pantry"}
+    ],
+    "steps": [
+      "Uvař rýži v mléce",
+      "Smíchej s vejci a cukrem",
+      "Přidej meruňky",
+      "Peč 30 minut"
+    ]
+  },
+
+  {
+    "id": 35,
+    "name": "Smažené žampiony",
+    "category": "czech_traditional",
+    "time_minutes": 20,
+    "difficulty": "Velmi snadné",
+    "price_per_portion_czk": 24,
+    "servings": 4,
+    "kid_friendly": true,
+    "tags": ["fried", "vegetarian"],
+    "allergens": ["gluten", "eggs"],
+    "ingredients": [
+      {"name": "Žampiony", "amount": "500g", "category": "vegetables"},
+      {"name": "Vejce", "amount": "2ks", "category": "dairy"},
+      {"name": "Mouka", "amount": "100g", "category": "pantry"},
+      {"name": "Strouhanka", "amount": "100g", "category": "pantry"},
+      {"name": "Olej", "amount": "200ml", "category": "pantry"}
+    ],
+    "steps": [
+      "Očisti žampiony",
+      "Obal v trojobalu",
+      "Smaž 3 minuty"
+    ]
+  },
+
+  {
+    "id": 36,
+    "name": "Šťouchané brambory se slaninou",
+    "category": "quick",
+    "time_minutes": 20,
+    "difficulty": "Velmi snadné",
+    "price_per_portion_czk": 18,
+    "servings": 4,
+    "kid_friendly": true,
+    "tags": ["quick", "czech_traditional"],
+    "allergens": [],
+    "ingredients": [
+      {"name": "Brambory", "amount": "800g", "category": "vegetables"},
+      {"name": "Slanina", "amount": "150g", "category": "meat"},
+      {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
+      {"name": "Máslo", "amount": "40g", "category": "dairy"}
+    ],
+    "steps": [
+      "Uvař brambory",
+      "Orestuj slaninu s cibulí",
+      "Rozšťouchej brambory s máslem",
+      "Vmíchej slaninu"
+    ]
+  },
+
+  {
+    "id": 37,
+    "name": "Krupicové noky do polévky",
+    "category": "quick",
+    "time_minutes": 15,
+    "difficulty": "Velmi snadné",
+    "price_per_portion_czk": 6,
+    "servings": 4,
+    "kid_friendly": true,
+    "tags": ["quick", "czech_traditional"],
+    "allergens": ["gluten", "eggs"],
+    "ingredients": [
+      {"name": "Vejce", "amount": "1ks", "category": "dairy"},
+      {"name": "Krupice", "amount": "4 lžíce", "category": "pantry"},
+      {"name": "Máslo", "amount": "1 lžíce", "category": "dairy"}
+    ],
+    "steps": [
+      "Smíchej ingredience",
+      "Tvaruj noky lžičkou",
+      "Vař 3 minuty"
+    ]
+  },
+
+  {
+    "id": 38,
+    "name": "Česká čočka na kyselo",
+    "category": "czech_traditional",
+    "time_minutes": 40,
+    "difficulty": "Snadné",
+    "price_per_portion_czk": 18,
+    "servings": 4,
+    "kid_friendly": true,
+    "tags": ["czech_traditional", "vegetarian"],
+    "allergens": [],
+    "ingredients": [
+      {"name": "Čočka hnědá", "amount": "300g", "category": "pantry"},
+      {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
+      {"name": "Ocet", "amount": "1 lžíce", "category": "pantry"},
+      {"name": "Cukr", "amount": "1 lžíce", "category": "pantry"}
+    ],
+    "steps": [
+      "Namoč čočku na 20 minut",
+      "Uvař do měkka",
+      "Orestuj cibuli, vmíchej do čočky",
+      "Dochut octem a cukrem"
+    ]
+  },
+
+  {
+    "id": 39,
+    "name": "Knedlíky z rohlíků",
+    "category": "czech_traditional",
+    "time_minutes": 30,
+    "difficulty": "Snadné",
+    "price_per_portion_czk": 10,
+    "servings": 4,
+    "kid_friendly": true,
+    "tags": ["czech_traditional"],
+    "allergens": ["gluten", "eggs", "dairy"],
+    "ingredients": [
+      {"name": "Rohlíky", "amount": "4ks", "category": "pantry"},
+      {"name": "Mléko", "amount": "200ml", "category": "dairy"},
+      {"name": "Vejce", "amount": "1ks", "category": "dairy"},
+      {"name": "Mouka", "amount": "3 lžíce", "category": "pantry"}
+    ],
+    "steps": [
+      "Nakrájej rohlíky",
+      "Zalij mlékem a vejcem",
+      "Přidej mouku",
+      "Tvaruj a vař 15 minut"
+    ]
+  },
+
+  {
+    "id": 40,
+    "name": "Sekaná pečeně",
+    "category": "czech_traditional",
+    "time_minutes": 70,
+    "difficulty": "Snadné",
+    "price_per_portion_czk": 30,
+    "servings": 6,
+    "kid_friendly": true,
+    "tags": ["baked", "meat"],
+    "allergens": ["gluten", "eggs"],
+    "ingredients": [
+      {"name": "Mleté maso mix", "amount": "700g", "category": "meat"},
+      {"name": "Strouhanka", "amount": "3 lžíce", "category": "pantry"},
+      {"name": "Cibule", "amount": "1ks", "category": "vegetables"},
+      {"name": "Vejce", "amount": "1ks", "category": "dairy"}
+    ],
+    "steps": [
+      "Smíchej vše dohromady",
+      "Vytvaruj šišku",
+      "Peč 50 minut na 180°C"
+    ]
+  }
   ]
 }
