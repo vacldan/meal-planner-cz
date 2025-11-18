@@ -8,33 +8,14 @@ from meal_planner import generate_meal_plan
 from pdf_generator import generate_pdf
 import os
 
-# Mapování český → anglický pro kategorie
-CATEGORY_MAP_CZ_TO_EN = {
-    "Těstoviny": "pasta",
-    "Tradiční česká": "czech_traditional",
-    "Rychlá jídla": "quick",
-    "Comfort food": "comfort"
-}
+# Kategorie receptů
+CATEGORIES = ["Těstoviny", "Tradiční česká", "Rychlá jídla", "Comfort food"]
 
-CATEGORY_MAP_EN_TO_CZ = {v: k for k, v in CATEGORY_MAP_CZ_TO_EN.items()}
+# Alergeny
+ALLERGENS = ["Lepek", "Mléčné výrobky", "Vejce", "Sója", "Ořechy"]
 
-# Mapování pro alergeny
-ALLERGEN_MAP_CZ_TO_EN = {
-    "Lepek": "gluten",
-    "Mléčné výrobky": "dairy",
-    "Vejce": "eggs",
-    "Sója": "soy",
-    "Ořechy": "nuts"
-}
-
-# Mapování pro potraviny, které nechceš
-DISLIKE_MAP_CZ_TO_EN = {
-    "Ryby": "fish",
-    "Houby": "mushrooms",
-    "Mořské plody": "seafood",
-    "Vnitřnosti": "liver",
-    "Vepřové": "pork"
-}
+# Potraviny, které nechceš
+DISLIKES = ["Ryby", "Houby", "Mořské plody", "Vnitřnosti", "Vepřové"]
 
 # Page config
 st.set_page_config(
@@ -59,9 +40,9 @@ household_size = st.sidebar.number_input(
 )
 
 st.sidebar.subheader("Kategorie, které máš rád")
-likes_cz = st.sidebar.multiselect(
+likes = st.sidebar.multiselect(
     "Vyber kategorie",
-    list(CATEGORY_MAP_CZ_TO_EN.keys()),
+    CATEGORIES,
     default=["Těstoviny", "Tradiční česká", "Rychlá jídla"]
 )
 
@@ -73,15 +54,15 @@ time_budget = st.sidebar.select_slider(
 )
 
 st.sidebar.subheader("Alergeny a omezení")
-allergies_cz = st.sidebar.multiselect(
+allergies = st.sidebar.multiselect(
     "Alergie",
-    list(ALLERGEN_MAP_CZ_TO_EN.keys()),
+    ALLERGENS,
     default=[]
 )
 
-dislikes_cz = st.sidebar.multiselect(
+dislikes = st.sidebar.multiselect(
     "Co nechceš v jídle",
-    list(DISLIKE_MAP_CZ_TO_EN.keys()),
+    DISLIKES,
     default=["Ryby"]
 )
 
@@ -90,19 +71,14 @@ kid_friendly = st.sidebar.checkbox("Jen jídla vhodná pro děti", value=True)
 # Generate button
 if st.sidebar.button("🚀 Generuj Jídelníček", type="primary"):
 
-    # Convert Czech selections to English for backend
-    likes_en = [CATEGORY_MAP_CZ_TO_EN[cat] for cat in likes_cz]
-    allergies_en = [ALLERGEN_MAP_CZ_TO_EN[allergen] for allergen in allergies_cz]
-    dislikes_en = [DISLIKE_MAP_CZ_TO_EN[dislike] for dislike in dislikes_cz]
-
-    # Prepare preferences
+    # Prepare preferences - vše česky
     preferences = {
         "household_size": household_size,
-        "allergies": allergies_en,
-        "likes": likes_en,
+        "allergies": [a.lower() for a in allergies],
+        "likes": [l.lower() for l in likes],
         "time_budget": time_budget,
         "price_budget": "30-70",
-        "dislikes": dislikes_en,
+        "dislikes": [d.lower() for d in dislikes],
         "kid_friendly_required": kid_friendly
     }
 

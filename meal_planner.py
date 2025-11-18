@@ -33,13 +33,30 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
     """Filter recipes based on user preferences"""
     filtered = []
 
-    # Mapování anglických dislike na české varianty
+    # Mapování českých kategorií na anglické v recipes.json
+    category_mapping = {
+        'těstoviny': 'pasta',
+        'tradiční česká': 'czech_traditional',
+        'rychlá jídla': 'quick',
+        'comfort food': 'comfort'
+    }
+
+    # Mapování českých alergenů na anglické v recipes.json
+    allergen_mapping = {
+        'lepek': 'gluten',
+        'mléčné výrobky': 'dairy',
+        'vejce': 'eggs',
+        'sója': 'soy',
+        'ořechy': 'nuts'
+    }
+
+    # Mapování českých omezení na varianty v receptech
     dislike_mapping = {
-        'fish': ['ryb', 'kapr', 'pstruh', 'losos'],
-        'mushrooms': ['houb', 'žampion', 'hřib'],
-        'seafood': ['krevet', 'mořsk', 'kalamár'],
-        'liver': ['játr', 'vnitřnos', 'dršť', 'ledvin', 'srdce', 'jazyk'],
-        'pork': ['vepř', 'bůček', 'kýta', 'plec', 'krkovice']
+        'ryby': ['ryb', 'kapr', 'pstruh', 'losos', 'sleď', 'treska'],
+        'houby': ['houb', 'žampion', 'hřib', 'bedl', 'liška'],
+        'mořské plody': ['krevet', 'mořsk', 'kalamár', 'chobotnic', 'slávk'],
+        'vnitřnosti': ['játr', 'vnitřnos', 'dršť', 'ledvin', 'srdce', 'jazyk'],
+        'vepřové': ['vepř', 'bůček', 'kýta', 'plec', 'krkovice', 'žebírk']
     }
 
     for recipe in recipes:
@@ -52,37 +69,42 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
         if preferences.get('kid_friendly_required') and not recipe['kid_friendly']:
             continue
 
-        # Check dislikes (ingredients) - s českým mapováním
-        dislikes_en = [d.lower() for d in preferences.get('dislikes', [])]
+        # Check dislikes (ingredients) - vše česky
+        dislikes = [d.lower() for d in preferences.get('dislikes', [])]
 
-        # Převeď anglické dislikes na české varianty
-        dislikes_cz = []
-        for dislike in dislikes_en:
+        # Rozšíř české dislikes na všechny varianty
+        dislikes_expanded = []
+        for dislike in dislikes:
             if dislike in dislike_mapping:
-                dislikes_cz.extend(dislike_mapping[dislike])
+                dislikes_expanded.extend(dislike_mapping[dislike])
             else:
-                dislikes_cz.append(dislike)
+                dislikes_expanded.append(dislike)
 
         # Check v názvu receptu
         recipe_name_lower = recipe['name'].lower()
-        if any(dislike in recipe_name_lower for dislike in dislikes_cz):
+        if any(dislike in recipe_name_lower for dislike in dislikes_expanded):
             continue
 
         # Check v ingrediencích
         recipe_ingredients = ' '.join([ing['name'].lower() for ing in recipe['ingredients']])
-        if any(dislike in recipe_ingredients for dislike in dislikes_cz):
+        if any(dislike in recipe_ingredients for dislike in dislikes_expanded):
             continue
 
-        # Check allergens
-        user_allergens = [a.lower() for a in preferences.get('allergies', [])]
+        # Check allergens - převeď české na anglické
+        user_allergens_cz = [a.lower() for a in preferences.get('allergies', [])]
+        user_allergens_en = [allergen_mapping.get(a, a) for a in user_allergens_cz]
         recipe_allergens = [a.lower() for a in recipe['allergens']]
-        if any(allergen in recipe_allergens for allergen in user_allergens):
+        if any(allergen in recipe_allergens for allergen in user_allergens_en):
             continue
 
-        # Check category preference
-        if recipe['category'] in preferences.get('likes', []):
-            filtered.append(recipe)
-        elif not preferences.get('likes'):  # If no preference, include all
+        # Check category preference - převeď české na anglické
+        user_likes_cz = [l.lower() for l in preferences.get('likes', [])]
+        user_likes_en = [category_mapping.get(l, l) for l in user_likes_cz]
+
+        if user_likes_en:
+            if recipe['category'] in user_likes_en:
+                filtered.append(recipe)
+        else:  # If no preference, include all
             filtered.append(recipe)
 
     return filtered
