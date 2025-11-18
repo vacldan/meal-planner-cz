@@ -255,6 +255,13 @@ if st.sidebar.button("🚀 Generuj Jídelníček", type="primary", use_container
             st.session_state.meal_plan = meal_plan
             st.session_state.preferences = preferences
 
+            # Load all filtered recipes for swap functionality
+            from meal_planner import load_recipes, filter_recipes, load_desserts
+            all_recipes = load_recipes()
+            filtered = filter_recipes(all_recipes, preferences)
+            st.session_state.filtered_recipes = filtered
+            st.session_state.all_desserts = load_desserts()
+
             # Generate PDF
             try:
                 pdf_path = generate_pdf(meal_plan, "generated_meal_plan.pdf")
@@ -327,6 +334,7 @@ if "meal_plan" in st.session_state:
 
     # Weekly menu (multiple weeks support)
     st.header("📅 Menu")
+    st.info("💡 **Tip:** Nelíbí se ti nějaký recept? Klikni na tlačítko **🔄 Vyměň** vedle názvu dne a vygeneruje se ti jiný recept!")
 
     days_czech = {
         'monday': 'Pondělí',
@@ -352,7 +360,82 @@ if "meal_plan" in st.session_state:
 
             recipe = week_meals[day_en]
 
-            with st.expander(f"**{day_cz}**: {recipe['name']} ({recipe['time_minutes']} min, {recipe['price_per_portion_czk']} Kč/porce)"):
+            # Create columns for recipe title and swap button
+            col_title, col_swap = st.columns([4, 1])
+
+            with col_title:
+                expander_title = f"**{day_cz}**: {recipe['name']} ({recipe['time_minutes']} min, {recipe['price_per_portion_czk']} Kč/porce)"
+
+            with col_swap:
+                swap_key = f"swap_{week_idx}_{day_en}"
+                if st.button("🔄 Vyměň", key=swap_key, help="Vyměnit za jiný recept"):
+                    # Get current week and day preferences
+                    from meal_planner import get_main_protein, generate_shopping_list, calculate_total_cost
+                    from collections import defaultdict
+
+                    # Get alternatives
+                    if 'filtered_recipes' in st.session_state:
+                        filtered = st.session_state.filtered_recipes
+
+                        # Get used recipe IDs in this week
+                        used_ids = [r['id'] for r in week_meals.values() if isinstance(r, dict) and 'id' in r]
+
+                        # Count proteins in this week (excluding current day)
+                        protein_counts = defaultdict(int)
+                        for d, r in week_meals.items():
+                            if d != day_en and d != 'sunday_dessert' and isinstance(r, dict):
+                                protein = get_main_protein(r)
+                                protein_counts[protein] += 1
+
+                        # Filter alternatives: not used, respects protein diversity
+                        alternatives = []
+                        for r in filtered:
+                            if r['id'] in used_ids:
+                                continue
+
+                            # Check time budget for this day
+                            prefs = st.session_state.preferences
+                            daily_budgets = prefs.get('daily_time_budgets')
+                            if daily_budgets and day_en in daily_budgets:
+                                time_range = daily_budgets[day_en]
+                            else:
+                                time_range = prefs['time_budget']
+
+                            time_min, time_max = map(int, time_range.split('-'))
+                            if not (time_min <= r['time_minutes'] <= time_max):
+                                continue
+
+                            # Check protein diversity (max 3x)
+                            r_protein = get_main_protein(r)
+                            if protein_counts[r_protein] >= 3:
+                                continue
+
+                            alternatives.append(r)
+
+                        if alternatives:
+                            import random
+                            new_recipe = random.choice(alternatives)
+
+                            # Update meal plan
+                            st.session_state.meal_plan['weeks'][week_idx - 1][day_en] = new_recipe
+
+                            # Re-generate shopping list and costs
+                            weeks_with_desserts = st.session_state.meal_plan['weeks']
+                            have_at_home = st.session_state.preferences.get('have_at_home', [])
+
+                            shopping_list = generate_shopping_list(weeks_with_desserts, have_at_home)
+                            total_cost = calculate_total_cost(weeks_with_desserts)
+                            total_portions = sum(sum(r['servings'] for r in w.values() if isinstance(r, dict)) for w in weeks_with_desserts)
+
+                            st.session_state.meal_plan['shopping_list'] = shopping_list
+                            st.session_state.meal_plan['total_cost_czk'] = total_cost
+                            st.session_state.meal_plan['cost_per_portion_czk'] = round(total_cost / total_portions, 1) if total_portions > 0 else 0
+
+                            st.rerun()
+                        else:
+                            st.warning("⚠️ Nenalezeny žádné alternativní recepty s těmito preferencemi")
+
+            with st.expander(expander_title):
 
                 col1, col2 = st.columns([2, 1])
 
@@ -404,7 +487,55 @@ if "meal_plan" in st.session_state:
         if 'sunday_dessert' in week_meals:
             dessert = week_meals['sunday_dessert']
 
-            with st.expander(f"🍰 **Dezert k neděli**: {dessert['name']} ({dessert['time_minutes']} min, {dessert['price_per_portion_czk']} Kč/porce)"):
+            # Create columns for dessert title and swap button
+            col_title_d, col_swap_d = st.columns([4, 1])
+
+            with col_title_d:
+                dessert_title = f"🍰 **Dezert k neděli**: {dessert['name']} ({dessert['time_minutes']} min, {dessert['price_per_portion_czk']} Kč/porce)"
+
+            with col_swap_d:
+                swap_dessert_key = f"swap_dessert_{week_idx}"
+                if st.button("🔄 Vyměň", key=swap_dessert_key, help="Vyměnit za jiný dezert"):
+                    if 'all_desserts' in st.session_state:
+                        all_desserts = st.session_state.all_desserts
+
+                        # Get used dessert IDs across all weeks
+                        used_dessert_ids = []
+                        for w in st.session_state.meal_plan['weeks']:
+                            if 'sunday_dessert' in w:
+                                used_dessert_ids.append(w['sunday_dessert']['id'])
+
+                        # Filter alternatives (not used this week)
+                        current_dessert_id = dessert['id']
+                        used_dessert_ids_except_current = [d_id for d_id in used_dessert_ids if d_id != current_dessert_id]
+
+                        alternatives = [d for d in all_desserts if d['id'] not in used_dessert_ids_except_current]
+
+                        if alternatives:
+                            import random
+                            new_dessert = random.choice(alternatives)
+
+                            # Update meal plan
+                            from meal_planner import generate_shopping_list, calculate_total_cost
+                            st.session_state.meal_plan['weeks'][week_idx - 1]['sunday_dessert'] = new_dessert
+
+                            # Re-generate shopping list and costs
+                            weeks_with_desserts = st.session_state.meal_plan['weeks']
+                            have_at_home = st.session_state.preferences.get('have_at_home', [])
+
+                            shopping_list = generate_shopping_list(weeks_with_desserts, have_at_home)
+                            total_cost = calculate_total_cost(weeks_with_desserts)
+                            total_portions = sum(sum(r['servings'] for r in w.values() if isinstance(r, dict)) for w in weeks_with_desserts)
+
+                            st.session_state.meal_plan['shopping_list'] = shopping_list
+                            st.session_state.meal_plan['total_cost_czk'] = total_cost
+                            st.session_state.meal_plan['cost_per_portion_czk'] = round(total_cost / total_portions, 1) if total_portions > 0 else 0
+
+                            st.rerun()
+                        else:
+                            st.warning("⚠️ Nenalezeny žádné alternativní dezerty")
+
+            with st.expander(dessert_title):
 
                 col1, col2 = st.columns([2, 1])
 
