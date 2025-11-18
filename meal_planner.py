@@ -42,12 +42,23 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
     }
 
     # Mapování českých alergenů na anglické v recipes.json
+    # Podporuje i varianty s popisem v závorkách
     allergen_mapping = {
         'lepek': 'gluten',
-        'mléčné výrobky': 'dairy',
+        'korýši': 'shellfish',
         'vejce': 'eggs',
+        'ryby': 'fish',
+        'arašídy': 'peanuts',
         'sója': 'soy',
-        'ořechy': 'nuts'
+        'mléko': 'dairy',
+        'mléko a mléčné výrobky': 'dairy',
+        'ořechy': 'nuts',
+        'celer': 'celery',
+        'hořčice': 'mustard',
+        'sezam': 'sesame',
+        'oxid siřičitý': 'sulfites',
+        'vlčí bob': 'lupin',
+        'měkkýši': 'molluscs'
     }
 
     # Mapování českých omezení na varianty v receptech - rozšířené
@@ -105,7 +116,19 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
 
         # Check allergens - převeď české na anglické
         user_allergens_cz = [a.lower() for a in preferences.get('allergies', [])]
-        user_allergens_en = [allergen_mapping.get(a, a) for a in user_allergens_cz]
+
+        # Extrahuj klíčové slovo před závorkou (např. "Lepek (pšenice)" → "lepek")
+        user_allergens_keys = []
+        for allergen in user_allergens_cz:
+            # Pokud obsahuje závorku, vezmi část před závorkou
+            if '(' in allergen:
+                key = allergen.split('(')[0].strip()
+            else:
+                key = allergen.strip()
+            user_allergens_keys.append(key)
+
+        # Převeď na anglické varianty
+        user_allergens_en = [allergen_mapping.get(key, key) for key in user_allergens_keys]
         recipe_allergens = [a.lower() for a in recipe['allergens']]
         if any(allergen in recipe_allergens for allergen in user_allergens_en):
             continue

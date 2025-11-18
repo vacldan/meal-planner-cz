@@ -11,8 +11,23 @@ import os
 # Kategorie receptů
 CATEGORIES = ["Těstoviny", "Tradiční česká", "Rychlá jídla", "Rodinná klasika"]
 
-# Alergeny
-ALLERGENS = ["Lepek", "Mléčné výrobky", "Vejce", "Sója", "Ořechy"]
+# Alergeny - kompletní seznam 14 hlavních alergenů EU
+ALLERGENS = [
+    "Lepek (pšenice, žito, ječmen, oves)",
+    "Korýši (krevety, humr, krab)",
+    "Vejce",
+    "Ryby",
+    "Arašídy",
+    "Sója",
+    "Mléko a mléčné výrobky",
+    "Ořechy (mandle, lískové, vlašské, kešu)",
+    "Celer",
+    "Hořčice",
+    "Sezam",
+    "Oxid siřičitý (konzervanty E220-E228)",
+    "Vlčí bob (lupina)",
+    "Měkkýši (slávky, chobotnice)"
+]
 
 # Potraviny, které nechceš - rozšířený seznam
 DISLIKES = [
@@ -228,10 +243,19 @@ if "meal_plan" in st.session_state:
                     allergens_cz = []
                     allergen_display_map = {
                         "gluten": "lepek",
-                        "dairy": "mléčné výrobky",
+                        "shellfish": "korýši",
                         "eggs": "vejce",
+                        "fish": "ryby",
+                        "peanuts": "arašídy",
                         "soy": "sója",
-                        "nuts": "ořechy"
+                        "dairy": "mléko",
+                        "nuts": "ořechy",
+                        "celery": "celer",
+                        "mustard": "hořčice",
+                        "sesame": "sezam",
+                        "sulfites": "oxid siřičitý",
+                        "lupin": "vlčí bob",
+                        "molluscs": "měkkýši"
                     }
                     for allergen in recipe['allergens']:
                         allergens_cz.append(allergen_display_map.get(allergen.lower(), allergen))
