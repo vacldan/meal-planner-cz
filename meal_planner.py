@@ -33,6 +33,15 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
     """Filter recipes based on user preferences"""
     filtered = []
 
+    # Mapování anglických dislike na české varianty
+    dislike_mapping = {
+        'fish': ['ryb', 'kapr', 'pstruh', 'losos'],
+        'mushrooms': ['houb', 'žampion', 'hřib'],
+        'seafood': ['krevet', 'mořsk', 'kalamár'],
+        'liver': ['játr', 'vnitřnos'],
+        'pork': ['vepř', 'bůček', 'kýta', 'plec', 'krkovice']
+    }
+
     for recipe in recipes:
         # Check time budget
         time_min, time_max = map(int, preferences['time_budget'].split('-'))
@@ -43,14 +52,25 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
         if preferences.get('kid_friendly_required') and not recipe['kid_friendly']:
             continue
 
-        # Check dislikes (ingredients)
-        dislikes = [d.lower() for d in preferences.get('dislikes', [])]
-        if any(dislike in recipe['name'].lower() for dislike in dislikes):
+        # Check dislikes (ingredients) - s českým mapováním
+        dislikes_en = [d.lower() for d in preferences.get('dislikes', [])]
+
+        # Převeď anglické dislikes na české varianty
+        dislikes_cz = []
+        for dislike in dislikes_en:
+            if dislike in dislike_mapping:
+                dislikes_cz.extend(dislike_mapping[dislike])
+            else:
+                dislikes_cz.append(dislike)
+
+        # Check v názvu receptu
+        recipe_name_lower = recipe['name'].lower()
+        if any(dislike in recipe_name_lower for dislike in dislikes_cz):
             continue
 
-        # Check if any ingredient contains disliked items
+        # Check v ingrediencích
         recipe_ingredients = ' '.join([ing['name'].lower() for ing in recipe['ingredients']])
-        if any(dislike in recipe_ingredients for dislike in dislikes):
+        if any(dislike in recipe_ingredients for dislike in dislikes_cz):
             continue
 
         # Check allergens
