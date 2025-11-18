@@ -441,7 +441,9 @@
         "gluten",
         "dairy"
       ],
-      "equipment": ["oven"],
+      "equipment": [
+        "oven"
+      ],
       "ingredients": [
         {
           "name": "Hladká mouka",
@@ -1774,7 +1776,9 @@
       "allergens": [
         "dairy"
       ],
-      "equipment": ["oven"],
+      "equipment": [
+        "oven"
+      ],
       "ingredients": [
         {
           "name": "Brambory",
@@ -6049,7 +6053,9 @@
         "one_pan"
       ],
       "allergens": [],
-      "equipment": ["oven"],
+      "equipment": [
+        "oven"
+      ],
       "ingredients": [
         {
           "name": "Rýže",
@@ -6315,9 +6321,9 @@
         "comfort"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "gluten",
+        "eggs",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -6385,7 +6391,7 @@
         "wok"
       ],
       "allergens": [
-        6
+        "soy"
       ],
       "ingredients": [
         {
@@ -6454,8 +6460,8 @@
         "comfort"
       ],
       "allergens": [
-        1,
-        7
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -6512,8 +6518,8 @@
         "mushrooms"
       ],
       "allergens": [
-        1,
-        7
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -6576,7 +6582,7 @@
         "healthy"
       ],
       "allergens": [
-        7
+        "dairy"
       ],
       "ingredients": [
         {
@@ -6640,9 +6646,9 @@
         "comfort"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "gluten",
+        "eggs",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -6712,8 +6718,8 @@
         "seafood"
       ],
       "allergens": [
-        2,
-        6
+        "shellfish",
+        "soy"
       ],
       "ingredients": [
         {
@@ -6781,7 +6787,7 @@
         "stuffed"
       ],
       "allergens": [
-        7
+        "dairy"
       ],
       "ingredients": [
         {
@@ -6890,7 +6896,7 @@
         "italian"
       ],
       "allergens": [
-        1
+        "gluten"
       ],
       "ingredients": [
         {
@@ -6948,8 +6954,8 @@
         "american"
       ],
       "allergens": [
-        1,
-        3
+        "gluten",
+        "eggs"
       ],
       "ingredients": [
         {
@@ -7062,9 +7068,9 @@
         "wok"
       ],
       "allergens": [
-        5,
-        6,
-        8
+        "peanuts",
+        "soy",
+        "nuts"
       ],
       "ingredients": [
         {
@@ -7141,8 +7147,8 @@
         "vegetable"
       ],
       "allergens": [
-        1,
-        7
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -7200,8 +7206,8 @@
         "creamy"
       ],
       "allergens": [
-        7,
-        10
+        "dairy",
+        "mustard"
       ],
       "ingredients": [
         {
@@ -7263,8 +7269,8 @@
         "czech_traditional"
       ],
       "allergens": [
-        7,
-        10
+        "dairy",
+        "mustard"
       ],
       "ingredients": [
         {
@@ -7322,9 +7328,9 @@
         "wraps"
       ],
       "allergens": [
-        1,
-        7,
-        9
+        "gluten",
+        "dairy",
+        "celery"
       ],
       "ingredients": [
         {
@@ -7402,8 +7408,8 @@
         "budget"
       ],
       "allergens": [
-        1,
-        4
+        "gluten",
+        "fish"
       ],
       "ingredients": [
         {
@@ -7461,7 +7467,7 @@
         "budget"
       ],
       "allergens": [
-        7
+        "dairy"
       ],
       "ingredients": [
         {
@@ -7519,8 +7525,8 @@
         "wraps"
       ],
       "allergens": [
-        1,
-        7
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -7638,8 +7644,8 @@
         "nuts"
       ],
       "allergens": [
-        6,
-        8
+        "soy",
+        "nuts"
       ],
       "ingredients": [
         {
@@ -7717,8 +7723,8 @@
         "comfort"
       ],
       "allergens": [
-        1,
-        7
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -7775,7 +7781,7 @@
         "comfort"
       ],
       "allergens": [
-        1
+        "gluten"
       ],
       "ingredients": [
         {
@@ -7834,8 +7840,8 @@
         "healthy"
       ],
       "allergens": [
-        1,
-        7
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -7891,8 +7897,8 @@
         "comfort"
       ],
       "allergens": [
-        1,
-        7
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -8017,8 +8023,8 @@
         "italian"
       ],
       "allergens": [
-        1,
-        4
+        "gluten",
+        "fish"
       ],
       "ingredients": [
         {
@@ -8137,10 +8143,10 @@
         "grilled"
       ],
       "allergens": [
-        3,
-        7,
-        9,
-        10
+        "eggs",
+        "dairy",
+        "celery",
+        "mustard"
       ],
       "ingredients": [
         {
@@ -8209,8 +8215,8 @@
         "noodles"
       ],
       "allergens": [
-        1,
-        6
+        "gluten",
+        "soy"
       ],
       "ingredients": [
         {
@@ -8273,7 +8279,7 @@
         "budget"
       ],
       "allergens": [
-        7
+        "dairy"
       ],
       "ingredients": [
         {
@@ -8329,7 +8335,7 @@
         "comfort"
       ],
       "allergens": [
-        7
+        "dairy"
       ],
       "ingredients": [
         {
@@ -8387,8 +8393,8 @@
         "comfort"
       ],
       "allergens": [
-        1,
-        3
+        "gluten",
+        "eggs"
       ],
       "ingredients": [
         {
@@ -8449,7 +8455,7 @@
         "comfort"
       ],
       "allergens": [
-        9
+        "celery"
       ],
       "ingredients": [
         {
@@ -8512,8 +8518,8 @@
         "vegetarian"
       ],
       "allergens": [
-        1,
-        7
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -8570,9 +8576,9 @@
         "spicy"
       ],
       "allergens": [
-        5,
-        6,
-        8
+        "peanuts",
+        "soy",
+        "nuts"
       ],
       "ingredients": [
         {
@@ -8639,8 +8645,8 @@
         "czech_traditional"
       ],
       "allergens": [
-        1,
-        7
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -8753,9 +8759,9 @@
         "pasta"
       ],
       "allergens": [
-        1,
-        7,
-        8
+        "gluten",
+        "dairy",
+        "nuts"
       ],
       "ingredients": [
         {
@@ -8810,7 +8816,7 @@
         "czech_traditional"
       ],
       "allergens": [
-        10
+        "mustard"
       ],
       "ingredients": [
         {
@@ -8868,8 +8874,8 @@
         "creamy"
       ],
       "allergens": [
-        7,
-        8
+        "dairy",
+        "nuts"
       ],
       "ingredients": [
         {
@@ -8941,7 +8947,7 @@
         "comfort"
       ],
       "allergens": [
-        7
+        "dairy"
       ],
       "ingredients": [
         {
@@ -8998,10 +9004,10 @@
         "thai"
       ],
       "allergens": [
-        1,
-        3,
-        5,
-        6
+        "gluten",
+        "eggs",
+        "peanuts",
+        "soy"
       ],
       "ingredients": [
         {
@@ -9073,7 +9079,7 @@
         "one_pan"
       ],
       "allergens": [
-        6
+        "soy"
       ],
       "ingredients": [
         {
@@ -9136,8 +9142,8 @@
         "budget"
       ],
       "allergens": [
-        1,
-        7
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -9193,7 +9199,7 @@
         "creamy"
       ],
       "allergens": [
-        7
+        "dairy"
       ],
       "ingredients": [
         {
@@ -9249,7 +9255,7 @@
         "mushrooms"
       ],
       "allergens": [
-        6
+        "soy"
       ],
       "ingredients": [
         {
@@ -9311,8 +9317,8 @@
         "comfort"
       ],
       "allergens": [
-        1,
-        7
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -9369,7 +9375,7 @@
         "indian"
       ],
       "allergens": [
-        7
+        "dairy"
       ],
       "ingredients": [
         {
@@ -9448,10 +9454,10 @@
         "vegetarian"
       ],
       "allergens": [
-        1,
-        3,
-        7,
-        9
+        "gluten",
+        "eggs",
+        "dairy",
+        "celery"
       ],
       "ingredients": [
         {
@@ -9519,8 +9525,8 @@
         "vegetarian"
       ],
       "allergens": [
-        1,
-        7
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -9652,8 +9658,8 @@
         "budget"
       ],
       "allergens": [
-        1,
-        7
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -9716,8 +9722,8 @@
         "vegetarian"
       ],
       "allergens": [
-        1,
-        7
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -9835,7 +9841,7 @@
         "comfort"
       ],
       "allergens": [
-        7
+        "dairy"
       ],
       "ingredients": [
         {
@@ -9889,8 +9895,8 @@
         "wraps"
       ],
       "allergens": [
-        1,
-        7
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -9958,7 +9964,7 @@
         "mushrooms"
       ],
       "allergens": [
-        7
+        "dairy"
       ],
       "ingredients": [
         {
@@ -10087,10 +10093,10 @@
         "mediterranean"
       ],
       "allergens": [
-        1,
-        3,
-        7,
-        9
+        "gluten",
+        "eggs",
+        "dairy",
+        "celery"
       ],
       "ingredients": [
         {
@@ -10157,8 +10163,8 @@
         "mediterranean"
       ],
       "allergens": [
-        1,
-        7
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -10221,8 +10227,8 @@
         "soup"
       ],
       "allergens": [
-        1,
-        6
+        "gluten",
+        "soy"
       ],
       "ingredients": [
         {
@@ -10295,9 +10301,9 @@
         "budget"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "gluten",
+        "eggs",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -10364,9 +10370,9 @@
         "vegetarian"
       ],
       "allergens": [
-        1,
-        7,
-        8
+        "gluten",
+        "dairy",
+        "nuts"
       ],
       "ingredients": [
         {
@@ -10429,7 +10435,7 @@
         "curry"
       ],
       "allergens": [
-        6
+        "soy"
       ],
       "ingredients": [
         {
@@ -10493,7 +10499,7 @@
         "salad"
       ],
       "allergens": [
-        7
+        "dairy"
       ],
       "ingredients": [
         {
@@ -10544,7 +10550,7 @@
         "vegetarian"
       ],
       "allergens": [
-        7
+        "dairy"
       ],
       "ingredients": [
         {
@@ -10601,8 +10607,8 @@
         "healthy"
       ],
       "allergens": [
-        5,
-        6
+        "peanuts",
+        "soy"
       ],
       "ingredients": [
         {
@@ -10670,8 +10676,8 @@
         "vegetarian"
       ],
       "allergens": [
-        1,
-        7
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -10728,7 +10734,7 @@
         "fried"
       ],
       "allergens": [
-        1
+        "gluten"
       ],
       "ingredients": [
         {
@@ -10790,7 +10796,7 @@
         "healthy"
       ],
       "allergens": [
-        11
+        "sesame"
       ],
       "ingredients": [
         {
@@ -10852,8 +10858,8 @@
         "comfort"
       ],
       "allergens": [
-        3,
-        7
+        "eggs",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -10915,7 +10921,7 @@
         "vegetarian"
       ],
       "allergens": [
-        1
+        "gluten"
       ],
       "ingredients": [
         {
@@ -10988,7 +10994,7 @@
         "comfort"
       ],
       "allergens": [
-        7
+        "dairy"
       ],
       "ingredients": [
         {
@@ -11041,9 +11047,9 @@
         "vegetarian"
       ],
       "allergens": [
-        1,
-        7,
-        8
+        "gluten",
+        "dairy",
+        "nuts"
       ],
       "ingredients": [
         {
@@ -11100,9 +11106,9 @@
         "comfort"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "gluten",
+        "eggs",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -11165,7 +11171,7 @@
         "baked"
       ],
       "allergens": [
-        7
+        "dairy"
       ],
       "ingredients": [
         {
@@ -11293,8 +11299,8 @@
         "vegetarian"
       ],
       "allergens": [
-        1,
-        3
+        "gluten",
+        "eggs"
       ],
       "ingredients": [
         {
@@ -11352,7 +11358,7 @@
         "baked"
       ],
       "allergens": [
-        7
+        "dairy"
       ],
       "ingredients": [
         {
@@ -11409,7 +11415,7 @@
         "curry"
       ],
       "allergens": [
-        6
+        "soy"
       ],
       "ingredients": [
         {
@@ -11478,7 +11484,7 @@
         "baked"
       ],
       "allergens": [
-        7
+        "dairy"
       ],
       "ingredients": [
         {
@@ -11603,8 +11609,8 @@
         "wraps"
       ],
       "allergens": [
-        1,
-        11
+        "gluten",
+        "sesame"
       ],
       "ingredients": [
         {
@@ -11666,7 +11672,7 @@
         "baked"
       ],
       "allergens": [
-        7
+        "dairy"
       ],
       "ingredients": [
         {
@@ -11729,8 +11735,8 @@
         "fried"
       ],
       "allergens": [
-        1,
-        3
+        "gluten",
+        "eggs"
       ],
       "ingredients": [
         {
@@ -11797,8 +11803,8 @@
         "salad"
       ],
       "allergens": [
-        7,
-        8
+        "dairy",
+        "nuts"
       ],
       "ingredients": [
         {
@@ -11861,8 +11867,8 @@
         "vegetarian"
       ],
       "allergens": [
-        1,
-        7
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -11925,9 +11931,9 @@
         "american"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "gluten",
+        "eggs",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -11996,7 +12002,7 @@
         "comfort"
       ],
       "allergens": [
-        7
+        "dairy"
       ],
       "ingredients": [
         {
@@ -12048,9 +12054,9 @@
         "mediterranean"
       ],
       "allergens": [
-        1,
-        7,
-        11
+        "gluten",
+        "dairy",
+        "sesame"
       ],
       "ingredients": [
         {
@@ -12111,9 +12117,9 @@
         "healthy"
       ],
       "allergens": [
-        1,
-        6,
-        11
+        "gluten",
+        "soy",
+        "sesame"
       ],
       "ingredients": [
         {
@@ -12181,7 +12187,7 @@
         "baked"
       ],
       "allergens": [
-        7
+        "dairy"
       ],
       "ingredients": [
         {
@@ -12239,9 +12245,9 @@
         "vegetarian"
       ],
       "allergens": [
-        1,
-        7,
-        8
+        "gluten",
+        "dairy",
+        "nuts"
       ],
       "ingredients": [
         {
@@ -12374,8 +12380,8 @@
         "baked"
       ],
       "allergens": [
-        1,
-        7
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -12437,9 +12443,9 @@
         "budget"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "gluten",
+        "eggs",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -12501,7 +12507,7 @@
         "baked"
       ],
       "allergens": [
-        7
+        "dairy"
       ],
       "ingredients": [
         {
@@ -12559,7 +12565,7 @@
         "bowl"
       ],
       "allergens": [
-        7
+        "dairy"
       ],
       "ingredients": [
         {
@@ -12627,7 +12633,7 @@
         "budget"
       ],
       "allergens": [
-        1
+        "gluten"
       ],
       "ingredients": [
         {
@@ -12695,7 +12701,7 @@
         "budget"
       ],
       "allergens": [
-        11
+        "sesame"
       ],
       "ingredients": [
         {
@@ -12828,8 +12834,8 @@
         "noodles"
       ],
       "allergens": [
-        5,
-        6
+        "peanuts",
+        "soy"
       ],
       "ingredients": [
         {
@@ -12958,7 +12964,7 @@
         "budget"
       ],
       "allergens": [
-        1
+        "gluten"
       ],
       "ingredients": [
         {
@@ -13080,7 +13086,7 @@
         "curry"
       ],
       "allergens": [
-        6
+        "soy"
       ],
       "ingredients": [
         {
@@ -13143,7 +13149,7 @@
         "healthy"
       ],
       "allergens": [
-        11
+        "sesame"
       ],
       "ingredients": [
         {
@@ -13270,7 +13276,7 @@
         "mediterranean"
       ],
       "allergens": [
-        11
+        "sesame"
       ],
       "ingredients": [
         {
@@ -13328,8 +13334,8 @@
         "soup"
       ],
       "allergens": [
-        1,
-        6
+        "gluten",
+        "soy"
       ],
       "ingredients": [
         {
@@ -13397,7 +13403,7 @@
         "baked"
       ],
       "allergens": [
-        8
+        "nuts"
       ],
       "ingredients": [
         {
@@ -13455,8 +13461,8 @@
         "wraps"
       ],
       "allergens": [
-        1,
-        6
+        "gluten",
+        "soy"
       ],
       "ingredients": [
         {
@@ -13579,8 +13585,8 @@
         "baked"
       ],
       "allergens": [
-        1,
-        6
+        "gluten",
+        "soy"
       ],
       "ingredients": [
         {
@@ -13703,7 +13709,7 @@
         "mediterranean"
       ],
       "allergens": [
-        11
+        "sesame"
       ],
       "ingredients": [
         {
@@ -13760,9 +13766,9 @@
         "bowl"
       ],
       "allergens": [
-        1,
-        6,
-        11
+        "gluten",
+        "soy",
+        "sesame"
       ],
       "ingredients": [
         {
@@ -13829,7 +13835,7 @@
         "budget"
       ],
       "allergens": [
-        5
+        "peanuts"
       ],
       "ingredients": [
         {
@@ -13958,7 +13964,7 @@
         "mediterranean"
       ],
       "allergens": [
-        11
+        "sesame"
       ],
       "ingredients": [
         {
@@ -14021,8 +14027,8 @@
         "bowl"
       ],
       "allergens": [
-        6,
-        11
+        "soy",
+        "sesame"
       ],
       "ingredients": [
         {
@@ -14084,7 +14090,7 @@
         "mexican"
       ],
       "allergens": [
-        1
+        "gluten"
       ],
       "ingredients": [
         {
@@ -14147,8 +14153,8 @@
         "soup"
       ],
       "allergens": [
-        1,
-        6
+        "gluten",
+        "soy"
       ],
       "ingredients": [
         {
@@ -14266,8 +14272,8 @@
         "quick"
       ],
       "allergens": [
-        6,
-        8
+        "soy",
+        "nuts"
       ],
       "ingredients": [
         {
@@ -14497,7 +14503,7 @@
         "budget"
       ],
       "allergens": [
-        1
+        "gluten"
       ],
       "ingredients": [
         {
@@ -14554,9 +14560,9 @@
         "quick"
       ],
       "allergens": [
-        1,
-        6,
-        11
+        "gluten",
+        "soy",
+        "sesame"
       ],
       "ingredients": [
         {
@@ -14624,7 +14630,7 @@
         "one_pan"
       ],
       "allergens": [
-        6
+        "soy"
       ],
       "ingredients": [
         {
@@ -14685,7 +14691,7 @@
         "mediterranean"
       ],
       "allergens": [
-        1
+        "gluten"
       ],
       "ingredients": [
         {
@@ -14798,7 +14804,7 @@
         "quick"
       ],
       "allergens": [
-        1
+        "gluten"
       ],
       "ingredients": [
         {
@@ -14910,8 +14916,8 @@
         "noodles"
       ],
       "allergens": [
-        1,
-        6
+        "gluten",
+        "soy"
       ],
       "ingredients": [
         {
@@ -14978,7 +14984,7 @@
         "international"
       ],
       "allergens": [
-        1
+        "gluten"
       ],
       "ingredients": [
         {
@@ -15040,7 +15046,7 @@
         "budget"
       ],
       "allergens": [
-        1
+        "gluten"
       ],
       "ingredients": [
         {
