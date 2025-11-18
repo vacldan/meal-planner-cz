@@ -8,24 +8,32 @@ from meal_planner import generate_meal_plan
 from pdf_generator import generate_pdf
 import os
 
-# Běžné ingredience, které lidé často mají doma
+# Běžné ingredience, které lidé často mají doma (50 nejpoužívanějších v ČR)
 COMMON_PANTRY_ITEMS = [
-    # Trvanlivé
-    "Mouka", "Cukr", "Sůl", "Pepř", "Olej", "Olivový olej",
-    "Ocet", "Rýže", "Těstoviny", "Kečup", "Hořčice",
+    # Trvanlivé - mouka a pečení
+    "Mouka hladká", "Mouka polohrubá", "Mouka hrubá", "Cukr", "Cukr moučka",
+    "Sůl", "Kypřicí prášek", "Droždí", "Vanilkový cukr", "Škrob",
 
-    # Mléčné
-    "Mléko", "Máslo", "Sýr", "Parmazán", "Smetana", "Jogurt",
+    # Trvanlivé - oleje a tuky
+    "Olej slunečnicový", "Olivový olej", "Ocet",
+
+    # Trvanlivé - těstoviny a rýže
+    "Rýže", "Těstoviny", "Instantní polévky", "Bujón/Vývar kostky",
+
+    # Trvanlivé - koření a dochucovadla
+    "Pepř", "Paprika sladká", "Paprika pálivá", "Kmín", "Majoránka",
+    "Bazalka", "Oregano", "Tymián", "Bobkový list", "Muškátový oříšek",
+    "Nové koření", "Kečup", "Hořčice", "Sojová omáčka",
+
+    # Mléčné výrobky
+    "Mléko", "Máslo", "Sýr", "Eidam", "Parmazán", "Smetana na vaření",
+    "Smetana ke šlehání", "Zakysaná smetana", "Jogurt", "Tvaroh",
 
     # Zelenina
-    "Cibule", "Česnek", "Brambory", "Mrkev", "Rajčata",
-
-    # Koření a byliny
-    "Paprika sladká", "Kmín", "Majoránka", "Bazalka",
-    "Oregano", "Tymián", "Bobkový list",
+    "Cibule", "Česnek", "Brambory", "Mrkev", "Rajčata", "Petržel",
 
     # Ostatní
-    "Vejce", "Med", "Citron", "Zázvor", "Sojová omáčka"
+    "Vejce", "Med", "Citron", "Zázvor"
 ]
 
 # Kategorie receptů
