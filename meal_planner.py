@@ -38,7 +38,9 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
         'těstoviny': 'pasta',
         'tradiční česká': 'czech_traditional',
         'rychlá jídla': 'quick',
-        'rodinná klasika': 'comfort'
+        'rodinná klasika': 'comfort',
+        'vegetariánské': 'vegetarian',
+        'veganské': 'vegan'
     }
 
     # Mapování českých alergenů na anglické v recipes.json
@@ -59,6 +61,15 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
         'oxid siřičitý': 'sulfites',
         'vlčí bob': 'lupin',
         'měkkýši': 'molluscs'
+    }
+
+    # Mapování českého vybavení na anglické v recipes.json
+    equipment_mapping = {
+        'trouba': 'oven',
+        'slow cooker (pomalý hrnec)': 'slow_cooker',
+        'air fryer (fritéza na vzduch)': 'air_fryer',
+        'mikrovlnka': 'microwave',
+        'mixér/tyčový mixér': 'blender'
     }
 
     # Mapování českých omezení na varianty v receptech - rozšířené
@@ -92,6 +103,16 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
         # Check kid-friendly requirement
         if preferences.get('kid_friendly_required') and not recipe['kid_friendly']:
             continue
+
+        # Check equipment - pokud recept vyžaduje speciální vybavení
+        if 'equipment' in recipe and recipe['equipment']:
+            user_equipment_cz = [e.lower() for e in preferences.get('equipment', [])]
+            user_equipment_en = [equipment_mapping.get(eq, eq) for eq in user_equipment_cz]
+
+            # Pokud recept potřebuje něco, co uživatel nemá, přeskoč ho
+            recipe_equipment = [e.lower() for e in recipe['equipment']]
+            if not all(req_eq in user_equipment_en or req_eq == 'stovetop' for req_eq in recipe_equipment):
+                continue
 
         # Check dislikes (ingredients) - vše česky
         dislikes = [d.lower() for d in preferences.get('dislikes', [])]
@@ -233,8 +254,70 @@ def select_weekly_recipes(filtered_recipes: List[Dict], daily_time_budgets: Dict
 
     return weekly_plan
 
+def round_to_package_size(ingredient_name: str, amount_str: str) -> str:
+    """Zaokrouhlit množství na reálné velikosti balení v obchodech"""
+    import re
+
+    # Extrahuj číslo a jednotku
+    match = re.match(r'(\d+(?:\.\d+)?)\s*(\w+)', amount_str)
+    if not match:
+        return amount_str  # Pokud nejde parsovat, vrať původní
+
+    amount = float(match.group(1))
+    unit = match.group(2).lower()
+
+    # Mapování běžných velikostí balení
+    package_sizes = {
+        # Maso a uzeniny (g)
+        'kuřecí': (400, 'g'), 'hovězí': (500, 'g'), 'vepřové': (400, 'g'),
+        'šunka': (100, 'g'), 'slanina': (150, 'g'),
+
+        # Mléčné výrobky
+        'máslo': (250, 'g'), 'smetana': (200, 'ml'),
+        'mléko': (1000, 'ml'), 'jogurt': (150, 'g'),
+        'sýr': (200, 'g'), 'parmazán': (100, 'g'),
+
+        # Zelenina a ovoce (přibližné)
+        'brambory': (1000, 'g'), 'mrkev': (500, 'g'),
+        'cibule': (500, 'g'), 'rajčata': (500, 'g'),
+
+        # Trvanlivé
+        'mouka': (1000, 'g'), 'rýže': (500, 'g'),
+        'těstoviny': (500, 'g'), 'cukr': (1000, 'g'),
+    }
+
+    # Zkus najít ingredienci v mapování
+    ingredient_lower = ingredient_name.lower()
+    package_size = None
+    package_unit = unit
+
+    for key, (size, pkg_unit) in package_sizes.items():
+        if key in ingredient_lower:
+            # Konvertuj jednotky pokud nutné
+            if unit == pkg_unit or (unit == 'g' and pkg_unit == 'g') or (unit == 'ml' and pkg_unit == 'ml'):
+                package_size = size
+                package_unit = pkg_unit
+                break
+
+    # Pokud našli package_size, zaokrouhli nahoru
+    if package_size:
+        packages_needed = int((amount + package_size - 1) // package_size)  # Ceiling division
+        rounded = packages_needed * package_size
+
+        if rounded > amount:
+            return f"{int(amount)}{unit} → {int(rounded)}{package_unit} (balení)"
+        else:
+            return f"{int(rounded)}{package_unit}"
+
+    # Pokud není v mapování, vrať původní
+    if amount == int(amount):
+        return f"{int(amount)}{unit}"
+    else:
+        return amount_str
+
+
 def generate_shopping_list(weekly_recipes: Dict[str, Dict]) -> Dict[str, List[str]]:
-    """Aggregate ingredients from all recipes into shopping list"""
+    """Aggregate ingredients from all recipes into shopping list with smart rounding"""
     shopping_dict = defaultdict(lambda: defaultdict(float))
 
     for day, recipe in weekly_recipes.items():
@@ -246,10 +329,15 @@ def generate_shopping_list(weekly_recipes: Dict[str, Dict]) -> Dict[str, List[st
             # Simple aggregation (for demo - in production, parse units properly)
             shopping_dict[category][name] = amount  # Just store, not summing for demo
 
-    # Convert to list format grouped by category
+    # Convert to list format grouped by category with smart quantities
     shopping_list = {}
     for category, items in shopping_dict.items():
-        shopping_list[category] = [f"{name} - {amount}" for name, amount in items.items()]
+        smart_items = []
+        for name, amount in items.items():
+            rounded_amount = round_to_package_size(name, amount)
+            smart_items.append(f"{name} - {rounded_amount}")
+
+        shopping_list[category] = smart_items
 
     return shopping_list
 

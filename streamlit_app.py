@@ -9,7 +9,7 @@ from pdf_generator import generate_pdf
 import os
 
 # Kategorie receptů
-CATEGORIES = ["Těstoviny", "Tradiční česká", "Rychlá jídla", "Rodinná klasika"]
+CATEGORIES = ["Těstoviny", "Tradiční česká", "Rychlá jídla", "Rodinná klasika", "Vegetariánské", "Veganské"]
 
 # Alergeny - kompletní seznam 14 hlavních alergenů EU
 ALLERGENS = [
@@ -51,6 +51,15 @@ DISLIKES = [
     "Koření (pikantní)"
 ]
 
+# Vybavení kuchyně
+EQUIPMENT = [
+    "Trouba",
+    "Slow cooker (pomalý hrnec)",
+    "Air fryer (fritéza na vzduch)",
+    "Mikrovlnka",
+    "Mixér/Tyčový mixér"
+]
+
 # Page config
 st.set_page_config(
     page_title="🍽️ Týdenní Jídelníček",
@@ -83,7 +92,9 @@ likes = st.sidebar.multiselect(
     • Těstoviny - špagety, lasagne, penne\n
     • Tradiční česká - guláš, svíčková, řízek\n
     • Rychlá jídla - do 30 minut\n
-    • Rodinná klasika - pizza, burgery, palačinky
+    • Rodinná klasika - pizza, burgery, palačinky\n
+    • Vegetariánské - bez masa a ryb\n
+    • Veganské - bez živočišných produktů
     """
 )
 
@@ -155,6 +166,17 @@ kid_friendly = st.sidebar.checkbox(
 
 st.sidebar.divider()
 
+st.sidebar.subheader("🔧 Jaké máš vybavení?")
+st.sidebar.markdown("*Recepty použijí jen to, co máš:*")
+equipment = st.sidebar.multiselect(
+    "Dostupné vybavení",
+    EQUIPMENT,
+    default=["Trouba"],
+    help="Vybereme jen recepty, které můžeš s tímto vybavením připravit"
+)
+
+st.sidebar.divider()
+
 # Generate button
 if st.sidebar.button("🚀 Generuj Jídelníček", type="primary", use_container_width=True):
 
@@ -167,7 +189,8 @@ if st.sidebar.button("🚀 Generuj Jídelníček", type="primary", use_container
         "daily_time_budgets": daily_time_budgets,  # None pokud stejný čas, jinak dict
         "price_budget": "30-70",
         "dislikes": [d.lower() for d in dislikes],
-        "kid_friendly_required": kid_friendly
+        "kid_friendly_required": kid_friendly,
+        "equipment": [e.lower() for e in equipment]
     }
 
     # Show loading spinner
@@ -281,7 +304,13 @@ if "meal_plan" in st.session_state:
                     st.markdown(f"{i}. {step}")
 
             with col2:
-                st.metric("⏱️ Čas", f"{recipe['time_minutes']} min")
+                # Zobraz celkový čas nebo rozdělení prep/cook
+                if 'prep_time_minutes' in recipe and 'cook_time_minutes' in recipe:
+                    st.metric("⏱️ Celkový čas", f"{recipe['time_minutes']} min")
+                    st.caption(f"🔪 Příprava: {recipe['prep_time_minutes']} min | 🍳 Vaření: {recipe['cook_time_minutes']} min")
+                else:
+                    st.metric("⏱️ Čas", f"{recipe['time_minutes']} min")
+
                 st.metric("📊 Obtížnost", recipe['difficulty'])
                 st.metric("👥 Porce", recipe['servings'])
                 st.metric("💰 Cena/porce", f"{recipe['price_per_portion_czk']} Kč")
@@ -375,6 +404,8 @@ else:
         | 🇨🇿 **Tradiční česká** | Guláš, svíčková, řízek s bramborovým salátem |
         | ⚡ **Rychlá jídla** | Smažený sýr, kuřecí stir-fry (do 30 min) |
         | 🍕 **Rodinná klasika** | Pizza, palačinky, bramboráky |
+        | 🥗 **Vegetariánské** | Smažený sýr, bramboráky, zapečené těstoviny |
+        | 🌱 **Veganské** | Zeleninové kari, fazolový guláš, vegan lasagne |
 
         ---
 

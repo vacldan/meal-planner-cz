@@ -5,6 +5,8 @@
       "name": "Kuřecí špagety carbonara (česká verze)",
       "category": "pasta",
       "time_minutes": 25,
+      "prep_time_minutes": 10,
+      "cook_time_minutes": 15,
       "difficulty": "Snadné",
       "price_per_portion_czk": 52,
       "servings": 4,
@@ -424,6 +426,8 @@
       "name": "Domácí pizza Margherita",
       "category": "comfort",
       "time_minutes": 45,
+      "prep_time_minutes": 20,
+      "cook_time_minutes": 25,
       "difficulty": "Snadné",
       "price_per_portion_czk": 38,
       "servings": 4,
@@ -437,6 +441,7 @@
         "gluten",
         "dairy"
       ],
+      "equipment": ["oven"],
       "ingredients": [
         {
           "name": "Hladká mouka",
@@ -1756,6 +1761,8 @@
       "name": "Zapečené brambory se smetanou",
       "category": "czech_traditional",
       "time_minutes": 55,
+      "prep_time_minutes": 15,
+      "cook_time_minutes": 40,
       "difficulty": "Snadné",
       "price_per_portion_czk": 28,
       "servings": 4,
@@ -1767,6 +1774,7 @@
       "allergens": [
         "dairy"
       ],
+      "equipment": ["oven"],
       "ingredients": [
         {
           "name": "Brambory",
@@ -6041,6 +6049,7 @@
         "one_pan"
       ],
       "allergens": [],
+      "equipment": ["oven"],
       "ingredients": [
         {
           "name": "Rýže",
