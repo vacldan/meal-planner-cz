@@ -88,12 +88,44 @@ likes = st.sidebar.multiselect(
 )
 
 st.sidebar.subheader("⏱️ Kolik máš času?")
-time_budget = st.sidebar.select_slider(
-    "Příprava večeře",
-    options=["15-25", "20-45", "30-60", "30-120"],
-    value="20-45",
-    help="Vyber, kolik času máš denně na vaření"
+
+# Možnost: Stejný čas každý den NEBO individuální
+time_mode = st.sidebar.radio(
+    "Jak chceš nastavit čas?",
+    ["Stejný každý den", "Jiný čas pro každý den"],
+    help="Vyber si jestli máš stejný čas každý den, nebo se ti to liší"
 )
+
+if time_mode == "Stejný každý den":
+    time_budget = st.sidebar.select_slider(
+        "Kolik minut na přípravu?",
+        options=["15-25", "20-45", "30-60", "30-120"],
+        value="20-45"
+    )
+    daily_time_budgets = None
+else:
+    st.sidebar.caption("💡 Nastav čas pro každý den:")
+    days_cz = {
+        'monday': 'Pondělí',
+        'tuesday': 'Úterý',
+        'wednesday': 'Středa',
+        'thursday': 'Čtvrtek',
+        'friday': 'Pátek',
+        'saturday': 'Sobota',
+        'sunday': 'Neděle'
+    }
+
+    daily_time_budgets = {}
+    for day_en, day_cz in days_cz.items():
+        emoji = "⚡" if day_en in ['monday', 'tuesday', 'wednesday', 'thursday'] else "🕐"
+        daily_time_budgets[day_en] = st.sidebar.selectbox(
+            f"{emoji} {day_cz}",
+            ["15-25", "20-45", "30-60", "30-120"],
+            index=1,  # default 20-45
+            key=f"time_{day_en}"
+        )
+    time_budget = "20-45"  # fallback
+
 st.sidebar.caption("💡 Rychlá jídla = do 30 minut")
 
 st.sidebar.divider()
@@ -132,6 +164,7 @@ if st.sidebar.button("🚀 Generuj Jídelníček", type="primary", use_container
         "allergies": [a.lower() for a in allergies],
         "likes": [l.lower() for l in likes],
         "time_budget": time_budget,
+        "daily_time_budgets": daily_time_budgets,  # None pokud stejný čas, jinak dict
         "price_budget": "30-70",
         "dislikes": [d.lower() for d in dislikes],
         "kid_friendly_required": kid_friendly
@@ -178,7 +211,7 @@ if "meal_plan" in st.session_state:
     meal_plan = st.session_state.meal_plan
 
     # Summary
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3, col4 = st.columns(4)
     with col1:
         st.metric("💰 Celková cena týdne", f"{meal_plan['total_cost_czk']} Kč")
     with col2:
@@ -186,6 +219,21 @@ if "meal_plan" in st.session_state:
     with col3:
         total_portions = sum(r['servings'] for r in meal_plan['meals'].values())
         st.metric("🍽️ Celkem porcí", f"{total_portions}")
+    with col4:
+        if 'ingredient_stats' in meal_plan:
+            reuse_pct = meal_plan['ingredient_stats']['reuse_percentage']
+            st.metric(
+                "♻️ Opakované ingredience",
+                f"{reuse_pct}%",
+                help="Kolik ingrediencí používáš vícekrát = menší nákup!"
+            )
+
+    # Zobraz úspory z opakování ingrediencí
+    if 'ingredient_stats' in meal_plan and meal_plan['ingredient_stats']['reuse_percentage'] > 0:
+        st.success(
+            f"✨ **Smart optimalizace:** Tvůj jídelníček využívá {meal_plan['ingredient_stats']['reused_count']} "
+            f"sdílených ingrediencí! Koupíš méně, ušetříš čas i peníze."
+        )
 
     st.divider()
 

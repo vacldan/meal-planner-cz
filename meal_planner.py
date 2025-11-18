@@ -145,32 +145,93 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
 
     return filtered
 
-def select_weekly_recipes(filtered_recipes: List[Dict]) -> Dict[str, Dict]:
-    """Select 7 recipes for the week with variety"""
+def select_weekly_recipes(filtered_recipes: List[Dict], daily_time_budgets: Dict[str, str] = None) -> Dict[str, Dict]:
+    """Select 7 recipes for the week with ingredient overlap optimization"""
+
+    days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+
     if len(filtered_recipes) < 7:
         # If not enough recipes, allow repeats
         selected = random.sample(filtered_recipes * 2, 7)
-    else:
-        # Ensure variety - try to avoid same category multiple times
-        selected = []
-        remaining = filtered_recipes.copy()
-        categories_used = defaultdict(int)
+        return {day: recipe for day, recipe in zip(days, selected)}
 
-        for _ in range(7):
-            # Sort by how many times category was used (prefer less used)
-            remaining.sort(key=lambda r: categories_used[r['category']])
+    # OPTIMALIZACE: Vyber recepty které sdílejí ingredience
+    weekly_plan = {}
+    ingredient_pool = set()
+    categories_used = defaultdict(int)
 
-            # Pick from top candidates
-            recipe = random.choice(remaining[:min(3, len(remaining))])
-            selected.append(recipe)
-            categories_used[recipe['category']] += 1
-            remaining.remove(recipe)
+    for day in days:
+        # Pokud máme individuální časy, filtruj podle dne
+        if daily_time_budgets:
+            time_range = daily_time_budgets.get(day, "20-45")
+            time_min, time_max = map(int, time_range.split('-'))
 
-            if not remaining:
-                remaining = filtered_recipes.copy()
+            # Filtruj recepty pro tento den
+            day_recipes = [r for r in filtered_recipes
+                          if time_min <= r['time_minutes'] <= time_max]
 
-    days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
-    return {day: recipe for day, recipe in zip(days, selected)}
+            if not day_recipes:
+                day_recipes = filtered_recipes  # fallback
+        else:
+            day_recipes = filtered_recipes
+
+        # První den - vyber náhodně
+        if not weekly_plan:
+            first = random.choice(day_recipes)
+            weekly_plan[day] = first
+            categories_used[first['category']] += 1
+
+            # Přidej ingredience do poolu
+            for ing in first['ingredients']:
+                ingredient_pool.add(ing['name'].lower().split()[0])
+            continue
+
+        # Další dny - preferuj recepty se sdílenými ingrediencemi
+        scored = []
+        used_ids = [r['id'] for r in weekly_plan.values()]
+
+        for recipe in day_recipes:
+            if recipe['id'] in used_ids:
+                continue  # Neop akuj stejný recept
+
+            # Spočítej překryv ingrediencí
+            recipe_ingredients = set()
+            for ing in recipe['ingredients']:
+                recipe_ingredients.add(ing['name'].lower().split()[0])
+
+            overlap = len(recipe_ingredients & ingredient_pool)
+
+            # Penalizace za opakování kategorie
+            category_penalty = categories_used[recipe['category']] * 2
+
+            # Skóre: overlap je pozitivní, category_penalty negativní
+            score = overlap - category_penalty
+
+            scored.append((recipe, score))
+
+        if not scored:
+            # Pokud nejsou žádné nové recepty, použij co máme
+            available = [r for r in day_recipes if r['id'] not in used_ids]
+            if available:
+                next_recipe = random.choice(available)
+            else:
+                next_recipe = random.choice(day_recipes)
+        else:
+            # Seřaď podle skóre (vyšší = lepší)
+            scored.sort(key=lambda x: x[1], reverse=True)
+
+            # Vyber z top 3 kandidátů (trochu randomizace)
+            top_candidates = scored[:min(3, len(scored))]
+            next_recipe, _ = random.choice(top_candidates)
+
+        weekly_plan[day] = next_recipe
+        categories_used[next_recipe['category']] += 1
+
+        # Přidej nové ingredience do poolu
+        for ing in next_recipe['ingredients']:
+            ingredient_pool.add(ing['name'].lower().split()[0])
+
+    return weekly_plan
 
 def generate_shopping_list(weekly_recipes: Dict[str, Dict]) -> Dict[str, List[str]]:
     """Aggregate ingredients from all recipes into shopping list"""
@@ -208,7 +269,8 @@ def generate_meal_plan(preferences: Dict) -> Dict:
         raise ValueError("No recipes match your preferences. Please adjust your criteria.")
 
     # Select 7 recipes
-    weekly_recipes = select_weekly_recipes(filtered)
+    daily_time_budgets = preferences.get('daily_time_budgets')
+    weekly_recipes = select_weekly_recipes(filtered, daily_time_budgets)
 
     # Generate shopping list
     shopping_list = generate_shopping_list(weekly_recipes)
@@ -217,11 +279,31 @@ def generate_meal_plan(preferences: Dict) -> Dict:
     total_cost = calculate_total_cost(weekly_recipes)
     total_portions = sum(r['servings'] for r in weekly_recipes.values())
 
+    # Spočítej překryv ingrediencí (pro statistiku úspor)
+    all_ingredients = set()
+    unique_count = 0
+    for recipe in weekly_recipes.values():
+        for ing in recipe['ingredients']:
+            ing_base = ing['name'].lower().split()[0]
+            if ing_base not in all_ingredients:
+                unique_count += 1
+                all_ingredients.add(ing_base)
+
+    total_ingredient_uses = sum(len(r['ingredients']) for r in weekly_recipes.values())
+    reuse_count = total_ingredient_uses - unique_count
+    reuse_percentage = round((reuse_count / total_ingredient_uses) * 100) if total_ingredient_uses > 0 else 0
+
     return {
         "week_of": "2024-11-18",
         "preferences": preferences,
         "meals": weekly_recipes,
         "shopping_list": shopping_list,
         "total_cost_czk": total_cost,
-        "cost_per_portion_czk": round(total_cost / total_portions, 1)
+        "cost_per_portion_czk": round(total_cost / total_portions, 1),
+        "ingredient_stats": {
+            "total_uses": total_ingredient_uses,
+            "unique_ingredients": unique_count,
+            "reused_count": reuse_count,
+            "reuse_percentage": reuse_percentage
+        }
     }
