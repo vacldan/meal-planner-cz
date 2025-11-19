@@ -15,9 +15,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -81,9 +81,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -140,9 +140,9 @@
         "quick"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -204,9 +204,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -270,9 +270,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -334,9 +334,9 @@
         "quick"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -403,9 +403,9 @@
         "cookies"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -464,9 +464,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -529,9 +529,9 @@
         "no_bake"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -594,9 +594,9 @@
         "chocolate"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -658,9 +658,9 @@
         "layered"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -723,9 +723,9 @@
         "quick"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -787,9 +787,9 @@
         "no_bake"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -853,10 +853,10 @@
         "frosted"
       ],
       "allergens": [
-        1,
-        3,
-        7,
-        8
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky",
+        "8. Ořechy (skořápkové plody)"
       ],
       "ingredients": [
         {
@@ -934,7 +934,7 @@
         "christmas"
       ],
       "allergens": [
-        3
+        "3. Vejce"
       ],
       "ingredients": [
         {
@@ -980,7 +980,7 @@
         "berries"
       ],
       "allergens": [
-        7
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -1032,9 +1032,9 @@
         "christmas"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -1097,9 +1097,9 @@
         "creamy"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -1163,9 +1163,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -1228,9 +1228,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -1292,9 +1292,9 @@
         "impressive"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -1351,8 +1351,8 @@
         "christmas"
       ],
       "allergens": [
-        3,
-        7
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -1409,8 +1409,8 @@
         "czech_traditional"
       ],
       "allergens": [
-        1,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -1468,9 +1468,9 @@
         "czech_traditional"
       ],
       "allergens": [
-        1,
-        7,
-        8
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky",
+        "8. Ořechy (skořápkové plody)"
       ],
       "ingredients": [
         {
@@ -1522,9 +1522,9 @@
         "quick"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -1586,9 +1586,9 @@
         "filled"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -1644,9 +1644,9 @@
         "elegant"
       ],
       "allergens": [
-        3,
-        7,
-        8
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky",
+        "8. Ořechy (skořápkové plody)"
       ],
       "ingredients": [
         {
@@ -1704,9 +1704,9 @@
         "chocolate"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -1769,10 +1769,10 @@
         "filled"
       ],
       "allergens": [
-        1,
-        3,
-        7,
-        8
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky",
+        "8. Ořechy (skořápkové plody)"
       ],
       "ingredients": [
         {
@@ -1829,8 +1829,8 @@
         "impressive"
       ],
       "allergens": [
-        3,
-        7
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -1882,9 +1882,9 @@
         "cheese"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -1942,8 +1942,8 @@
         "elegant"
       ],
       "allergens": [
-        3,
-        7
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -1991,9 +1991,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -2050,10 +2050,10 @@
         "czech_traditional"
       ],
       "allergens": [
-        1,
-        3,
-        7,
-        8
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky",
+        "8. Ořechy (skořápkové plody)"
       ],
       "ingredients": [
         {
@@ -2110,8 +2110,8 @@
         "no_bake"
       ],
       "allergens": [
-        7,
-        8
+        "7. Mléko a mléčné výrobky",
+        "8. Ořechy (skořápkové plody)"
       ],
       "ingredients": [
         {
@@ -2158,9 +2158,9 @@
         "elegant"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -2223,8 +2223,8 @@
         "quick"
       ],
       "allergens": [
-        3,
-        7
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -2275,9 +2275,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -2334,9 +2334,9 @@
         "czech_traditional"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -2399,8 +2399,8 @@
         "decorated"
       ],
       "allergens": [
-        1,
-        3
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce"
       ],
       "ingredients": [
         {
@@ -2458,9 +2458,9 @@
         "light"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -2518,9 +2518,9 @@
         "filled"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -2583,9 +2583,9 @@
         "lemon"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -2647,8 +2647,8 @@
         "elegant"
       ],
       "allergens": [
-        7,
-        8
+        "7. Mléko a mléčné výrobky",
+        "8. Ořechy (skořápkové plody)"
       ],
       "ingredients": [
         {
@@ -2700,9 +2700,9 @@
         "cinnamon"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -2769,9 +2769,9 @@
         "layered"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -2834,10 +2834,10 @@
         "healthy"
       ],
       "allergens": [
-        1,
-        3,
-        7,
-        8
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky",
+        "8. Ořechy (skořápkové plody)"
       ],
       "ingredients": [
         {
@@ -2899,9 +2899,9 @@
         "puff_pastry"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -2959,9 +2959,9 @@
         "frosted"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3033,8 +3033,8 @@
         "czech_traditional"
       ],
       "allergens": [
-        1,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3090,9 +3090,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3138,9 +3138,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3186,9 +3186,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3234,9 +3234,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3282,9 +3282,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3330,9 +3330,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3378,9 +3378,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3426,9 +3426,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3474,9 +3474,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3522,9 +3522,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3570,9 +3570,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3618,9 +3618,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3666,9 +3666,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3714,9 +3714,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3762,9 +3762,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3810,9 +3810,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3858,9 +3858,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3906,9 +3906,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3954,9 +3954,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4002,9 +4002,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4050,9 +4050,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4098,9 +4098,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4146,9 +4146,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4194,9 +4194,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4242,9 +4242,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4290,9 +4290,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4338,9 +4338,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4386,9 +4386,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4434,9 +4434,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4482,9 +4482,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4530,9 +4530,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4578,9 +4578,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4626,9 +4626,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4674,9 +4674,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4722,9 +4722,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4770,9 +4770,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4818,9 +4818,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4866,9 +4866,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4914,9 +4914,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4962,9 +4962,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5010,9 +5010,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5058,9 +5058,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5106,9 +5106,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5154,9 +5154,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5202,9 +5202,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5250,9 +5250,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5298,9 +5298,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5346,9 +5346,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5394,9 +5394,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5442,9 +5442,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5490,9 +5490,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5538,9 +5538,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5586,9 +5586,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5634,9 +5634,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5682,9 +5682,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5730,9 +5730,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5778,9 +5778,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5826,9 +5826,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5874,9 +5874,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5922,9 +5922,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5970,9 +5970,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6018,9 +6018,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6066,9 +6066,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6114,9 +6114,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6162,9 +6162,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6210,9 +6210,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6258,9 +6258,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6306,9 +6306,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6354,9 +6354,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6402,9 +6402,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6450,9 +6450,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6498,9 +6498,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6546,9 +6546,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6594,9 +6594,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6642,9 +6642,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6690,9 +6690,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6738,9 +6738,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6786,9 +6786,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6834,9 +6834,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6882,9 +6882,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6930,9 +6930,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6978,9 +6978,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7026,9 +7026,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7074,9 +7074,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7122,9 +7122,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7170,9 +7170,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7218,9 +7218,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7266,9 +7266,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7314,9 +7314,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7362,9 +7362,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7410,9 +7410,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7458,9 +7458,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7506,9 +7506,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7554,9 +7554,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7602,9 +7602,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7650,9 +7650,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7698,9 +7698,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7746,9 +7746,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7794,9 +7794,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7842,9 +7842,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7890,9 +7890,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7938,9 +7938,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7986,9 +7986,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8034,9 +8034,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8082,9 +8082,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8130,9 +8130,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8178,9 +8178,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8226,9 +8226,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8274,9 +8274,9 @@
         "no_bake"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8322,9 +8322,9 @@
         "no_bake"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8370,9 +8370,9 @@
         "no_bake"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8418,9 +8418,9 @@
         "no_bake"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8466,9 +8466,9 @@
         "no_bake"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8514,9 +8514,9 @@
         "no_bake"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8562,9 +8562,9 @@
         "no_bake"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8610,9 +8610,9 @@
         "no_bake"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8658,9 +8658,9 @@
         "no_bake"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8706,9 +8706,9 @@
         "no_bake"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8754,9 +8754,9 @@
         "no_bake"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8802,9 +8802,9 @@
         "no_bake"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8850,9 +8850,9 @@
         "ice_cream"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8898,9 +8898,9 @@
         "ice_cream"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8946,9 +8946,9 @@
         "ice_cream"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8994,9 +8994,9 @@
         "ice_cream"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9042,9 +9042,9 @@
         "ice_cream"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9090,9 +9090,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9138,9 +9138,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9186,9 +9186,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9234,9 +9234,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9282,9 +9282,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9330,9 +9330,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9378,9 +9378,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9426,9 +9426,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9474,9 +9474,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9522,9 +9522,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9570,9 +9570,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9618,9 +9618,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9666,9 +9666,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9714,9 +9714,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9762,9 +9762,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9810,9 +9810,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9858,9 +9858,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9906,9 +9906,9 @@
         "no_bake"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9954,9 +9954,9 @@
         "ice_cream"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -10002,9 +10002,9 @@
         "ice_cream"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -10050,9 +10050,9 @@
         "ice_cream"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -10098,9 +10098,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -10146,9 +10146,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -10194,9 +10194,9 @@
         "baked"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -10242,9 +10242,9 @@
         "no_bake"
       ],
       "allergens": [
-        1,
-        3,
-        7
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {

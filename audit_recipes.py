@@ -19,19 +19,22 @@ SEASONAL_INGREDIENTS = {
     'zima': ['mrkev', 'celer', 'petržel', 'zelí', 'kedlubna', 'květák', 'kapusta', 'pór', 'brukev']
 }
 
-# Mapování ingrediencí na alergeny
+# Mapování ingrediencí na alergeny (český formát s EU čísly)
 ALLERGEN_MAPPING = {
-    'gluten': ['mouka', 'těstoviny', 'chléb', 'špaget', 'penne', 'nudle', 'krupice', 'strouhanka', 'bulka', 'houska', 'sójová omáčka', 'soy sauce'],
-    'dairy': ['mléko', 'smetana', 'sýr', 'máslo', 'jogurt', 'tvaroh', 'zakysaná', 'parmazán', 'mozzarella', 'eidam', 'čedar', 'mascarpone', 'ricotta', 'cream'],
-    'eggs': ['vejce', 'vaječn', 'egg'],
-    'fish': ['losos', 'treska', 'tuňák', 'kapr', 'pstruh', 'sleď', 'makrela', 'fish'],
-    'shellfish': ['krevet', 'garnát', 'humr', 'krab', 'slávk', 'mušl', 'chobotnic', 'shrimp', 'prawn'],
-    'nuts': ['oříšk', 'mandle', 'lískové', 'vlašské', 'kešu', 'pistácie', 'pekan', 'nut', 'almond', 'walnut', 'cashew'],
-    'peanuts': ['arašíd', 'peanut'],
-    'soy': ['sójov', 'tofu', 'soy'],
-    'sesame': ['sezam', 'sesame'],
-    'celery': ['celer', 'celery'],
-    'mustard': ['hořčic', 'mustard'],
+    '1. Lepek (pšenice, žito, ječmen, oves)': ['mouka', 'těstoviny', 'chléb', 'špaget', 'penne', 'nudle', 'krupice', 'strouhanka', 'bulka', 'houska', 'sójová omáčka', 'soy sauce'],
+    '7. Mléko a mléčné výrobky': ['mléko', 'smetana', 'sýr', 'máslo', 'jogurt', 'tvaroh', 'zakysaná', 'parmazán', 'mozzarella', 'eidam', 'čedar', 'mascarpone', 'ricotta', 'cream'],
+    '3. Vejce': ['vejce', 'vaječn', 'egg'],
+    '4. Ryby': ['losos', 'treska', 'tuňák', 'kapr', 'pstruh', 'sleď', 'makrela', 'fish'],
+    '2. Korýši': ['krevet', 'garnát', 'humr', 'krab', 'shrimp', 'prawn'],
+    '14. Měkkýši': ['slávk', 'mušl', 'chobotnic', 'sépie'],
+    '8. Ořechy (skořápkové plody)': ['oříšk', 'mandle', 'lískové', 'vlašské', 'kešu', 'pistácie', 'pekan', 'nut', 'almond', 'walnut', 'cashew'],
+    '5. Arašídy (podzemnice olejná)': ['arašíd', 'peanut'],
+    '6. Sója': ['sójov', 'tofu', 'soy', 'tempeh'],
+    '11. Sezam (sezamová semena)': ['sezam', 'sesame'],
+    '9. Celer': ['celer', 'celery'],
+    '10. Hořčice': ['hořčic', 'mustard'],
+    '12. Oxid siřičitý a siřičitany': ['víno', 'sušené'],
+    '13. Vlčí bob (lupina)': ['vlčí bob', 'lupina', 'lupin']
 }
 
 def detect_seasonal_ingredients(recipe):
@@ -54,7 +57,7 @@ def detect_seasonal_ingredients(recipe):
 
 def detect_missing_allergens(recipe):
     """Detekuje chybějící alergeny v receptu"""
-    current_allergens = set(a.lower() for a in recipe.get('allergens', []))
+    current_allergens = recipe.get('allergens', [])
     recipe_text = recipe['name'].lower()
 
     # Přidej ingredience do textu
@@ -64,7 +67,7 @@ def detect_missing_allergens(recipe):
     missing_allergens = []
 
     for allergen, keywords in ALLERGEN_MAPPING.items():
-        # Pokud už alergen máme, přeskoč
+        # Pokud už alergen máme, přeskoč (kontroluj přesnou shodu)
         if allergen in current_allergens:
             continue
 

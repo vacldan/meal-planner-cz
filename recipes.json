@@ -17,9 +17,9 @@
         "czech_adapted"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -85,7 +85,7 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)"
       ],
       "ingredients": [
         {
@@ -171,10 +171,10 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "dairy",
-        "mustard"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "10. Hořčice",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -261,8 +261,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky",
+        "12. Oxid siřičitý a siřičitany"
       ],
       "ingredients": [
         {
@@ -360,9 +361,9 @@
         "seasonal"
       ],
       "allergens": [
-        "soy",
-        "gluten",
-        "sesame"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "11. Sezam (sezamová semena)",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -448,8 +449,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "equipment": [
         "oven"
@@ -529,9 +530,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -598,7 +599,7 @@
         "seasonal"
       ],
       "allergens": [
-        "celery"
+        "9. Celer"
       ],
       "ingredients": [
         {
@@ -681,9 +682,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -763,9 +764,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy",
-        "mustard"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "10. Hořčice",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -829,8 +830,8 @@
         "sauce"
       ],
       "allergens": [
-        "dairy",
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -914,7 +915,7 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)"
       ],
       "ingredients": [
         {
@@ -976,9 +977,9 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy",
-        "gluten",
-        "eggs"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -1094,7 +1095,7 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)"
       ],
       "ingredients": [
         {
@@ -1152,10 +1153,10 @@
         "vegetarian"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "dairy",
-        "nuts"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky",
+        "8. Ořechy (skořápkové plody)"
       ],
       "ingredients": [
         {
@@ -1212,9 +1213,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy",
-        "eggs"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -1289,7 +1290,8 @@
         "seasonal"
       ],
       "allergens": [
-        "celery"
+        "9. Celer",
+        "12. Oxid siřičitý a siřičitany"
       ],
       "ingredients": [
         {
@@ -1346,9 +1348,9 @@
         "vegetarian"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -1398,8 +1400,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "mustard"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "10. Hořčice"
       ],
       "ingredients": [
         {
@@ -1455,9 +1457,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -1518,7 +1520,7 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)"
       ],
       "ingredients": [
         {
@@ -1564,8 +1566,8 @@
         "vegetarian"
       ],
       "allergens": [
-        "dairy",
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -1616,8 +1618,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "eggs"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce"
       ],
       "ingredients": [
         {
@@ -1669,8 +1671,8 @@
         "vegetarian"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -1721,7 +1723,7 @@
         "baked"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -1766,9 +1768,9 @@
         "czech_traditional"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -1817,7 +1819,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "equipment": [
         "oven"
@@ -1866,9 +1868,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "celery"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "9. Celer"
       ],
       "ingredients": [
         {
@@ -1967,8 +1969,8 @@
         "cold"
       ],
       "allergens": [
-        "eggs",
-        "dairy"
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -2019,7 +2021,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -2064,8 +2066,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "eggs"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce"
       ],
       "ingredients": [
         {
@@ -2112,8 +2114,8 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy",
-        "eggs"
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -2168,8 +2170,8 @@
         "vegetarian"
       ],
       "allergens": [
-        "gluten",
-        "eggs"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce"
       ],
       "ingredients": [
         {
@@ -2219,7 +2221,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -2265,9 +2267,9 @@
         "vegetarian"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -2350,9 +2352,9 @@
         "vegetarian"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -2397,8 +2399,8 @@
         "meat"
       ],
       "allergens": [
-        "gluten",
-        "eggs"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce"
       ],
       "ingredients": [
         {
@@ -2444,8 +2446,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -2513,8 +2515,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -2583,8 +2585,8 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy",
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -2651,8 +2653,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -2715,7 +2717,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -2785,9 +2787,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "soy",
-        "eggs"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -2899,9 +2901,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "fish"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "4. Ryby"
       ],
       "ingredients": [
         {
@@ -2958,7 +2960,7 @@
         "seasonal"
       ],
       "allergens": [
-        "eggs"
+        "3. Vejce"
       ],
       "ingredients": [
         {
@@ -3083,9 +3085,9 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy",
-        "gluten",
-        "eggs"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3214,7 +3216,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3278,9 +3280,9 @@
         "vegetarian"
       ],
       "allergens": [
-        "eggs",
-        "soy",
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -3332,8 +3334,8 @@
         "pan"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3379,9 +3381,9 @@
         "healthy"
       ],
       "allergens": [
-        "fish",
-        "soy",
-        "sesame"
+        "11. Sezam (sezamová semena)",
+        "4. Ryby",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -3428,9 +3430,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy",
-        "mustard"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "10. Hořčice",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3488,8 +3490,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3541,8 +3543,8 @@
         "creamy"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3600,9 +3602,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy",
-        "eggs"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3721,8 +3723,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3775,9 +3777,9 @@
         "seasonal"
       ],
       "allergens": [
-        "fish",
-        "soy",
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "4. Ryby",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -3835,9 +3837,9 @@
         "seasonal"
       ],
       "allergens": [
-        "eggs",
-        "soy",
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -3900,8 +3902,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -3964,7 +3966,7 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)"
       ],
       "ingredients": [
         {
@@ -4015,7 +4017,7 @@
         "rice"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4073,8 +4075,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4130,7 +4132,7 @@
         "seasonal"
       ],
       "allergens": [
-        "eggs"
+        "3. Vejce"
       ],
       "ingredients": [
         {
@@ -4179,8 +4181,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "celery"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "9. Celer"
       ],
       "ingredients": [
         {
@@ -4242,7 +4244,7 @@
         "seasonal"
       ],
       "allergens": [
-        "mustard"
+        "10. Hořčice"
       ],
       "ingredients": [
         {
@@ -4361,7 +4363,7 @@
         "vegetarian"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4419,9 +4421,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "soy",
-        "eggs"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -4479,8 +4481,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "fish"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "4. Ryby"
       ],
       "ingredients": [
         {
@@ -4533,8 +4535,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4592,9 +4594,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "soy",
-        "eggs"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -4656,8 +4658,8 @@
         "kids"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4710,7 +4712,7 @@
         "seasonal"
       ],
       "allergens": [
-        "fish"
+        "4. Ryby"
       ],
       "ingredients": [
         {
@@ -4758,8 +4760,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4812,8 +4814,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4866,8 +4868,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "eggs"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce"
       ],
       "ingredients": [
         {
@@ -4920,10 +4922,10 @@
         "seasonal"
       ],
       "allergens": [
-        "peanuts",
-        "soy",
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "5. Arašídy (podzemnice olejná)",
+        "6. Sója",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -4991,9 +4993,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "fish",
-        "eggs"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "4. Ryby"
       ],
       "ingredients": [
         {
@@ -5046,8 +5048,8 @@
         "vegetarian"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5095,9 +5097,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy",
-        "nuts"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky",
+        "8. Ořechy (skořápkové plody)"
       ],
       "ingredients": [
         {
@@ -5202,7 +5204,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5255,10 +5257,10 @@
         "seasonal"
       ],
       "allergens": [
-        "soy",
-        "peanuts",
-        "gluten",
-        "nuts"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "5. Arašídy (podzemnice olejná)",
+        "6. Sója",
+        "8. Ořechy (skořápkové plody)"
       ],
       "ingredients": [
         {
@@ -5322,7 +5324,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5380,8 +5382,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5438,8 +5440,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5491,9 +5493,9 @@
         "italian_adapted"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5596,8 +5598,8 @@
         "quick"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5645,8 +5647,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5698,7 +5700,7 @@
         "finger_food"
       ],
       "allergens": [
-        "eggs"
+        "3. Vejce"
       ],
       "ingredients": [
         {
@@ -5746,7 +5748,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5798,7 +5800,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5856,8 +5858,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5910,8 +5912,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -5970,7 +5972,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6028,7 +6030,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6081,9 +6083,9 @@
         "seasonal"
       ],
       "allergens": [
-        "fish",
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "4. Ryby",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6141,7 +6143,7 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)"
       ],
       "ingredients": [
         {
@@ -6242,9 +6244,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "fish",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "4. Ryby",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6297,8 +6299,8 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy",
-        "mustard"
+        "10. Hořčice",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6355,8 +6357,8 @@
         "seasonal"
       ],
       "allergens": [
-        "eggs",
-        "dairy"
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6409,8 +6411,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6467,9 +6469,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6538,8 +6540,8 @@
         "seasonal"
       ],
       "allergens": [
-        "soy",
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -6608,8 +6610,8 @@
         "comfort"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6667,8 +6669,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6732,7 +6734,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6796,10 +6798,10 @@
         "comfort"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "dairy",
-        "mustard"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "10. Hořčice",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -6870,10 +6872,10 @@
         "seasonal"
       ],
       "allergens": [
-        "shellfish",
-        "soy",
-        "gluten",
-        "sesame"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "11. Sezam (sezamová semena)",
+        "2. Korýši",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -6942,7 +6944,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7053,7 +7055,7 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)"
       ],
       "ingredients": [
         {
@@ -7112,8 +7114,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "eggs"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce"
       ],
       "ingredients": [
         {
@@ -7228,10 +7230,10 @@
         "seasonal"
       ],
       "allergens": [
-        "peanuts",
-        "soy",
-        "nuts",
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "5. Arašídy (podzemnice olejná)",
+        "6. Sója",
+        "8. Ořechy (skořápkové plody)"
       ],
       "ingredients": [
         {
@@ -7309,8 +7311,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7368,9 +7370,9 @@
         "creamy"
       ],
       "allergens": [
-        "dairy",
-        "mustard",
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "10. Hořčice",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7433,8 +7435,8 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy",
-        "mustard"
+        "10. Hořčice",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7493,9 +7495,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy",
-        "celery"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky",
+        "9. Celer"
       ],
       "ingredients": [
         {
@@ -7574,8 +7576,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "fish"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "4. Ryby"
       ],
       "ingredients": [
         {
@@ -7634,7 +7636,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7693,8 +7695,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7814,9 +7816,9 @@
         "seasonal"
       ],
       "allergens": [
-        "soy",
-        "nuts",
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "6. Sója",
+        "8. Ořechy (skořápkové plody)"
       ],
       "ingredients": [
         {
@@ -7895,8 +7897,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -7953,7 +7955,7 @@
         "comfort"
       ],
       "allergens": [
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)"
       ],
       "ingredients": [
         {
@@ -8013,8 +8015,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8071,8 +8073,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8199,8 +8201,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "fish"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "4. Ryby"
       ],
       "ingredients": [
         {
@@ -8266,7 +8268,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8323,10 +8325,10 @@
         "seasonal"
       ],
       "allergens": [
-        "eggs",
-        "dairy",
-        "celery",
-        "mustard"
+        "10. Hořčice",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky",
+        "9. Celer"
       ],
       "ingredients": [
         {
@@ -8396,9 +8398,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "soy",
-        "sesame"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "11. Sezam (sezamová semena)",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -8462,7 +8464,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8519,7 +8521,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8578,8 +8580,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "eggs"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce"
       ],
       "ingredients": [
         {
@@ -8641,7 +8643,7 @@
         "seasonal"
       ],
       "allergens": [
-        "celery"
+        "9. Celer"
       ],
       "ingredients": [
         {
@@ -8705,8 +8707,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8764,10 +8766,10 @@
         "seasonal"
       ],
       "allergens": [
-        "peanuts",
-        "soy",
-        "nuts",
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "5. Arašídy (podzemnice olejná)",
+        "6. Sója",
+        "8. Ořechy (skořápkové plody)"
       ],
       "ingredients": [
         {
@@ -8834,8 +8836,8 @@
         "czech_traditional"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -8950,9 +8952,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy",
-        "nuts"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky",
+        "8. Ořechy (skořápkové plody)"
       ],
       "ingredients": [
         {
@@ -9008,7 +9010,7 @@
         "seasonal"
       ],
       "allergens": [
-        "mustard"
+        "10. Hořčice"
       ],
       "ingredients": [
         {
@@ -9066,8 +9068,8 @@
         "creamy"
       ],
       "allergens": [
-        "dairy",
-        "nuts"
+        "7. Mléko a mléčné výrobky",
+        "8. Ořechy (skořápkové plody)"
       ],
       "ingredients": [
         {
@@ -9140,7 +9142,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9197,10 +9199,10 @@
         "thai"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "peanuts",
-        "soy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "5. Arašídy (podzemnice olejná)",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -9273,9 +9275,9 @@
         "seasonal"
       ],
       "allergens": [
-        "soy",
-        "gluten",
-        "sesame"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "11. Sezam (sezamová semena)",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -9339,8 +9341,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9396,8 +9398,8 @@
         "creamy"
       ],
       "allergens": [
-        "dairy",
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9454,8 +9456,8 @@
         "seasonal"
       ],
       "allergens": [
-        "soy",
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -9518,8 +9520,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9577,7 +9579,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9657,10 +9659,10 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "dairy",
-        "celery"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky",
+        "9. Celer"
       ],
       "ingredients": [
         {
@@ -9729,8 +9731,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9796,7 +9798,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9867,8 +9869,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -9932,8 +9934,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -10054,7 +10056,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -10109,8 +10111,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -10179,7 +10181,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -10249,7 +10251,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -10312,10 +10314,10 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "dairy",
-        "celery"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky",
+        "9. Celer"
       ],
       "ingredients": [
         {
@@ -10383,8 +10385,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -10449,8 +10451,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "soy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -10524,9 +10526,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -10594,9 +10596,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy",
-        "nuts"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky",
+        "8. Ořechy (skořápkové plody)"
       ],
       "ingredients": [
         {
@@ -10661,8 +10663,8 @@
         "seasonal"
       ],
       "allergens": [
-        "soy",
-        "dairy"
+        "6. Sója",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -10727,7 +10729,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -10778,8 +10780,8 @@
         "vegetarian"
       ],
       "allergens": [
-        "dairy",
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -10838,10 +10840,10 @@
         "seasonal"
       ],
       "allergens": [
-        "peanuts",
-        "soy",
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "5. Arašídy (podzemnice olejná)",
+        "6. Sója",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -10910,8 +10912,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -10970,7 +10972,7 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)"
       ],
       "ingredients": [
         {
@@ -11034,7 +11036,7 @@
         "seasonal"
       ],
       "allergens": [
-        "sesame"
+        "11. Sezam (sezamová semena)"
       ],
       "ingredients": [
         {
@@ -11097,8 +11099,8 @@
         "seasonal"
       ],
       "allergens": [
-        "eggs",
-        "dairy"
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -11162,7 +11164,7 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)"
       ],
       "ingredients": [
         {
@@ -11236,7 +11238,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -11290,9 +11292,10 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy",
-        "nuts"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky",
+        "8. Ořechy (skořápkové plody)",
+        "12. Oxid siřičitý a siřičitany"
       ],
       "ingredients": [
         {
@@ -11350,9 +11353,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -11416,7 +11419,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -11547,8 +11550,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "eggs"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce"
       ],
       "ingredients": [
         {
@@ -11607,7 +11610,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -11666,8 +11669,8 @@
         "seasonal"
       ],
       "allergens": [
-        "soy",
-        "dairy"
+        "6. Sója",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -11737,7 +11740,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -11866,8 +11869,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "sesame"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "11. Sezam (sezamová semena)"
       ],
       "ingredients": [
         {
@@ -11930,7 +11933,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -11994,9 +11997,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "soy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -12064,8 +12067,8 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy",
-        "nuts"
+        "7. Mléko a mléčné výrobky",
+        "8. Ořechy (skořápkové plody)"
       ],
       "ingredients": [
         {
@@ -12129,8 +12132,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -12194,9 +12197,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -12266,7 +12269,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -12319,9 +12322,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy",
-        "sesame"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "11. Sezam (sezamová semena)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -12384,9 +12387,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "soy",
-        "sesame"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "11. Sezam (sezamová semena)",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -12454,7 +12457,7 @@
         "baked"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -12512,9 +12515,9 @@
         "vegetarian"
       ],
       "allergens": [
-        "gluten",
-        "dairy",
-        "nuts"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky",
+        "8. Ořechy (skořápkové plody)"
       ],
       "ingredients": [
         {
@@ -12583,7 +12586,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -12652,8 +12655,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -12716,9 +12719,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "eggs",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -12781,8 +12784,8 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy",
-        "nuts"
+        "7. Mléko a mléčné výrobky",
+        "8. Ořechy (skořápkové plody)"
       ],
       "ingredients": [
         {
@@ -12841,7 +12844,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -12911,8 +12914,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "celery"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "9. Celer"
       ],
       "ingredients": [
         {
@@ -12982,8 +12985,8 @@
         "seasonal"
       ],
       "allergens": [
-        "sesame",
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "11. Sezam (sezamová semena)"
       ],
       "ingredients": [
         {
@@ -13119,9 +13122,9 @@
         "vegetarian"
       ],
       "allergens": [
-        "peanuts",
-        "soy",
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "5. Arašídy (podzemnice olejná)",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -13191,7 +13194,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -13256,7 +13259,7 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)"
       ],
       "ingredients": [
         {
@@ -13382,8 +13385,8 @@
         "seasonal"
       ],
       "allergens": [
-        "soy",
-        "dairy"
+        "6. Sója",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -13448,7 +13451,7 @@
         "seasonal"
       ],
       "allergens": [
-        "sesame"
+        "11. Sezam (sezamová semena)"
       ],
       "ingredients": [
         {
@@ -13579,7 +13582,7 @@
         "seasonal"
       ],
       "allergens": [
-        "sesame"
+        "11. Sezam (sezamová semena)"
       ],
       "ingredients": [
         {
@@ -13638,8 +13641,8 @@
         "vegetarian"
       ],
       "allergens": [
-        "gluten",
-        "soy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -13708,7 +13711,8 @@
         "vegetarian"
       ],
       "allergens": [
-        "nuts"
+        "8. Ořechy (skořápkové plody)",
+        "12. Oxid siřičitý a siřičitany"
       ],
       "ingredients": [
         {
@@ -13768,8 +13772,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "soy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -13833,7 +13837,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -13898,9 +13902,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "soy",
-        "sesame"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "11. Sezam (sezamová semena)",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -13965,7 +13969,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -14029,7 +14033,7 @@
         "seasonal"
       ],
       "allergens": [
-        "sesame"
+        "11. Sezam (sezamová semena)"
       ],
       "ingredients": [
         {
@@ -14088,9 +14092,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "soy",
-        "sesame"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "11. Sezam (sezamová semena)",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -14159,7 +14163,7 @@
         "seasonal"
       ],
       "allergens": [
-        "peanuts"
+        "5. Arašídy (podzemnice olejná)"
       ],
       "ingredients": [
         {
@@ -14229,7 +14233,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -14294,7 +14298,7 @@
         "seasonal"
       ],
       "allergens": [
-        "sesame"
+        "11. Sezam (sezamová semena)"
       ],
       "ingredients": [
         {
@@ -14359,9 +14363,9 @@
         "seasonal"
       ],
       "allergens": [
-        "soy",
-        "sesame",
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "11. Sezam (sezamová semena)",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -14425,7 +14429,7 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)"
       ],
       "ingredients": [
         {
@@ -14489,8 +14493,8 @@
         "vegetarian"
       ],
       "allergens": [
-        "gluten",
-        "soy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -14612,9 +14616,9 @@
         "seasonal"
       ],
       "allergens": [
-        "soy",
-        "nuts",
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "6. Sója",
+        "8. Ořechy (skořápkové plody)"
       ],
       "ingredients": [
         {
@@ -14726,7 +14730,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -14853,8 +14857,8 @@
         "vegetarian"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -14913,9 +14917,9 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "soy",
-        "sesame"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "11. Sezam (sezamová semena)",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -14985,7 +14989,7 @@
         "seasonal"
       ],
       "allergens": [
-        "soy"
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -15047,8 +15051,8 @@
         "vegetarian"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -15165,7 +15169,7 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)"
       ],
       "ingredients": [
         {
@@ -15224,8 +15228,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -15284,8 +15288,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "soy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "6. Sója"
       ],
       "ingredients": [
         {
@@ -15354,7 +15358,7 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)"
       ],
       "ingredients": [
         {
@@ -15418,7 +15422,7 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)"
       ],
       "ingredients": [
         {
@@ -15476,7 +15480,7 @@
         "quick"
       ],
       "allergens": [
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)"
       ],
       "ingredients": [
         {
@@ -15558,7 +15562,7 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten"
+        "1. Lepek (pšenice, žito, ječmen, oves)"
       ],
       "ingredients": [
         {
@@ -15606,8 +15610,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -15682,8 +15686,8 @@
         "vegetarian"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -15723,7 +15727,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -15763,7 +15767,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -15872,7 +15876,7 @@
         "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -15988,8 +15992,8 @@
         "vegetarian"
       ],
       "allergens": [
-        "gluten",
-        "eggs"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "3. Vejce"
       ],
       "ingredients": [
         {
@@ -16063,8 +16067,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -16137,7 +16141,7 @@
         "seasonal"
       ],
       "allergens": [
-        "fish"
+        "4. Ryby"
       ],
       "ingredients": [
         {
@@ -16178,8 +16182,8 @@
         "seasonal"
       ],
       "allergens": [
-        "gluten",
-        "dairy"
+        "1. Lepek (pšenice, žito, ječmen, oves)",
+        "7. Mléko a mléčné výrobky"
       ],
       "ingredients": [
         {
@@ -16220,7 +16224,7 @@
         "seasonal"
       ],
       "allergens": [
-        "celery"
+        "9. Celer"
       ],
       "ingredients": [
         {

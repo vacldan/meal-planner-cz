@@ -69,26 +69,6 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
         # 'jídla pro děti' není kategorie - filtruje se přes kid_friendly flag
     }
 
-    # Mapování českých alergenů na anglické v recipes.json
-    # Podporuje i varianty s popisem v závorkách
-    allergen_mapping = {
-        'lepek': 'gluten',
-        'korýši': 'shellfish',
-        'vejce': 'eggs',
-        'ryby': 'fish',
-        'arašídy': 'peanuts',
-        'sója': 'soy',
-        'mléko': 'dairy',
-        'mléko a mléčné výrobky': 'dairy',
-        'ořechy': 'nuts',
-        'celer': 'celery',
-        'hořčice': 'mustard',
-        'sezam': 'sesame',
-        'oxid siřičitý': 'sulfites',
-        'vlčí bob': 'lupin',
-        'měkkýši': 'molluscs'
-    }
-
     # Mapování českého vybavení na anglické v recipes.json
     equipment_mapping = {
         'trouba': 'oven',
@@ -167,7 +147,8 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
         if any(dislike in recipe_ingredients for dislike in dislikes_expanded):
             continue
 
-        # Check allergens - převeď české na anglické
+        # Check allergens - recepty mají český formát s EU čísly
+        # Formát v recipes.json: ["1. Lepek (pšenice, žito, ječmen, oves)", "3. Vejce"]
         user_allergens_cz = [a.lower() for a in preferences.get('allergies', [])]
 
         # Extrahuj klíčové slovo před závorkou (např. "Lepek (pšenice)" → "lepek")
@@ -180,10 +161,12 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
                 key = allergen.strip()
             user_allergens_keys.append(key)
 
-        # Převeď na anglické varianty
-        user_allergens_en = [allergen_mapping.get(key, key) for key in user_allergens_keys]
-        recipe_allergens = [a.lower() for a in recipe['allergens']]
-        if any(allergen in recipe_allergens for allergen in user_allergens_en):
+        # Kontroluj, jestli se klíčové slovo objevuje v nějakém alergenu receptu
+        # Recipe allergens jsou např: "1. Lepek (pšenice, žito, ječmen, oves)"
+        recipe_allergens = [a.lower() for a in recipe.get('allergens', [])]
+        recipe_allergens_text = ' '.join(recipe_allergens)
+
+        if any(allergen_key in recipe_allergens_text for allergen_key in user_allergens_keys):
             continue
 
         # Check category preference - převeď české na anglické

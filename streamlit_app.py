@@ -552,27 +552,9 @@ if "meal_plan" in st.session_state:
                     st.metric("💰 Cena/porce", f"{recipe['price_per_portion_czk']} Kč")
 
                     if recipe.get('allergens'):
-                        # Translate allergens to Czech for display
-                        allergens_cz = []
-                        allergen_display_map = {
-                            "gluten": "lepek",
-                            "shellfish": "korýši",
-                            "eggs": "vejce",
-                            "fish": "ryby",
-                            "peanuts": "arašídy",
-                            "soy": "sója",
-                            "dairy": "mléko",
-                            "nuts": "ořechy",
-                            "celery": "celer",
-                            "hořčice": "mustard",
-                            "sesame": "sezam",
-                            "sulfites": "oxid siřičitý",
-                            "lupin": "vlčí bob",
-                            "molluscs": "měkkýši"
-                        }
-                        for allergen in recipe['allergens']:
-                            allergens_cz.append(allergen_display_map.get(allergen.lower(), allergen))
-                        st.warning(f"⚠️ Alergeny: {', '.join(allergens_cz)}")
+                        # Alergeny jsou již v českém formátu s EU čísly
+                        # Např: "1. Lepek (pšenice, žito, ječmen, oves)", "3. Vejce"
+                        st.warning(f"⚠️ Alergeny: {', '.join(recipe['allergens'])}")
 
         # Po všech dnech týdne zobraz dezert (pokud existuje)
         if 'sunday_dessert' in week_meals:
@@ -654,20 +636,16 @@ if "meal_plan" in st.session_state:
 
                     # Zobraz alergeny pokud existují
                     if dessert.get('allergens'):
-                        # Alergeny v dezertech jsou jako čísla, převedeme je
-                        allergen_number_map = {
-                            1: "lepek",
-                            3: "vejce",
-                            7: "mléko",
-                            8: "ořechy"
-                        }
-                        allergens_cz = []
+                        # Alergeny jsou již v českém formátu s EU čísly
+                        # Např: "1. Lepek (pšenice, žito, ječmen, oves)", "3. Vejce"
+                        allergens_display = []
                         for allergen in dessert['allergens']:
                             if isinstance(allergen, int):
-                                allergens_cz.append(allergen_number_map.get(allergen, str(allergen)))
+                                # Starý formát s čísly - převeď na string
+                                allergens_display.append(str(allergen))
                             else:
-                                allergens_cz.append(str(allergen))
-                        st.warning(f"⚠️ Alergeny: {', '.join(allergens_cz)}")
+                                allergens_display.append(allergen)
+                        st.warning(f"⚠️ Alergeny: {', '.join(allergens_display)}")
 
     st.divider()
 
