@@ -11,6 +11,10 @@ venv/
 # Output files
 muj_jidelnicek.pdf
 meal_plan_output.json
+generated_meal_plan.pdf
+
+# Backup files from audit script
+recipes_backup_*.json
 
 # But keep the sample PDF
 !sample_meal_plan.pdf
