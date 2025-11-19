@@ -64,7 +64,8 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
         'rodinná klasika': 'comfort',
         'polévky': 'soup',
         'vegetariánské': 'vegetarian',
-        'veganské': 'vegan'
+        'veganské': 'vegan',
+        # 'jídla pro děti' není kategorie - filtruje se přes kid_friendly flag
     }
 
     # Mapování českých alergenů na anglické v recipes.json
@@ -180,14 +181,17 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
 
         # Check category preference - převeď české na anglické
         user_likes_cz = [l.lower() for l in preferences.get('likes', [])]
-        user_likes_en = [category_mapping.get(l, l) for l in user_likes_cz]
+
+        # Odfiltruj "jídla pro děti" - to se kontroluje přes kid_friendly flag, ne kategorii
+        user_likes_cz_filtered = [l for l in user_likes_cz if l != 'jídla pro děti']
+        user_likes_en = [category_mapping.get(l, l) for l in user_likes_cz_filtered]
 
         if user_likes_en:
             # Kontroluj jak category, tak tags (pro vegetarian/vegan)
             recipe_tags = recipe.get('tags', [])
             if recipe['category'] in user_likes_en or any(tag in user_likes_en for tag in recipe_tags):
                 filtered.append(recipe)
-        else:  # If no preference, include all
+        else:  # If no preference (nebo jen "Jídla pro děti"), include all
             filtered.append(recipe)
 
     return filtered

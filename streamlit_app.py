@@ -8,84 +8,120 @@ from meal_planner import generate_meal_plan
 from pdf_generator import generate_pdf
 import os
 
-# Běžné ingredience, které lidé často mají doma (50 nejpoužívanějších v ČR)
-COMMON_PANTRY_ITEMS = [
-    # Trvanlivé - mouka a pečení
-    "Mouka hladká", "Mouka polohrubá", "Mouka hrubá", "Cukr", "Cukr moučka",
-    "Sůl", "Kypřicí prášek", "Droždí", "Vanilkový cukr", "Škrob",
-
-    # Trvanlivé - oleje a tuky
-    "Olej slunečnicový", "Olivový olej", "Ocet",
-
-    # Trvanlivé - těstoviny a rýže
-    "Rýže", "Těstoviny", "Instantní polévky", "Bujón/Vývar kostky",
-
-    # Trvanlivé - koření a dochucovadla
-    "Pepř", "Paprika sladká", "Paprika pálivá", "Kmín", "Majoránka",
-    "Bazalka", "Oregano", "Tymián", "Bobkový list", "Muškátový oříšek",
-    "Nové koření", "Kečup", "Hořčice", "Sojová omáčka",
-
-    # Mléčné výrobky
-    "Mléko", "Máslo", "Sýr", "Eidam", "Parmazán", "Smetana na vaření",
-    "Smetana ke šlehání", "Zakysaná smetana", "Jogurt", "Tvaroh",
-
-    # Zelenina
-    "Cibule", "Česnek", "Brambory", "Mrkev", "Rajčata", "Petržel",
-
-    # Ostatní
-    "Vejce", "Med", "Citron", "Zázvor"
+# Kategorie receptů (seřazeno abecedně)
+CATEGORIES = [
+    "Jídla pro děti",
+    "Polévky",
+    "Rodinná klasika",
+    "Rychlá jídla",
+    "Tradiční česká",
+    "Těstoviny",
+    "Veganské",
+    "Vegetariánské"
 ]
 
-# Kategorie receptů
-CATEGORIES = ["Těstoviny", "Tradiční česká", "Rychlá jídla", "Rodinná klasika", "Polévky", "Vegetariánské", "Veganské"]
-
-# Alergeny - kompletní seznam 14 hlavních alergenů EU
-ALLERGENS = [
-    "Lepek (pšenice, žito, ječmen, oves)",
-    "Korýši (krevety, humr, krab)",
-    "Vejce",
-    "Ryby",
-    "Arašídy",
-    "Sója",
-    "Mléko a mléčné výrobky",
-    "Ořechy (mandle, lískové, vlašské, kešu)",
-    "Celer",
-    "Hořčice",
-    "Sezam",
-    "Oxid siřičitý (konzervanty E220-E228)",
-    "Vlčí bob (lupina)",
-    "Měkkýši (slávky, chobotnice)"
-]
-
-# Potraviny, které nechceš - rozšířený seznam
+# Potraviny, které nechceš (seřazeno abecedně)
 DISLIKES = [
-    "Vepřové",
-    "Hovězí",
-    "Kuřecí",
-    "Ryby",
-    "Mořské plody",
-    "Vnitřnosti",
-    "Houby",
+    "Brokolice",
     "Cibule",
     "Česnek",
+    "Čočka",
+    "Fazole",
+    "Hovězí",
+    "Houby",
+    "Koření (pikantní)",
+    "Kuřecí",
+    "Květák",
+    "Mořské plody",
     "Paprika",
     "Rajčata",
-    "Brokolice",
-    "Květák",
-    "Fazole",
-    "Čočka",
-    "Sýr",
+    "Ryby",
     "Smetana",
-    "Koření (pikantní)"
+    "Sýr",
+    "Vepřové",
+    "Vnitřnosti"
 ]
 
-# Vybavení kuchyně
+# Alergeny - kompletní seznam 14 hlavních alergenů EU (seřazeno abecedně)
+ALLERGENS = [
+    "Arašídy",
+    "Celer",
+    "Hořčice",
+    "Korýši (krevety, humr, krab)",
+    "Lepek (pšenice, žito, ječmen, oves)",
+    "Měkkýši (slávky, chobotnice)",
+    "Mléko a mléčné výrobky",
+    "Ořechy (mandle, lískové, vlašské, kešu)",
+    "Oxid siřičitý (konzervanty E220-E228)",
+    "Ryby",
+    "Sezam",
+    "Sója",
+    "Vejce",
+    "Vlčí bob (lupina)"
+]
+
+# Vybavení kuchyně (seřazeno abecedně)
 EQUIPMENT = [
-    "Trouba",
-    "Slow cooker (pomalý hrnec)",
     "Air fryer (fritéza na vzduch)",
     "Mikrovlnka",
-    "Mixér/Tyčový mixér"
+    "Mixér/Tyčový mixér",
+    "Slow cooker (pomalý hrnec)",
+    "Trouba"
+]
+
+# Běžné ingredience, které lidé často mají doma (seřazeno abecedně)
+COMMON_PANTRY_ITEMS = [
+    "Bazalka",
+    "Bobkový list",
+    "Brambory",
+    "Bujón/Vývar kostky",
+    "Cibule",
+    "Citron",
+    "Cukr",
+    "Cukr moučka",
+    "Česnek",
+    "Droždí",
+    "Eidam",
+    "Hořčice",
+    "Instantní polévky",
+    "Jogurt",
+    "Kečup",
+    "Kmín",
+    "Kypřicí prášek",
+    "Majoránka",
+    "Máslo",
+    "Med",
+    "Mléko",
+    "Mouka hladká",
+    "Mouka hrubá",
+    "Mouka polohrubá",
+    "Mrkev",
+    "Muškátový oříšek",
+    "Nové koření",
+    "Ocet",
+    "Olej slunečnicový",
+    "Olivový olej",
+    "Oregano",
+    "Paprika pálivá",
+    "Paprika sladká",
+    "Parmazán",
+    "Pepř",
+    "Petržel",
+    "Rajčata",
+    "Rýže",
+    "Smetana ke šlehání",
+    "Smetana na vaření",
+    "Sojová omáčka",
+    "Sůl",
+    "Sýr",
+    "Tvaroh",
+    "Tymián",
+    "Těstoviny",
+    "Vanilkový cukr",
+    "Vejce",
+    "Zakysaná smetana",
+    "Zázvor",
+    "Škrob"
 ]
 
 # Page config
@@ -117,23 +153,53 @@ household_size = st.sidebar.number_input(
     value=4
 )
 
+st.sidebar.divider()
+
+# 1. Jaká jídla máš rád
 st.sidebar.subheader("🍽️ Jaká jídla máš rád?")
 st.sidebar.markdown("*Vyber jeden nebo více typů:*")
 likes = st.sidebar.multiselect(
     "Kategorie jídel",
     CATEGORIES,
-    default=["Těstoviny", "Tradiční česká", "Rychlá jídla"],
+    default=["Rychlá jídla", "Tradiční česká", "Těstoviny"],
     help="""
-    • Těstoviny - špagety, lasagne, penne\n
-    • Tradiční česká - guláš, svíčková, řízek\n
-    • Rychlá jídla - do 30 minut\n
-    • Rodinná klasika - pizza, burgery, palačinky\n
+    • Jídla pro děti - jednoduchá, neexotická jídla vhodná pro děti\n
     • Polévky - zeleninové, vývarové, krémové\n
-    • Vegetariánské - bez masa a ryb\n
-    • Veganské - bez živočišných produktů
+    • Rodinná klasika - pizza, burgery, palačinky\n
+    • Rychlá jídla - do 30 minut\n
+    • Tradiční česká - guláš, svíčková, řízek\n
+    • Těstoviny - špagety, lasagne, penne\n
+    • Veganské - bez živočišných produktů\n
+    • Vegetariánské - bez masa a ryb
     """
 )
 
+st.sidebar.divider()
+
+# 2. Co nechceš v jídle
+st.sidebar.subheader("❌ Co nechceš v jídle")
+st.sidebar.markdown("*Vyber potraviny, které nechceš:*")
+dislikes = st.sidebar.multiselect(
+    "Nechci jíst...",
+    DISLIKES,
+    default=[],
+    help="Vyloučíme recepty obsahující tyto ingredience"
+)
+
+st.sidebar.divider()
+
+# 3. Alergie
+st.sidebar.subheader("⚠️ Alergie")
+allergies = st.sidebar.multiselect(
+    "Máš alergii na...",
+    ALLERGENS,
+    default=[],
+    help="Vyfiltrujeme recepty s těmito alergeny"
+)
+
+st.sidebar.divider()
+
+# 4. Kolik máš času
 st.sidebar.subheader("⏱️ Kolik máš času?")
 
 # Možnost: Stejný čas každý den NEBO individuální
@@ -177,31 +243,7 @@ st.sidebar.caption("💡 Rychlá jídla = do 30 minut")
 
 st.sidebar.divider()
 
-st.sidebar.subheader("⚠️ Alergie")
-allergies = st.sidebar.multiselect(
-    "Máš alergii na...",
-    ALLERGENS,
-    default=[],
-    help="Vyfiltrujeme recepty s těmito alergeny"
-)
-
-st.sidebar.subheader("❌ Co nechceš v jídle")
-st.sidebar.markdown("*Vyber potraviny, které nechceš:*")
-dislikes = st.sidebar.multiselect(
-    "Nechci jíst...",
-    DISLIKES,
-    default=[],
-    help="Vyloučíme recepty obsahující tyto ingredience"
-)
-
-kid_friendly = st.sidebar.checkbox(
-    "👶 Jen jídla vhodná pro děti",
-    value=True,
-    help="Vyloučíme velmi pikantní a netradiční jídla"
-)
-
-st.sidebar.divider()
-
+# 5. Jaké máš vybavení
 st.sidebar.subheader("🔧 Jaké máš vybavení?")
 st.sidebar.markdown("*Recepty použijí jen to, co máš:*")
 equipment = st.sidebar.multiselect(
@@ -213,6 +255,7 @@ equipment = st.sidebar.multiselect(
 
 st.sidebar.divider()
 
+# 6. Co už máš doma
 st.sidebar.subheader("🏠 Co už máš doma?")
 st.sidebar.markdown("*Odečteme z nákupního seznamu:*")
 have_at_home = st.sidebar.multiselect(
@@ -239,7 +282,7 @@ if st.sidebar.button("🚀 Generuj Jídelníček", type="primary", use_container
         "daily_time_budgets": daily_time_budgets,  # None pokud stejný čas, jinak dict
         "price_budget": "30-70",
         "dislikes": [d.lower() for d in dislikes],
-        "kid_friendly_required": kid_friendly,
+        "kid_friendly_required": "jídla pro děti" in [l.lower() for l in likes],
         "equipment": [e.lower() for e in equipment],
         "num_weeks": num_weeks,
         "have_at_home": have_at_home_list
