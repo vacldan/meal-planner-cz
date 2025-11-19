@@ -718,8 +718,10 @@ def generate_meal_plan(preferences: Dict) -> Dict:
     reuse_percentage = round((reuse_count / total_ingredient_uses) * 100) if total_ingredient_uses > 0 else 0
 
     # Odhadni úspory z překryvu (weighted)
-    avg_ingredient_cost = 30  # Kč průměr
-    estimated_savings = round(weighted_reuse * avg_ingredient_cost)
+    # Realističtější výpočet: ne každá sdílená ingredience = plná úspora
+    avg_ingredient_cost = 20  # Kč průměr (konzervativnější)
+    efficiency_factor = 0.65  # Ne všechny opakování vedou k plné úspoře (využití zbytků z balení)
+    estimated_savings = round(weighted_reuse * avg_ingredient_cost * efficiency_factor)
 
     return {
         "week_of": "2024-11-18",
