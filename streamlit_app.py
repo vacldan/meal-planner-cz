@@ -14,6 +14,7 @@ CATEGORIES = [
     "Polévky",
     "Rodinná klasika",
     "Rychlá jídla",
+    "Sezónní jídla",
     "Tradiční česká",
     "Těstoviny",
     "Veganské",
@@ -153,6 +154,13 @@ household_size = st.sidebar.number_input(
     value=4
 )
 
+price_budget = st.sidebar.select_slider(
+    "💰 Přibližný rozpočet na porci",
+    options=["20-40 Kč", "30-70 Kč", "50-100 Kč", "100+ Kč"],
+    value="30-70 Kč",
+    help="Vyber cenový rozsah pro recepty. Můžeme filtrovat podle ceny za porci."
+)
+
 st.sidebar.divider()
 
 # 1. Jaká jídla máš rád
@@ -167,6 +175,7 @@ likes = st.sidebar.multiselect(
     • Polévky - zeleninové, vývarové, krémové\n
     • Rodinná klasika - pizza, burgery, palačinky\n
     • Rychlá jídla - do 30 minut\n
+    • Sezónní jídla - jídla využívající sezónní suroviny\n
     • Tradiční česká - guláš, svíčková, řízek\n
     • Těstoviny - špagety, lasagne, penne\n
     • Veganské - bez živočišných produktů\n
@@ -274,13 +283,16 @@ if st.sidebar.button("🚀 Generuj Jídelníček", type="primary", use_container
     # "Mám doma" už je list z multiselect
     have_at_home_list = [item.lower() for item in have_at_home]
 
+    # Převeď rozpočet z formátu "30-70 Kč" na "30-70"
+    price_budget_clean = price_budget.replace(" Kč", "").replace("+", "-200")  # "100+ Kč" → "100-200"
+
     preferences = {
         "household_size": household_size,
         "allergies": [a.lower() for a in allergies],
         "likes": [l.lower() for l in likes],
         "time_budget": time_budget,
         "daily_time_budgets": daily_time_budgets,  # None pokud stejný čas, jinak dict
-        "price_budget": "30-70",
+        "price_budget": price_budget_clean,
         "dislikes": [d.lower() for d in dislikes],
         "kid_friendly_required": "jídla pro děti" in [l.lower() for l in likes],
         "equipment": [e.lower() for e in equipment],

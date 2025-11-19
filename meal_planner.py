@@ -63,6 +63,7 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
         'rychlá jídla': 'quick',
         'rodinná klasika': 'comfort',
         'polévky': 'soup',
+        'sezónní jídla': 'seasonal',
         'vegetariánské': 'vegetarian',
         'veganské': 'vegan',
         # 'jídla pro děti' není kategorie - filtruje se přes kid_friendly flag
@@ -124,6 +125,12 @@ def filter_recipes(recipes: List[Dict], preferences: Dict) -> List[Dict]:
         time_min, time_max = map(int, preferences['time_budget'].split('-'))
         if not (time_min <= recipe['time_minutes'] <= time_max):
             continue
+
+        # Check price budget
+        if 'price_budget' in preferences:
+            price_min, price_max = map(int, preferences['price_budget'].split('-'))
+            if not (price_min <= recipe['price_per_portion_czk'] <= price_max):
+                continue
 
         # Check kid-friendly requirement
         if preferences.get('kid_friendly_required') and not recipe['kid_friendly']:
