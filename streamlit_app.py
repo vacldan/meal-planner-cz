@@ -298,6 +298,9 @@ if st.sidebar.button("🚀 Generuj Jídelníček", type="primary", use_container
             st.session_state.meal_plan = meal_plan
             st.session_state.preferences = preferences
 
+            # Reset swap tracking for new meal plan
+            st.session_state.swap_used_per_week = {}
+
             # Load all filtered recipes for swap functionality
             from meal_planner import load_recipes, filter_recipes, load_desserts
             all_recipes = load_recipes()
@@ -392,7 +395,7 @@ if "meal_plan" in st.session_state:
 
     # Weekly menu (multiple weeks support)
     st.header("📅 Menu")
-    st.info("💡 **Tip:** Nelíbí se ti nějaký recept? Klikni na tlačítko **🔄 Vyměň** vedle názvu dne a vygeneruje se ti jiný recept!")
+    st.info("💡 **Tip:** Nelíbí se ti nějaký recept? Klikni na tlačítko **🔄 Vyměň** vedle názvu dne a vygeneruje se ti jiný recept! ⚠️ Můžeš vyměnit pouze 1 recept na týden.")
 
     days_czech = {
         'monday': 'Pondělí',
@@ -408,9 +411,23 @@ if "meal_plan" in st.session_state:
     num_weeks = meal_plan.get('num_weeks', 1)
     weeks = meal_plan.get('weeks', [meal_plan.get('meals', {})])
 
+    # Initialize swap tracking for each week if not exists
+    if 'swap_used_per_week' not in st.session_state:
+        st.session_state.swap_used_per_week = {}
+
     for week_idx, week_meals in enumerate(weeks, 1):
+        # Initialize swap tracking for this week
+        if week_idx not in st.session_state.swap_used_per_week:
+            st.session_state.swap_used_per_week[week_idx] = False
+
+        # Check if swap was already used this week
+        swap_disabled = st.session_state.swap_used_per_week[week_idx]
+
         if num_weeks > 1:
             st.subheader(f"🗓️ Týden {week_idx}")
+
+        if swap_disabled:
+            st.caption("⚠️ Již jsi použil funkci 'Vyměň recept' pro tento týden")
 
         for day_en, day_cz in days_czech.items():
             if day_en not in week_meals:
@@ -426,7 +443,7 @@ if "meal_plan" in st.session_state:
 
             with col_swap:
                 swap_key = f"swap_{week_idx}_{day_en}"
-                if st.button("🔄 Vyměň", key=swap_key, help="Vyměnit za jiný recept"):
+                if st.button("🔄 Vyměň", key=swap_key, help="Vyměnit za jiný recept" if not swap_disabled else "Již jsi použil swap tento týden", disabled=swap_disabled):
                     # Get current week and day preferences
                     from meal_planner import get_main_protein, generate_shopping_list, calculate_total_cost
                     from collections import defaultdict
@@ -489,6 +506,9 @@ if "meal_plan" in st.session_state:
                             st.session_state.meal_plan['shopping_details'] = shopping_result
                             st.session_state.meal_plan['total_cost_czk'] = total_cost
                             st.session_state.meal_plan['cost_per_portion_czk'] = round(total_cost / total_portions, 1) if total_portions > 0 else 0
+
+                            # Mark swap as used for this week
+                            st.session_state.swap_used_per_week[week_idx] = True
 
                             st.rerun()
                         else:
@@ -554,7 +574,7 @@ if "meal_plan" in st.session_state:
 
             with col_swap_d:
                 swap_dessert_key = f"swap_dessert_{week_idx}"
-                if st.button("🔄 Vyměň", key=swap_dessert_key, help="Vyměnit za jiný dezert"):
+                if st.button("🔄 Vyměň", key=swap_dessert_key, help="Vyměnit za jiný dezert" if not swap_disabled else "Již jsi použil swap tento týden", disabled=swap_disabled):
                     if 'all_desserts' in st.session_state:
                         all_desserts = st.session_state.all_desserts
 
@@ -590,6 +610,9 @@ if "meal_plan" in st.session_state:
                             st.session_state.meal_plan['shopping_details'] = shopping_result
                             st.session_state.meal_plan['total_cost_czk'] = total_cost
                             st.session_state.meal_plan['cost_per_portion_czk'] = round(total_cost / total_portions, 1) if total_portions > 0 else 0
+
+                            # Mark swap as used for this week
+                            st.session_state.swap_used_per_week[week_idx] = True
 
                             st.rerun()
                         else:
