@@ -81,7 +81,8 @@
       "kid_friendly": true,
       "tags": [
         "czech_traditional",
-        "comfort"
+        "comfort",
+        "seasonal"
       ],
       "allergens": [
         "gluten"
@@ -166,11 +167,14 @@
       "kid_friendly": true,
       "tags": [
         "czech_traditional",
-        "fried"
+        "fried",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
-        "eggs"
+        "eggs",
+        "dairy",
+        "mustard"
       ],
       "ingredients": [
         {
@@ -253,7 +257,8 @@
       "tags": [
         "pasta",
         "baked",
-        "comfort"
+        "comfort",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -351,10 +356,13 @@
       "tags": [
         "quick",
         "healthy",
-        "asian"
+        "asian",
+        "seasonal"
       ],
       "allergens": [
-        "soy"
+        "soy",
+        "gluten",
+        "sesame"
       ],
       "ingredients": [
         {
@@ -436,7 +444,8 @@
         "comfort",
         "italian",
         "baked",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -516,7 +525,8 @@
       "tags": [
         "czech_traditional",
         "vegetarian",
-        "fried"
+        "fried",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -584,9 +594,12 @@
       "tags": [
         "czech_traditional",
         "soup",
-        "comfort"
+        "comfort",
+        "seasonal"
       ],
-      "allergens": [],
+      "allergens": [
+        "celery"
+      ],
       "ingredients": [
         {
           "name": "Červená čočka",
@@ -664,7 +677,8 @@
         "quick",
         "czech_traditional",
         "fried",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -745,10 +759,13 @@
       "tags": [
         "quick",
         "czech_traditional",
-        "fast"
+        "fast",
+        "seasonal"
       ],
       "allergens": [
-        "gluten"
+        "gluten",
+        "dairy",
+        "mustard"
       ],
       "ingredients": [
         {
@@ -893,7 +910,8 @@
       "kid_friendly": true,
       "tags": [
         "czech_traditional",
-        "roasted"
+        "roasted",
+        "seasonal"
       ],
       "allergens": [
         "gluten"
@@ -954,11 +972,13 @@
       "tags": [
         "czech_traditional",
         "vegetarian",
-        "sauce"
+        "sauce",
+        "seasonal"
       ],
       "allergens": [
         "dairy",
-        "gluten"
+        "gluten",
+        "eggs"
       ],
       "ingredients": [
         {
@@ -1021,7 +1041,8 @@
       "kid_friendly": true,
       "tags": [
         "baked",
-        "czech_traditional"
+        "czech_traditional",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -1069,7 +1090,8 @@
       "kid_friendly": false,
       "tags": [
         "soup",
-        "czech_traditional"
+        "czech_traditional",
+        "seasonal"
       ],
       "allergens": [
         "gluten"
@@ -1132,7 +1154,8 @@
       "allergens": [
         "gluten",
         "eggs",
-        "dairy"
+        "dairy",
+        "nuts"
       ],
       "ingredients": [
         {
@@ -1185,11 +1208,13 @@
       "kid_friendly": true,
       "tags": [
         "sauce",
-        "czech_traditional"
+        "czech_traditional",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
-        "dairy"
+        "dairy",
+        "eggs"
       ],
       "ingredients": [
         {
@@ -1260,9 +1285,12 @@
         "soup",
         "vegetarian",
         "czech_traditional",
-        "vegan"
+        "vegan",
+        "seasonal"
       ],
-      "allergens": [],
+      "allergens": [
+        "celery"
+      ],
       "ingredients": [
         {
           "name": "Brambory",
@@ -1366,10 +1394,12 @@
       "kid_friendly": true,
       "tags": [
         "sauce",
-        "czech_traditional"
+        "czech_traditional",
+        "seasonal"
       ],
       "allergens": [
-        "gluten"
+        "gluten",
+        "mustard"
       ],
       "ingredients": [
         {
@@ -1421,7 +1451,8 @@
       "kid_friendly": true,
       "tags": [
         "fried",
-        "czech_traditional"
+        "czech_traditional",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -1483,7 +1514,8 @@
       "kid_friendly": false,
       "tags": [
         "roasted",
-        "czech_traditional"
+        "czech_traditional",
+        "seasonal"
       ],
       "allergens": [
         "gluten"
@@ -1580,7 +1612,8 @@
       "kid_friendly": true,
       "tags": [
         "czech_traditional",
-        "quick"
+        "quick",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -1636,7 +1669,8 @@
         "vegetarian"
       ],
       "allergens": [
-        "gluten"
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -1779,7 +1813,8 @@
       "tags": [
         "baked",
         "comfort",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -1827,11 +1862,13 @@
       "kid_friendly": true,
       "tags": [
         "soup",
-        "czech_traditional"
+        "czech_traditional",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
-        "eggs"
+        "eggs",
+        "celery"
       ],
       "ingredients": [
         {
@@ -1878,7 +1915,8 @@
       "kid_friendly": true,
       "tags": [
         "sauce",
-        "czech_traditional"
+        "czech_traditional",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -1977,7 +2015,8 @@
       "kid_friendly": true,
       "tags": [
         "quick",
-        "sauce"
+        "sauce",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -2021,7 +2060,8 @@
       "servings": 4,
       "kid_friendly": true,
       "tags": [
-        "czech_traditional"
+        "czech_traditional",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -2068,7 +2108,8 @@
       "tags": [
         "sweet",
         "baked",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "dairy",
@@ -2174,9 +2215,12 @@
       "kid_friendly": true,
       "tags": [
         "quick",
-        "czech_traditional"
+        "czech_traditional",
+        "seasonal"
       ],
-      "allergens": [],
+      "allergens": [
+        "dairy"
+      ],
       "ingredients": [
         {
           "name": "Brambory",
@@ -2222,7 +2266,8 @@
       ],
       "allergens": [
         "gluten",
-        "eggs"
+        "eggs",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -2395,7 +2440,8 @@
       "tags": [
         "pasta",
         "italian",
-        "family_favorite"
+        "family_favorite",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -2463,10 +2509,12 @@
       "tags": [
         "mexican",
         "quick",
-        "wraps"
+        "wraps",
+        "seasonal"
       ],
       "allergens": [
-        "gluten"
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -2531,7 +2579,8 @@
       "tags": [
         "mediterranean",
         "bowl",
-        "healthy"
+        "healthy",
+        "seasonal"
       ],
       "allergens": [
         "dairy",
@@ -2598,7 +2647,8 @@
       "tags": [
         "mexican",
         "quick",
-        "family_favorite"
+        "family_favorite",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -2661,7 +2711,8 @@
       "tags": [
         "indian",
         "sauce",
-        "rice"
+        "rice",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -2730,11 +2781,13 @@
         "asian",
         "quick",
         "vegetarian",
-        "vegan"
+        "vegan",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
-        "soy"
+        "soy",
+        "eggs"
       ],
       "ingredients": [
         {
@@ -2793,7 +2846,8 @@
       "tags": [
         "american",
         "baked",
-        "finger_food"
+        "finger_food",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -2841,7 +2895,8 @@
       "kid_friendly": true,
       "tags": [
         "british",
-        "baked"
+        "baked",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -2899,7 +2954,8 @@
       "tags": [
         "mediterranean",
         "vegetarian",
-        "one_pan"
+        "one_pan",
+        "seasonal"
       ],
       "allergens": [
         "eggs"
@@ -2957,7 +3013,8 @@
         "mediterranean",
         "vegetarian",
         "healthy",
-        "vegan"
+        "vegan",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -3022,7 +3079,8 @@
       "tags": [
         "salad",
         "light",
-        "international"
+        "international",
+        "seasonal"
       ],
       "allergens": [
         "dairy",
@@ -3086,7 +3144,8 @@
       "tags": [
         "mexican",
         "one_pot",
-        "rice"
+        "rice",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -3151,9 +3210,12 @@
       "tags": [
         "thai",
         "curry",
-        "rice"
+        "rice",
+        "seasonal"
       ],
-      "allergens": [],
+      "allergens": [
+        "dairy"
+      ],
       "ingredients": [
         {
           "name": "Kuřecí prsa",
@@ -3217,7 +3279,8 @@
       ],
       "allergens": [
         "eggs",
-        "soy"
+        "soy",
+        "gluten"
       ],
       "ingredients": [
         {
@@ -3317,7 +3380,8 @@
       ],
       "allergens": [
         "fish",
-        "soy"
+        "soy",
+        "sesame"
       ],
       "ingredients": [
         {
@@ -3360,11 +3424,13 @@
       "tags": [
         "american",
         "burger",
-        "family_favorite"
+        "family_favorite",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
-        "dairy"
+        "dairy",
+        "mustard"
       ],
       "ingredients": [
         {
@@ -3418,7 +3484,8 @@
       "tags": [
         "quick",
         "wraps",
-        "healthy"
+        "healthy",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -3529,7 +3596,8 @@
       "tags": [
         "pasta",
         "vegetarian",
-        "baked"
+        "baked",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -3588,7 +3656,8 @@
       "tags": [
         "mediterranean",
         "rice",
-        "one_pan"
+        "one_pan",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -3648,7 +3717,8 @@
       "tags": [
         "pasta",
         "quick",
-        "italian"
+        "italian",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -3701,11 +3771,13 @@
       "tags": [
         "asian",
         "bowl",
-        "healthy"
+        "healthy",
+        "seasonal"
       ],
       "allergens": [
         "fish",
-        "soy"
+        "soy",
+        "gluten"
       ],
       "ingredients": [
         {
@@ -3759,11 +3831,13 @@
       "tags": [
         "asian",
         "noodles",
-        "stir_fry"
+        "stir_fry",
+        "seasonal"
       ],
       "allergens": [
         "eggs",
-        "soy"
+        "soy",
+        "gluten"
       ],
       "ingredients": [
         {
@@ -3822,10 +3896,12 @@
       "tags": [
         "vegetarian",
         "mediterranean",
-        "street_food"
+        "street_food",
+        "seasonal"
       ],
       "allergens": [
-        "gluten"
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -3884,7 +3960,8 @@
         "starter",
         "italian",
         "vegetarian",
-        "vegan"
+        "vegan",
+        "seasonal"
       ],
       "allergens": [
         "gluten"
@@ -3992,7 +4069,8 @@
       "tags": [
         "mediterranean",
         "baked",
-        "wraps"
+        "wraps",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -4048,7 +4126,8 @@
       "tags": [
         "spanish",
         "vegetarian",
-        "pan"
+        "pan",
+        "seasonal"
       ],
       "allergens": [
         "eggs"
@@ -4096,10 +4175,12 @@
         "italian",
         "soup",
         "vegetarian",
-        "vegan"
+        "vegan",
+        "seasonal"
       ],
       "allergens": [
-        "gluten"
+        "gluten",
+        "celery"
       ],
       "ingredients": [
         {
@@ -4157,9 +4238,12 @@
       "kid_friendly": true,
       "tags": [
         "baked",
-        "family_favorite"
+        "family_favorite",
+        "seasonal"
       ],
-      "allergens": [],
+      "allergens": [
+        "mustard"
+      ],
       "ingredients": [
         {
           "name": "Kuřecí stehna nebo paličky",
@@ -4212,7 +4296,8 @@
       "tags": [
         "mexican",
         "bowl",
-        "rice"
+        "rice",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -4330,11 +4415,13 @@
       "tags": [
         "asian",
         "soup",
-        "light"
+        "light",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
-        "soy"
+        "soy",
+        "eggs"
       ],
       "ingredients": [
         {
@@ -4388,7 +4475,8 @@
       "tags": [
         "pasta",
         "quick",
-        "budget"
+        "budget",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -4441,7 +4529,8 @@
       "tags": [
         "wraps",
         "quick",
-        "healthy"
+        "healthy",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -4499,7 +4588,8 @@
       "tags": [
         "asian",
         "soup",
-        "noodles"
+        "noodles",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -4616,7 +4706,8 @@
       "tags": [
         "fish",
         "baked",
-        "healthy"
+        "healthy",
+        "seasonal"
       ],
       "allergens": [
         "fish"
@@ -4663,7 +4754,8 @@
       "tags": [
         "baked",
         "vegetarian",
-        "comfort"
+        "comfort",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -4716,7 +4808,8 @@
       "tags": [
         "quick",
         "pan",
-        "kids"
+        "kids",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -4769,7 +4862,8 @@
       "tags": [
         "baked",
         "meat",
-        "pasta_or_rice"
+        "pasta_or_rice",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -4822,11 +4916,14 @@
       "tags": [
         "asian",
         "stir_fry",
-        "rice"
+        "rice",
+        "seasonal"
       ],
       "allergens": [
         "peanuts",
-        "soy"
+        "soy",
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -4890,7 +4987,8 @@
       "tags": [
         "salad",
         "quick",
-        "cold"
+        "cold",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -4993,7 +5091,8 @@
       "tags": [
         "pasta",
         "quick",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -5042,7 +5141,8 @@
         "indian",
         "vegetarian",
         "rice",
-        "vegan"
+        "vegan",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -5098,7 +5198,8 @@
       "tags": [
         "soup",
         "vegetarian",
-        "cream"
+        "cream",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -5150,11 +5251,14 @@
       "tags": [
         "asian",
         "stir_fry",
-        "rice"
+        "rice",
+        "seasonal"
       ],
       "allergens": [
         "soy",
-        "peanuts"
+        "peanuts",
+        "gluten",
+        "nuts"
       ],
       "ingredients": [
         {
@@ -5214,7 +5318,8 @@
       "tags": [
         "baked",
         "mediterranean",
-        "meat"
+        "meat",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -5271,7 +5376,8 @@
       "tags": [
         "mediterranean",
         "baked",
-        "wraps"
+        "wraps",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -5328,7 +5434,8 @@
       "tags": [
         "mexican",
         "baked",
-        "family_favorite"
+        "family_favorite",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -5435,7 +5542,8 @@
       "tags": [
         "one_pan",
         "rice",
-        "mediterranean"
+        "mediterranean",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -5533,7 +5641,8 @@
       "tags": [
         "pasta",
         "quick",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -5633,7 +5742,8 @@
       "tags": [
         "mediterranean",
         "vegetarian",
-        "light"
+        "light",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -5684,7 +5794,8 @@
       "tags": [
         "indian_adapted",
         "mild",
-        "rice"
+        "rice",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -5741,7 +5852,8 @@
       "tags": [
         "baked",
         "pasta",
-        "meat"
+        "meat",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -5794,7 +5906,8 @@
       "tags": [
         "wraps",
         "light",
-        "mediterranean"
+        "mediterranean",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -5853,9 +5966,12 @@
         "vegetarian",
         "curry",
         "rice",
-        "vegan"
+        "vegan",
+        "seasonal"
       ],
-      "allergens": [],
+      "allergens": [
+        "dairy"
+      ],
       "ingredients": [
         {
           "name": "Mrkev",
@@ -5908,7 +6024,8 @@
       "tags": [
         "italian",
         "baked",
-        "low_carb"
+        "low_carb",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -5960,7 +6077,8 @@
       "tags": [
         "mexican",
         "fish",
-        "wraps"
+        "wraps",
+        "seasonal"
       ],
       "allergens": [
         "fish",
@@ -6019,7 +6137,8 @@
       "tags": [
         "pasta",
         "quick",
-        "meat"
+        "meat",
+        "seasonal"
       ],
       "allergens": [
         "gluten"
@@ -6119,7 +6238,8 @@
       "tags": [
         "pasta",
         "fish",
-        "creamy"
+        "creamy",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -6173,10 +6293,12 @@
       "tags": [
         "low_carb",
         "bowl",
-        "american"
+        "american",
+        "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "dairy",
+        "mustard"
       ],
       "ingredients": [
         {
@@ -6229,7 +6351,8 @@
       "tags": [
         "mediterranean",
         "vegetarian",
-        "one_pan"
+        "one_pan",
+        "seasonal"
       ],
       "allergens": [
         "eggs",
@@ -6282,7 +6405,8 @@
       "tags": [
         "greek",
         "pan",
-        "wraps"
+        "wraps",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -6339,7 +6463,8 @@
       "tags": [
         "czech_traditional",
         "fried",
-        "comfort"
+        "comfort",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -6409,10 +6534,12 @@
       "tags": [
         "quick",
         "asian",
-        "wok"
+        "wok",
+        "seasonal"
       ],
       "allergens": [
-        "soy"
+        "soy",
+        "gluten"
       ],
       "ingredients": [
         {
@@ -6536,7 +6663,8 @@
       "kid_friendly": true,
       "tags": [
         "czech_traditional",
-        "mushrooms"
+        "mushrooms",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -6600,7 +6728,8 @@
       "tags": [
         "quick",
         "creamy",
-        "healthy"
+        "healthy",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -6669,7 +6798,8 @@
       "allergens": [
         "gluten",
         "eggs",
-        "dairy"
+        "dairy",
+        "mustard"
       ],
       "ingredients": [
         {
@@ -6736,11 +6866,14 @@
       "tags": [
         "quick",
         "asian",
-        "seafood"
+        "seafood",
+        "seasonal"
       ],
       "allergens": [
         "shellfish",
-        "soy"
+        "soy",
+        "gluten",
+        "sesame"
       ],
       "ingredients": [
         {
@@ -6805,7 +6938,8 @@
       "kid_friendly": true,
       "tags": [
         "baked",
-        "stuffed"
+        "stuffed",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -6863,7 +6997,8 @@
       "kid_friendly": true,
       "tags": [
         "quick",
-        "czech_traditional"
+        "czech_traditional",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -6914,7 +7049,8 @@
       "tags": [
         "quick",
         "pasta",
-        "italian"
+        "italian",
+        "seasonal"
       ],
       "allergens": [
         "gluten"
@@ -6972,7 +7108,8 @@
       "tags": [
         "fried",
         "comfort",
-        "american"
+        "american",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -7029,7 +7166,8 @@
       "kid_friendly": true,
       "tags": [
         "czech_traditional",
-        "one_pan"
+        "one_pan",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -7086,12 +7224,14 @@
       "tags": [
         "asian",
         "spicy",
-        "wok"
+        "wok",
+        "seasonal"
       ],
       "allergens": [
         "peanuts",
         "soy",
-        "nuts"
+        "nuts",
+        "gluten"
       ],
       "ingredients": [
         {
@@ -7165,7 +7305,8 @@
       "kid_friendly": true,
       "tags": [
         "baked",
-        "vegetable"
+        "vegetable",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -7228,7 +7369,8 @@
       ],
       "allergens": [
         "dairy",
-        "mustard"
+        "mustard",
+        "gluten"
       ],
       "ingredients": [
         {
@@ -7287,7 +7429,8 @@
       "kid_friendly": true,
       "tags": [
         "quick",
-        "czech_traditional"
+        "czech_traditional",
+        "seasonal"
       ],
       "allergens": [
         "dairy",
@@ -7346,7 +7489,8 @@
       "kid_friendly": true,
       "tags": [
         "greek",
-        "wraps"
+        "wraps",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -7426,7 +7570,8 @@
       "tags": [
         "quick",
         "pasta",
-        "budget"
+        "budget",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -7485,7 +7630,8 @@
       "tags": [
         "baked",
         "comfort",
-        "budget"
+        "budget",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -7543,7 +7689,8 @@
       "tags": [
         "quick",
         "mexican",
-        "wraps"
+        "wraps",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -7600,7 +7747,8 @@
       "kid_friendly": true,
       "tags": [
         "healthy",
-        "baked"
+        "baked",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -7662,11 +7810,13 @@
       "tags": [
         "asian",
         "wok",
-        "nuts"
+        "nuts",
+        "seasonal"
       ],
       "allergens": [
         "soy",
-        "nuts"
+        "nuts",
+        "gluten"
       ],
       "ingredients": [
         {
@@ -7741,7 +7891,8 @@
       "tags": [
         "baked",
         "pasta",
-        "comfort"
+        "comfort",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -7858,7 +8009,8 @@
       "tags": [
         "quick",
         "wraps",
-        "healthy"
+        "healthy",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -7915,7 +8067,8 @@
       "kid_friendly": true,
       "tags": [
         "czech_traditional",
-        "comfort"
+        "comfort",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -7985,7 +8138,8 @@
       "tags": [
         "quick",
         "one_pan",
-        "budget"
+        "budget",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -8041,7 +8195,8 @@
       "tags": [
         "quick",
         "pasta",
-        "italian"
+        "italian",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -8107,9 +8262,12 @@
       "servings": 4,
       "kid_friendly": true,
       "tags": [
-        "comfort"
+        "comfort",
+        "seasonal"
       ],
-      "allergens": [],
+      "allergens": [
+        "dairy"
+      ],
       "ingredients": [
         {
           "name": "Kuřecí prsa",
@@ -8161,7 +8319,8 @@
       "kid_friendly": true,
       "tags": [
         "czech_traditional",
-        "grilled"
+        "grilled",
+        "seasonal"
       ],
       "allergens": [
         "eggs",
@@ -8233,11 +8392,13 @@
       "tags": [
         "quick",
         "asian",
-        "noodles"
+        "noodles",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
-        "soy"
+        "soy",
+        "sesame"
       ],
       "ingredients": [
         {
@@ -8297,7 +8458,8 @@
       "tags": [
         "czech_traditional",
         "baked",
-        "budget"
+        "budget",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -8353,7 +8515,8 @@
       "servings": 4,
       "kid_friendly": false,
       "tags": [
-        "comfort"
+        "comfort",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -8411,7 +8574,8 @@
       "kid_friendly": true,
       "tags": [
         "fried",
-        "comfort"
+        "comfort",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -8473,7 +8637,8 @@
       "servings": 4,
       "kid_friendly": true,
       "tags": [
-        "comfort"
+        "comfort",
+        "seasonal"
       ],
       "allergens": [
         "celery"
@@ -8536,7 +8701,8 @@
       "tags": [
         "quick",
         "pasta",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -8594,12 +8760,14 @@
       "tags": [
         "asian",
         "bowl",
-        "spicy"
+        "spicy",
+        "seasonal"
       ],
       "allergens": [
         "peanuts",
         "soy",
-        "nuts"
+        "nuts",
+        "gluten"
       ],
       "ingredients": [
         {
@@ -8723,7 +8891,8 @@
       "tags": [
         "baked",
         "one_pan",
-        "budget"
+        "budget",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -8777,7 +8946,8 @@
       "kid_friendly": true,
       "tags": [
         "quick",
-        "pasta"
+        "pasta",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -8834,7 +9004,8 @@
       "servings": 4,
       "kid_friendly": true,
       "tags": [
-        "czech_traditional"
+        "czech_traditional",
+        "seasonal"
       ],
       "allergens": [
         "mustard"
@@ -8965,7 +9136,8 @@
       "kid_friendly": true,
       "tags": [
         "baked",
-        "comfort"
+        "comfort",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -9097,10 +9269,13 @@
       "kid_friendly": true,
       "tags": [
         "asian",
-        "one_pan"
+        "one_pan",
+        "seasonal"
       ],
       "allergens": [
-        "soy"
+        "soy",
+        "gluten",
+        "sesame"
       ],
       "ingredients": [
         {
@@ -9160,7 +9335,8 @@
         "quick",
         "pasta",
         "vegetarian",
-        "budget"
+        "budget",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -9220,7 +9396,8 @@
         "creamy"
       ],
       "allergens": [
-        "dairy"
+        "dairy",
+        "gluten"
       ],
       "ingredients": [
         {
@@ -9273,10 +9450,12 @@
       "kid_friendly": true,
       "tags": [
         "asian",
-        "mushrooms"
+        "mushrooms",
+        "seasonal"
       ],
       "allergens": [
-        "soy"
+        "soy",
+        "gluten"
       ],
       "ingredients": [
         {
@@ -9335,7 +9514,8 @@
       "tags": [
         "baked",
         "pasta",
-        "comfort"
+        "comfort",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -9393,7 +9573,8 @@
       "tags": [
         "asian",
         "curry",
-        "indian"
+        "indian",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -9472,7 +9653,8 @@
       "tags": [
         "pasta",
         "baked",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -9543,7 +9725,8 @@
       "tags": [
         "mediterranean",
         "baked",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -9609,9 +9792,12 @@
         "curry",
         "vegetarian",
         "budget",
-        "vegan"
+        "vegan",
+        "seasonal"
       ],
-      "allergens": [],
+      "allergens": [
+        "dairy"
+      ],
       "ingredients": [
         {
           "name": "Cizrna konzervovaná",
@@ -9677,7 +9863,8 @@
         "quick",
         "pasta",
         "vegetarian",
-        "budget"
+        "budget",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -9741,7 +9928,8 @@
       "tags": [
         "quick",
         "pasta",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -9800,7 +9988,8 @@
         "healthy",
         "vegetarian",
         "salad",
-        "vegan"
+        "vegan",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -9861,7 +10050,8 @@
       "tags": [
         "baked",
         "vegetarian",
-        "comfort"
+        "comfort",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -9915,7 +10105,8 @@
         "quick",
         "mexican",
         "vegetarian",
-        "wraps"
+        "wraps",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -9984,7 +10175,8 @@
       "tags": [
         "italian",
         "vegetarian",
-        "mushrooms"
+        "mushrooms",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -10053,9 +10245,12 @@
       "tags": [
         "healthy",
         "vegetarian",
-        "bowl"
+        "bowl",
+        "seasonal"
       ],
-      "allergens": [],
+      "allergens": [
+        "dairy"
+      ],
       "ingredients": [
         {
           "name": "Batáty",
@@ -10113,7 +10308,8 @@
       "tags": [
         "vegetarian",
         "budget",
-        "mediterranean"
+        "mediterranean",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -10183,7 +10379,8 @@
       "tags": [
         "baked",
         "vegetarian",
-        "mediterranean"
+        "mediterranean",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -10248,7 +10445,8 @@
         "asian",
         "vegetarian",
         "soup",
-        "vegan"
+        "vegan",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -10322,7 +10520,8 @@
       "tags": [
         "czech_traditional",
         "vegetarian",
-        "budget"
+        "budget",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -10391,7 +10590,8 @@
       "tags": [
         "quick",
         "pasta",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -10457,10 +10657,12 @@
         "asian",
         "vegetarian",
         "curry",
-        "vegan"
+        "vegan",
+        "seasonal"
       ],
       "allergens": [
-        "soy"
+        "soy",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -10521,7 +10723,8 @@
       "tags": [
         "quick",
         "vegetarian",
-        "salad"
+        "salad",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -10575,7 +10778,8 @@
         "vegetarian"
       ],
       "allergens": [
-        "dairy"
+        "dairy",
+        "gluten"
       ],
       "ingredients": [
         {
@@ -10630,11 +10834,14 @@
         "asian",
         "vegetarian",
         "healthy",
-        "vegan"
+        "vegan",
+        "seasonal"
       ],
       "allergens": [
         "peanuts",
-        "soy"
+        "soy",
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -10699,7 +10906,8 @@
       "tags": [
         "baked",
         "pasta",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -10758,7 +10966,8 @@
         "asian",
         "vegetarian",
         "fried",
-        "vegan"
+        "vegan",
+        "seasonal"
       ],
       "allergens": [
         "gluten"
@@ -10821,7 +11030,8 @@
         "mediterranean",
         "vegetarian",
         "healthy",
-        "vegan"
+        "vegan",
+        "seasonal"
       ],
       "allergens": [
         "sesame"
@@ -10883,7 +11093,8 @@
       "kid_friendly": true,
       "tags": [
         "vegetarian",
-        "comfort"
+        "comfort",
+        "seasonal"
       ],
       "allergens": [
         "eggs",
@@ -10947,7 +11158,8 @@
       "tags": [
         "international",
         "vegetarian",
-        "vegan"
+        "vegan",
+        "seasonal"
       ],
       "allergens": [
         "gluten"
@@ -11020,7 +11232,8 @@
       "tags": [
         "baked",
         "vegetarian",
-        "comfort"
+        "comfort",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -11073,7 +11286,8 @@
       "tags": [
         "quick",
         "pasta",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -11132,7 +11346,8 @@
       "kid_friendly": true,
       "tags": [
         "vegetarian",
-        "comfort"
+        "comfort",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -11197,7 +11412,8 @@
       "tags": [
         "healthy",
         "vegetarian",
-        "baked"
+        "baked",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -11256,7 +11472,8 @@
         "mediterranean",
         "vegetarian",
         "rice",
-        "vegan"
+        "vegan",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -11326,7 +11543,8 @@
       "kid_friendly": true,
       "tags": [
         "quick",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -11385,7 +11603,8 @@
       "tags": [
         "italian",
         "vegetarian",
-        "baked"
+        "baked",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -11443,10 +11662,12 @@
         "asian",
         "vegetarian",
         "curry",
-        "vegan"
+        "vegan",
+        "seasonal"
       ],
       "allergens": [
-        "soy"
+        "soy",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -11512,7 +11733,8 @@
       "tags": [
         "mediterranean",
         "vegetarian",
-        "baked"
+        "baked",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -11572,7 +11794,8 @@
         "asian",
         "vegetarian",
         "budget",
-        "vegan"
+        "vegan",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -11639,7 +11862,8 @@
         "quick",
         "vegetarian",
         "wraps",
-        "vegan"
+        "vegan",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -11702,7 +11926,8 @@
       "tags": [
         "mediterranean",
         "vegetarian",
-        "baked"
+        "baked",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -11765,11 +11990,13 @@
       "tags": [
         "asian",
         "vegetarian",
-        "fried"
+        "fried",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
-        "eggs"
+        "eggs",
+        "soy"
       ],
       "ingredients": [
         {
@@ -11833,7 +12060,8 @@
       "tags": [
         "healthy",
         "vegetarian",
-        "salad"
+        "salad",
+        "seasonal"
       ],
       "allergens": [
         "dairy",
@@ -11897,7 +12125,8 @@
       "tags": [
         "quick",
         "pasta",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -11961,7 +12190,8 @@
       "tags": [
         "vegetarian",
         "comfort",
-        "american"
+        "american",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -12032,7 +12262,8 @@
       "tags": [
         "baked",
         "vegetarian",
-        "comfort"
+        "comfort",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -12084,7 +12315,8 @@
       "tags": [
         "quick",
         "vegetarian",
-        "mediterranean"
+        "mediterranean",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -12148,7 +12380,8 @@
         "asian",
         "vegetarian",
         "healthy",
-        "vegan"
+        "vegan",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -12346,9 +12579,12 @@
         "asian",
         "vegetarian",
         "budget",
-        "vegan"
+        "vegan",
+        "seasonal"
       ],
-      "allergens": [],
+      "allergens": [
+        "dairy"
+      ],
       "ingredients": [
         {
           "name": "Čočka červená",
@@ -12412,7 +12648,8 @@
       "tags": [
         "italian",
         "vegetarian",
-        "baked"
+        "baked",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -12475,7 +12712,8 @@
       "tags": [
         "healthy",
         "vegetarian",
-        "budget"
+        "budget",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -12539,10 +12777,12 @@
       "tags": [
         "vegetarian",
         "comfort",
-        "baked"
+        "baked",
+        "seasonal"
       ],
       "allergens": [
-        "dairy"
+        "dairy",
+        "nuts"
       ],
       "ingredients": [
         {
@@ -12597,7 +12837,8 @@
       "tags": [
         "mexican",
         "vegetarian",
-        "bowl"
+        "bowl",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -12666,10 +12907,12 @@
         "vegan",
         "pasta",
         "budget",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
-        "gluten"
+        "gluten",
+        "celery"
       ],
       "ingredients": [
         {
@@ -12735,10 +12978,12 @@
         "vegan",
         "mediterranean",
         "budget",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
-        "sesame"
+        "sesame",
+        "gluten"
       ],
       "ingredients": [
         {
@@ -12803,7 +13048,8 @@
         "vegan",
         "mexican",
         "bowl",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -12874,7 +13120,8 @@
       ],
       "allergens": [
         "peanuts",
-        "soy"
+        "soy",
+        "gluten"
       ],
       "ingredients": [
         {
@@ -12940,9 +13187,12 @@
         "vegan",
         "soup",
         "budget",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
-      "allergens": [],
+      "allergens": [
+        "dairy"
+      ],
       "ingredients": [
         {
           "name": "Žampiony",
@@ -13002,7 +13252,8 @@
         "vegan",
         "czech_traditional",
         "budget",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten"
@@ -13071,7 +13322,8 @@
       "tags": [
         "vegan",
         "healthy",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -13126,10 +13378,12 @@
         "vegan",
         "asian",
         "curry",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
-        "soy"
+        "soy",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -13190,7 +13444,8 @@
       "tags": [
         "vegan",
         "healthy",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "sesame"
@@ -13254,7 +13509,8 @@
         "vegan",
         "mexican",
         "budget",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -13319,7 +13575,8 @@
       "tags": [
         "vegan",
         "mediterranean",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "sesame"
@@ -13507,7 +13764,8 @@
         "vegan",
         "asian",
         "wraps",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -13571,9 +13829,12 @@
         "vegan",
         "soup",
         "budget",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
-      "allergens": [],
+      "allergens": [
+        "dairy"
+      ],
       "ingredients": [
         {
           "name": "Mrkev",
@@ -13633,11 +13894,13 @@
         "vegan",
         "asian",
         "baked",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
-        "soy"
+        "soy",
+        "sesame"
       ],
       "ingredients": [
         {
@@ -13698,9 +13961,12 @@
         "vegan",
         "comfort",
         "baked",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
-      "allergens": [],
+      "allergens": [
+        "dairy"
+      ],
       "ingredients": [
         {
           "name": "Čočka zelená",
@@ -13759,7 +14025,8 @@
       "tags": [
         "vegan",
         "mediterranean",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "sesame"
@@ -13817,7 +14084,8 @@
         "vegan",
         "asian",
         "bowl",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -13887,7 +14155,8 @@
         "vegan",
         "international",
         "budget",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "peanuts"
@@ -13956,9 +14225,12 @@
         "vegan",
         "asian",
         "budget",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
-      "allergens": [],
+      "allergens": [
+        "dairy"
+      ],
       "ingredients": [
         {
           "name": "Čočka červená",
@@ -14018,7 +14290,8 @@
       "tags": [
         "vegan",
         "mediterranean",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "sesame"
@@ -14082,11 +14355,13 @@
         "vegan",
         "healthy",
         "bowl",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "soy",
-        "sesame"
+        "sesame",
+        "gluten"
       ],
       "ingredients": [
         {
@@ -14146,7 +14421,8 @@
       "tags": [
         "vegan",
         "mexican",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten"
@@ -14275,7 +14551,8 @@
         "vegan",
         "comfort",
         "budget",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -14331,11 +14608,13 @@
         "vegan",
         "asian",
         "quick",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "soy",
-        "nuts"
+        "nuts",
+        "gluten"
       ],
       "ingredients": [
         {
@@ -14395,7 +14674,8 @@
         "vegan",
         "italian",
         "budget",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -14442,9 +14722,12 @@
         "vegan",
         "asian",
         "curry",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
-      "allergens": [],
+      "allergens": [
+        "dairy"
+      ],
       "ingredients": [
         {
           "name": "Kokosové mléko",
@@ -14504,7 +14787,8 @@
         "vegan",
         "mediterranean",
         "salad",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -14569,7 +14853,8 @@
         "vegetarian"
       ],
       "allergens": [
-        "gluten"
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -14624,7 +14909,8 @@
         "vegan",
         "asian",
         "quick",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -14695,7 +14981,8 @@
         "vegan",
         "mediterranean",
         "one_pan",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "soy"
@@ -14760,7 +15047,8 @@
         "vegetarian"
       ],
       "allergens": [
-        "gluten"
+        "gluten",
+        "dairy"
       ],
       "ingredients": [
         {
@@ -14809,7 +15097,8 @@
         "vegan",
         "asian",
         "budget",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -14872,7 +15161,8 @@
         "vegan",
         "mexican",
         "quick",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten"
@@ -14930,9 +15220,13 @@
         "vegan",
         "comfort",
         "budget",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
-      "allergens": [],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
       "ingredients": [
         {
           "name": "Brambory",
@@ -14986,7 +15280,8 @@
         "vegan",
         "asian",
         "noodles",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -15055,7 +15350,8 @@
       "tags": [
         "vegan",
         "international",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten"
@@ -15118,7 +15414,8 @@
         "vegan",
         "healthy",
         "budget",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten"
@@ -15217,7 +15514,8 @@
       "tags": [
         "soup",
         "rice",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -15256,7 +15554,8 @@
       "tags": [
         "soup",
         "classic",
-        "kids"
+        "kids",
+        "seasonal"
       ],
       "allergens": [
         "gluten"
@@ -15303,7 +15602,8 @@
         "cream",
         "quick",
         "kids",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -15345,7 +15645,8 @@
       "tags": [
         "soup",
         "czech",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -15418,7 +15719,8 @@
       "kid_friendly": true,
       "tags": [
         "soup",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -15457,7 +15759,8 @@
       "kid_friendly": true,
       "tags": [
         "cream",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -15497,7 +15800,8 @@
       "tags": [
         "soup",
         "kids",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -15530,7 +15834,8 @@
       "tags": [
         "soup",
         "legumes",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -15563,7 +15868,8 @@
       "tags": [
         "cream",
         "healthy",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "dairy"
@@ -15602,7 +15908,8 @@
       "kid_friendly": true,
       "tags": [
         "czech",
-        "meat"
+        "meat",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -15639,7 +15946,8 @@
       "kid_friendly": true,
       "tags": [
         "czech",
-        "hearty"
+        "hearty",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -15712,7 +16020,8 @@
       "kid_friendly": true,
       "tags": [
         "vegetarian",
-        "cream"
+        "cream",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -15750,7 +16059,8 @@
       "tags": [
         "czech",
         "mushroom",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
       "allergens": [
         "gluten",
@@ -15790,7 +16100,8 @@
       "kid_friendly": true,
       "tags": [
         "vegetarian",
-        "czech"
+        "czech",
+        "seasonal"
       ],
       "allergens": [],
       "ingredients": [
@@ -15822,7 +16133,8 @@
       "kid_friendly": true,
       "tags": [
         "fish",
-        "soup"
+        "soup",
+        "seasonal"
       ],
       "allergens": [
         "fish"
@@ -15862,9 +16174,13 @@
       "tags": [
         "asian",
         "noodles",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
-      "allergens": [],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
       "ingredients": [
         {
           "name": "Kokosové mléko",
@@ -15900,9 +16216,12 @@
       "kid_friendly": true,
       "tags": [
         "legumes",
-        "vegetarian"
+        "vegetarian",
+        "seasonal"
       ],
-      "allergens": [],
+      "allergens": [
+        "celery"
+      ],
       "ingredients": [
         {
           "name": "Bílé fazole v plechovce",
